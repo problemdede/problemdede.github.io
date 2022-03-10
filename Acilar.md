@@ -8,4 +8,4 @@ Verilen birim açılardan istediğiniz kadarını kağıttan kesiniz Daha sonra 
 ---
 
 ## Açıları Ölçelim
-[![](./svg_imgs/1_ileriGeriSayma.svg)](./svg_imgs/1_ileriGeriSayma.pdf){:target="_blank"}
+<a href="./svg_imgs/1_ileriGeriSayma.pdf" target="_blank">![](./svg_imgs/1_ileriGeriSayma.svg)</a>
