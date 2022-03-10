@@ -4,3 +4,15 @@ ProblemDede iki matematik öğretmeninin derslerinde kullanmak için hazırladı
 
 ## İletişim
 problemdede@gmail.com
+
+
+## GitBook Kurulum Ve Güncelleme
+> sudo npm install -g gitbook-cli
+
+> gitbook build
+
+> git init
+
+> cp -R _book/* .
+
+> git clean -fx _book
