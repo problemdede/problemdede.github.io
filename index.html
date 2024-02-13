@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="./images/problemdede.svg">
+    <title>ProblemDede</title>
+    <style>
+	.container {
+	font-size: 0;
+	width: 80%;
+	position: absolute;
+	left: 10%;
+	top: 20%;
+	}
+	.child1 {
+	display: inline-block;
+	font-size: 16px;
+	width: 40%;
+	position: absolute;
+	}
+	.child2 {
+	display: inline-block;
+	font-size: 16px;
+	width: 40%;
+	position: absolute;
+	left: 60%;
+	}
+	.btn_text {
+	font-size: 30px;
+	}
+	.btn{
+	background-color: #f1f1f1;
+	text-align: center;
+	cursor: pointer;
+	outline: none;
+	color: #000;
+	border: 2px solid black;
+	}
+	.btn:hover {
+	background-color: #dddddd;
+	border-color: #000;
+	}
+
+	.btn:active {
+	background-color: #bbbbbb;
+	border-color: #000;
+	}
+
+
+    </style>
+  </head>
+  <body>
+    <header><center><img src="./images/problemdede_sidebar.svg"></center></header>
+    <main>
+		<div class="container">
+			<div class="child1">
+				<button class="btn" onclick="window.location.href='a4ler.html';" type="submit">
+					<img src = "./images/A4.svg" width="80%"/>
+					<p class="btn_text">A4 Formatında Basılabilir Sayfalar.</p>
+				</button>
+			</div>
+			<div class="child2">
+				<button class="btn" onclick="window.location.href='sunumlar.html';" type="submit">
+				<img src = "./images/16_9.svg" width="80%"/>
+				<p class="btn_text">Akıllı Tahtalar İçin Sunumlar.</p>
+				</button>
+			</div>
+		</div>
+    </main>
+  </body>
+</html>
