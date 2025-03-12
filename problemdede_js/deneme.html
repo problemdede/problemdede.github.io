@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/problemdede.svg">
+    <title>ProblemDEDE - "Başlık"</title>
+    <style>
+        body { margin: 0; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #f0f0f0; overflow: hidden; }
+        .container { position: relative; width: 100vw; height: 100vh; }
+        svg { width: 100%; height: 100%; display: block; }
+        text {
+            user-select: none;
+            pointer-events: none;
+        }
+        .nav-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 40px;
+            cursor: pointer;
+            background: none;
+            color: black;
+            text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+            border: none;
+            padding: 10px;
+            transition: transform 0.2s;
+            font-family: Arial, sans-serif;
+        }
+        .nav-button:hover {
+            transform: translateY(-50%) scale(1.2);
+        }
+        #prev { left: 10px; }
+        #next { right: 10px; }
+        .pen-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 48px;
+            height: 48px;
+            font-size: 30px;
+            cursor: pointer;
+            /*background: none;*/
+            color: black;
+            border: 2px solid black;
+            /*padding: 5px 10px;*/
+            border-radius: 5px;
+            transition: transform 0.2s;
+        }
+        .pen-button.active {
+            background: #388ff9;
+            color: white;
+        }
+        .pen-button:hover {
+            transform: scale(1.2);
+        }
+        #thickness-btn-1 {
+            position: absolute;
+            width: 48px;
+            height: 48px;
+            top: 10px;
+            left: 70px;
+            border: 2px solid black;
+            /*padding: 5px 10px;*/
+            border-radius: 5px;
+        }
+        #thickness-btn-2 {
+            position: absolute;
+            width: 48px;
+            height: 48px;
+            top: 10px;
+            left: 130px;
+            border: 2px solid black;
+            /*padding: 5px 10px;*/
+            border-radius: 5px;
+        }
+        #thickness-btn-3 {
+            position: absolute;
+            width: 48px;
+            height: 48px;
+            top: 10px;
+            left: 190px;
+            border: 2px solid black;
+            /*padding: 5px 10px;*/
+            border-radius: 5px;
+        }
+        #thickness-btn-4 {
+            position: absolute;
+            width: 48px;
+            height: 48px;
+            top: 10px;
+            left: 250px;
+            border: 2px solid black;
+            /*padding: 5px 10px;*/
+            border-radius: 5px;
+        }
+        #colorButton {
+            position: absolute;
+            width: 48px;
+            height: 48px;
+            top: 10px;
+            left: 310px;
+            border: 2px solid black;
+            /*padding: 5px 10px;*/
+            border-radius: 5px;
+        }
+        #eraser {
+            top: 10px; /* Çizim butonunun hemen altına yerleştir */
+            left: 370px;
+        }
+
+        #clear {
+            top: 10px; /* Çizim butonunun hemen altına yerleştir */
+            left: 430px;
+        }
+        #eraser-size-btn-1 {
+            position: absolute;
+            width: 48px;
+            height: 48px;
+            top: 10px;
+            left: 490px;
+            border: 2px solid black;
+            /*padding: 5px 10px;*/
+            border-radius: 5px;
+        }
+        #eraser-size-btn-2 {
+            position: absolute;
+            width: 48px;
+            height: 48px;
+            top: 10px;
+            left: 550px;
+            border: 2px solid black;
+            /*padding: 5px 10px;*/
+            border-radius: 5px;
+        }
+        #eraser-size-btn-3 {
+            position: absolute;
+            width: 48px;
+            height: 48px;
+            top: 10px;
+            left: 610px;
+            border: 2px solid black;
+            /*padding: 5px 10px;*/
+            border-radius: 5px;
+        }
+        #eraser-size-btn-4 {
+            position: absolute;
+            width: 48px;
+            height: 48px;
+            top: 10px;
+            left: 670px;
+            border: 2px solid black;
+            /*padding: 5px 10px;*/
+            border-radius: 5px;
+        }
+
+        #undo-btn {
+            position: absolute;
+            width: 48px;
+            height: 48px;
+            top: 10px;
+            left: 730px;
+            border: 2px solid black;
+            /*padding: 5px 10px;*/
+            border-radius: 5px;
+        }
+
+        #fscreen-btn {
+            position: absolute;
+            width: 48px;
+            height: 48px;
+            top: 10px;
+            left: 790px;
+            border: 2px solid black;
+            /*padding: 5px 10px;*/
+            border-radius: 5px;
+        }
+
+
+        .thickness-picker {
+            position: absolute;
+            top: 280px;
+            left: 10px;
+            display: flex;
+            flex-direction: column;
+            z-index: 2;
+            transition: transform 0.2s;
+        }
+
+        .thickness-btn {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: transform 0.2s;
+            background-color: white;
+            border: 2px solid black;
+            text-align: center;
+        }
+
+        .thickness-btn:hover {
+            transform: scale(1.2);
+        }
+
+        .color-btn {
+            transition: transform 0.2s;
+        }
+
+        .color-btn:hover {
+            transform: scale(1.2);
+        }
+
+        .eraser-size-btn {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: transform 0.2s;
+            background-color: white;
+            border: 2px solid black;
+            text-align: center;
+        }
+
+        .eraser-size-btn:hover {
+            transform: scale(1.2);
+        }
+
+        .color-btn.selected {
+            box-shadow: inset 0 0 0 4px black; /* İç kenara siyah çerçeve ekler */
+            filter: brightness(1.2); /* Butonu biraz parlak yapar */
+        }
+
+        .thickness-btn.selected {
+            box-shadow: inset 0 0 0 4px black; /* İç kenara siyah çerçeve ekler */
+            filter: brightness(1.2); /* Butonu biraz parlak yapar */
+        }
+
+        .eraser-size-btn.selected {
+            box-shadow: inset 0 0 0 4px black; /* İç kenara siyah çerçeve ekler */
+            filter: brightness(1.2); /* Butonu biraz parlak yapar */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button id="prev" class="nav-button">&lt;</button>
+        <button id="next" class="nav-button">&gt;</button>
+        <button id="pen" class="pen-button"><svg viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg"><path d="m11.04 11.04-.79-1.97-1.2 1.2Z" fill="#f4eed7"/><path d="m3.17 4.84 5.44 5.43L10.3 8.6 4.87 3.2Z" fill="#ffe680"/><path d="m1.33 3 1.84 1.84 1.7-1.65L3 1.33Z" fill="#ff8080"/><path d="M2.98 1.06 1.06 2.98l7.37 7.38 3.21 1.28-1.28-3.2Zm.03.52 1.58 1.6-1.42 1.41-1.59-1.58Zm1.87 1.88 5.18 5.18-.45.45-5.18-5.17Zm5.6 6.2.56 1.38-1.38-.55ZM3.93 4.43 9.1 9.61l-.45.45-5.18-5.18Z" overflow="visible"/></svg></button>
+
+        <button id="colorButton"></button>
+        <input type="color" id="colorPicker" style="display: none;">
+
+        <button id="thickness-btn-1" class="thickness-btn" data-thickness="0.25"><svg viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg"><circle cx="6.35" cy="6.35" r="1" fill="#b3b3b3" stroke="#000" stroke-width=".53"/></svg></button>
+        <button id="thickness-btn-2" class="thickness-btn" data-thickness="0.5"><svg viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg"><circle cx="6.35" cy="6.35" r="2" fill="#b3b3b3" stroke="#000" stroke-width=".53"/></svg></button>
+        <button id="thickness-btn-3" class="thickness-btn" data-thickness="1"><svg viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg"><circle cx="6.35" cy="6.35" r="3" fill="#b3b3b3" stroke="#000" stroke-width=".53"/></svg></button>
+        <button id="thickness-btn-4" class="thickness-btn" data-thickness="2"><svg viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg"><circle cx="6.35" cy="6.35" r="4" fill="#b3b3b3" stroke="#000" stroke-width=".53"/></svg></button>
+        <button id="eraser" class="pen-button"><svg viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg"><g transform="rotate(45 2.595 3.893)scale(.93694)" stroke="#000" stroke-width=".529"><path d="M3.175 0v6.35h7.408a3.175 3.175 0 0 0 0-6.35z" fill="#87cdde"/><path d="M9.22 0v6.35h1.363a3.175 3.175 0 0 0 0-6.35zM3.889 3.923h4.578v1.379H3.889z" fill="#fff"/></g></svg></button>
+        <button id="clear" class="pen-button"><svg viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg"><g transform="rotate(-45 4.85 5.4)scale(.82492)" stroke="#000" stroke-width=".53"><path fill="#d38d5f" d="M2.68 7.13H10V9.2H2.68zM5.52.92h1.65v6.21H5.52z"/><path fill="#ffe680" d="M3.11 9.2h6.44v4.75H3.11z"/><path d="M4.7 10.03v3.06m1.63-3.06v3.06m1.63-3.06v3.06" fill="#d38d5f"/></g></svg></button>
+        <button id="eraser-size-btn-1" class="eraser-size-btn" data-size="2"><svg viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg"><circle cx="6.35" cy="6.35" r="1" fill="#b3b3b3" stroke="#000" stroke-width=".53" stroke-dasharray=".52899998,.52899998"/></svg></button>
+        <button id="eraser-size-btn-2" class="eraser-size-btn" data-size="5"><svg viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg"><circle cx="6.35" cy="6.35" r="2" fill="#b3b3b3" stroke="#000" stroke-width=".53" stroke-dasharray=".52899998,.52899998"/></svg></button>
+        <button id="eraser-size-btn-3" class="eraser-size-btn" data-size="10"><svg viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg"><circle cx="6.35" cy="6.35" r="3" fill="#b3b3b3" stroke="#000" stroke-width=".53" stroke-dasharray=".52899998,.52899998"/></svg></button>
+        <button id="eraser-size-btn-4" class="eraser-size-btn" data-size="15"><svg viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg"><circle cx="6.35" cy="6.35" r="4" fill="#b3b3b3" stroke="#000" stroke-width=".53" stroke-dasharray=".52899998,.52899998"/></svg></button>
+        <button id="undo-btn" class="pen-button"><svg viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg"><path d="m2.6217 6.35.602.2637.4356 1.7267L4.697 9.5523l1.2515.4832 1.5683-.206 1.4495-1.2673.388-1.7346-.6256-1.592L7.382 4.1978l-.0792 1.0693-.7049.3248-.8792-.6178L4.499 3.6039l.0713-.5148 1.8693-1.8297.491.0237.3644.3565.0871 1.0772 1.5842.8475.9425.9109.6891 1.4257.0317 2.2178-.7128 1.5445-1.4891 1.2673-1.5525.499-1.7821-.1267-1.608-.895-.9742-1.1486-.5386-1.584.0713-1.0298Z" fill="#5fbcd3"/><path d="M9.5946 3.8078c-.5653-.5652-1.262-.971-2.0233-1.1802V1.958c0-.4961-.4036-.8997-.8996-.8997a.894.894 0 0 0-.6362.2635l-1.47 1.4699a.894.894 0 0 0-.2634.6361c0 .2404.0935.4663.2635.6362l1.47 1.47a.894.894 0 0 0 .636.2634c.4961 0 .8997-.4036.8997-.8996v-.3526c.949.4638 1.568 1.4362 1.568 2.5074 0 1.5381-1.2514 2.7894-2.7895 2.7894S3.5604 8.5907 3.5604 7.0526c0-.496-.4036-.8997-.8997-.8997s-.8996.4036-.8996.8997c0 1.2257.4773 2.378 1.344 3.2447s2.019 1.344 3.2447 1.344 2.378-.4773 3.2448-1.344 1.344-2.019 1.344-3.2447-.4774-2.378-1.344-3.2448m-.2982 6.1913c-.787.7871-1.8335 1.2206-2.9466 1.2206s-2.1595-.4335-2.9466-1.2205c-.787-.787-1.2205-1.8335-1.2205-2.9466 0-.2636.2145-.478.478-.478s.478.2144.478.478c0 1.7706 1.4406 3.211 3.2112 3.211s3.211-1.4404 3.211-3.211c0-1.3513-.8556-2.5663-2.1292-3.0233a.21.21 0 0 0-.1925.026.211.211 0 0 0-.0895.1725v.67a.4786.4786 0 0 1-.478.478.475.475 0 0 1-.338-.14l-1.47-1.47c-.0902-.0902-.14-.2103-.14-.338s.0498-.2477.14-.338l1.47-1.4698a.475.475 0 0 1 .338-.14c.2636 0 .478.2144.478.478v.8334c0 .0978.0673.1828.1626.2052.7483.176 1.4344.5596 1.9841 1.1094.7871.787 1.2206 1.8335 1.2206 2.9466 0 1.113-.4335 2.1595-1.2206 2.9465"/><rect width=".678" height="1.9871" x=".9961" y="6.0379" ry=".339" transform="rotate(-46.197)" fill="#fff" stroke="#000" stroke-width=".3"/></svg></button>
+        <button id="fscreen-btn" class="pen-button">
+          <svg id="fullscreenIcon" width="48" height="48" version="1.1" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
+            <g fill="#ffe680" stroke="#000" stroke-width=".41182">
+              <path d="m4.957 1.2642h-3.1687c-0.28198 0-0.52404 0.23186-0.52404 0.51657 1.87e-4 1.0561 3.17e-4 2.1123 3.17e-4 3.1683 1.87e-4 0.67178 1.0408 0.67766 1.0408 0.0075-1.87e-4 -0.63885-1.87e-4 -1.2775-1.87e-4 -1.9163 0.74824 0.74824 1.4967 1.4967 2.245 2.2448 0.4741 0.4741 1.2073-0.26445 0.73196-0.73976-0.74704-0.74704-1.4939-1.4937-2.2408-2.2406h1.9083c0.67168 3.17e-4 0.67757-1.0405 0.0073-1.0405z"/>
+              <path d="m7.743 2.3054c0.63885-1.87e-4 1.2773-1.87e-4 1.9162-1.87e-4 -0.74824 0.7481-1.4967 1.4965-2.245 2.2446-0.4741 0.4741 0.26427 1.2073 0.73976 0.73196 0.74704-0.74685 1.4937-1.4936 2.2408-2.2405 0 0.63588 1.87e-4 1.272 1.87e-4 1.908 1.87e-4 0.67178 1.0408 0.67766 1.0408 0.0075-1.86e-4 -1.0561-3.22e-4 -2.1123-3.22e-4 -3.1683 0-0.28198-0.23186-0.52404-0.51657-0.52404-1.0561 1.86e-4 -2.1121 3.17e-4 -3.1682 3.17e-4 -0.67196 4.6e-5 -0.6779 1.0407-0.0077 1.0407z"/>
+              <path d="m4.957 11.435h-3.1687c-0.28198 0-0.52404-0.23186-0.52404-0.51657 1.87e-4 -1.0561 3.17e-4 -2.1123 3.17e-4 -3.1683 1.87e-4 -0.67178 1.0408-0.67766 1.0408-0.0075-1.87e-4 0.63885-1.87e-4 1.2775-1.87e-4 1.9163 0.74824-0.74824 1.4967-1.4967 2.245-2.2448 0.4741-0.4741 1.2073 0.26445 0.73196 0.73976-0.74704 0.74704-1.4939 1.4937-2.2408 2.2406h1.9083c0.67168-3.17e-4 0.67757 1.0405 0.0073 1.0405z"/>
+              <path d="m7.743 10.394c0.63885 1.87e-4 1.2773 1.87e-4 1.9162 1.87e-4 -0.74824-0.7481-1.4967-1.4965-2.245-2.2446-0.4741-0.4741 0.26427-1.2073 0.73976-0.73196 0.74704 0.74685 1.4937 1.4936 2.2408 2.2405 0-0.63588 1.87e-4 -1.272 1.87e-4 -1.908 1.87e-4 -0.67178 1.0408-0.67766 1.0408-0.0075-1.86e-4 1.0561-3.22e-4 2.1123-3.22e-4 3.1683 0 0.28198-0.23186 0.52404-0.51657 0.52404-1.0561-1.86e-4 -2.1121-3.17e-4 -3.1682-3.17e-4 -0.67196-4.6e-5 -0.6779-1.0407-0.0077-1.0407z"/>
+            </g>
+          </svg>
+        </button>
+
+
+        <svg id="svg-container" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 90" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="a" d="M0 0h160v90H0z"/></defs><path fill="#e9ddaf" d="M0 0h160v90H0z"/><text xml:space="preserve" font-family="FreeSerif" font-size="16" style="-inkscape-font-specification:FreeSerif;text-align:center;white-space:pre;shape-inside:url(#a)" transform="translate(.6 35.6)"><tspan x="54.6" y="14.8">Selam 1</tspan></text><path fill="#e9ddaf" d="M160 0h160v90H160z"/><text xml:space="preserve" font-family="FreeSerif" font-size="16" style="-inkscape-font-specification:FreeSerif;text-align:center;white-space:pre;shape-inside:url(#prefix__b)" transform="translate(160 35.6)"><tspan x="54.6" y="14.8">Selam 2</tspan></text><path fill="#e9ddaf" d="M320 0h160v90H320z"/><text xml:space="preserve" font-family="FreeSerif" font-size="16" style="-inkscape-font-specification:FreeSerif;text-align:center;white-space:pre;shape-inside:url(#prefix__c)" transform="translate(320.3 35.6)"><tspan x="54.6" y="14.8">Selam 3</tspan></text></svg>
+    </div>
+    
+    <script>
+        const svg = document.getElementById('svg-container');
+        const drawingLayer = document.getElementById('drawing-layer');
+        const penButton = document.getElementById('pen');
+        const animationFrames = 20;
+        const eraserButton = document.getElementById('eraser');
+        const eraserButtons = document.querySelectorAll('.eraser-size-btn');
+        const thicknessPicker = document.getElementById('thickness-picker');
+        const thicknessButtons = document.querySelectorAll('.thickness-btn');
+        const undoButton = document.getElementById('undo-btn');
+        const colorSelectButton = document.getElementById("colorButton");
+        const colorPickerNew = document.getElementById("colorPicker");
+
+        let pageWidth = 160;
+        let totalWidth = 480;
+        let totalPages = 0;
+        let currentIndex = 0;
+        let startX = 0;
+        let drawing = false;
+        let lastX, lastY;
+        let isDrawingMode = false;
+        let currentEraserSize = 10;
+        let isErasing = false;
+        let currentColor = "black";
+        let currentThickness = 0.5;
+        let actionHistory = []
+
+        document.getElementById('thickness-btn-2').classList.add('selected');
+        document.getElementById('eraser-size-btn-3').classList.add('selected');
+        colorSelectButton.style.backgroundColor = currentColor;
+
+        eraserButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                eraserButtons.forEach(btn => btn.classList.remove('selected'));
+                button.classList.add('selected');
+                currentEraserSize = parseFloat(button.getAttribute('data-size'));
+                document.getElementById('eraser-size-picker').style.display = 'none';
+            });
+        });
+
+        thicknessButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                thicknessButtons.forEach(btn => btn.classList.remove('selected'));
+                currentThickness = parseFloat(button.getAttribute('data-thickness'));
+                button.classList.add('selected');
+                thicknessPicker.style.display = 'none'; // Seçim yapıldığında kalınlık menüsünü gizle
+            });
+        });
+
+        document.getElementById('clear').addEventListener('click', function () {
+            const drawingLayer = document.getElementById('drawing-layer');
+            if (drawingLayer) {
+                const allElements = Array.from(drawingLayer.children); // Tüm çizimleri al
+                if (allElements.length > 0) {
+                    actionHistory.push({ type: 'clear', elements: allElements });
+                    drawingLayer.innerHTML = ''; // Tüm çizimleri kaldır
+                    updateUndoButton();
+                }
+            }
+        });
+
+        function toggleEraserMode() {
+            if (isDrawingMode) {
+                // Eğer çizim modu aktifse, önce onu kapatalım
+                isDrawingMode = false;
+                penButton.classList.remove('active');
+            }
+
+            isErasing = !isErasing;
+            eraserButton.classList.toggle('active', isErasing);
+        }
+
+        function startErasing(event) {
+            if (!isErasing) return;
+            currentEraseGroup = []; // Yeni silme grubu başlat
+            eraseDrawing(event);
+        }
+
+        function stopErasing() {
+            if (isErasing) {
+                if (currentEraseGroup.length > 0) {
+                    actionHistory.push({ type: 'erase', elements: [...currentEraseGroup] });
+                    updateUndoButton();
+                }
+                currentEraseGroup = []; // Geçici listeyi sıfırla
+            }
+        }
+
+        function eraseDrawing(event) {
+            if (!isErasing) return; // Silgi modu aktif değilse işlem yapma
+            let erasedElements = []; // Silinen öğeleri saklamak için
+            const point = getMousePosition(event);
+            const drawingLayer = ensureDrawingLayer(); // Çizim katmanını al
+            const elements = drawingLayer.querySelectorAll('line, rect, circle, path'); // Çizgi, dikdörtgen, daire, yol gibi tüm öğeler
+
+            elements.forEach(element => {
+                let shouldRemove = false;
+                if (element.tagName === 'line') {
+                    const x1 = parseFloat(element.getAttribute('x1'));
+                    const y1 = parseFloat(element.getAttribute('y1'));
+                    const x2 = parseFloat(element.getAttribute('x2'));
+                    const y2 = parseFloat(element.getAttribute('y2'));
+                    const lineLength = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+                    const tolerance = currentEraserSize; // Silgi boyutuna göre tolerans belirle
+
+                    if (lineLength < tolerance) {
+                        const distanceSquared = (point.x - x1) ** 2 + (point.y - y1) ** 2;
+                        const toleranceSquared = tolerance ** 2;
+                        if (distanceSquared <= toleranceSquared) { shouldRemove = true; }
+                    } else {
+                        if (isPointOnLine(point.x, point.y, x1, y1, x2, y2, tolerance)) {
+                            shouldRemove = true;
+                        }
+                    }
+                }
+                if (element.tagName === 'rect') {
+                    const x = parseFloat(element.getAttribute('x'));
+                    const y = parseFloat(element.getAttribute('y'));
+                    const width = parseFloat(element.getAttribute('width'));
+                    const height = parseFloat(element.getAttribute('height'));
+
+                    if (point.x >= x && point.x <= x + width && point.y >= y && point.y <= y + height) {
+                        shouldRemove = true;
+                    }
+                }
+                if (element.tagName === 'circle') {
+                    const cx = parseFloat(element.getAttribute('cx'));
+                    const cy = parseFloat(element.getAttribute('cy'));
+                    const r = parseFloat(element.getAttribute('r'));
+
+                    const distance = Math.sqrt(Math.pow(point.x - cx, 2) + Math.pow(point.y - cy, 2));
+                    if (distance <= r + currentEraserSize) { shouldRemove = true; }
+                }
+                if (element.tagName === 'path') {
+                    const pathLength = element.getTotalLength();
+                    if (pathLength > 0) {
+                        shouldRemove = isPointOnPath(point, element, currentEraserSize);
+                    }
+                }
+                if (shouldRemove) {
+                    currentEraseGroup.push({ element: element.cloneNode(true), parent: drawingLayer });
+                    element.remove();
+                }
+            });
+        }
+
+        function initializeSVG() {
+            let viewBoxValues = svg.getAttribute('viewBox').split(' ');
+            totalWidth = parseFloat(viewBoxValues[2]);
+            totalPages = Math.floor(totalWidth / pageWidth);
+        }
+
+        function animateViewBox(targetX) {
+            let currentX = parseFloat(svg.getAttribute('viewBox').split(' ')[0]);
+            let step = (targetX - currentX) / animationFrames;
+            let frame = 0;
+            
+            function stepAnimation() {
+                if (frame < animationFrames) {
+                    currentX += step;
+                    svg.setAttribute('viewBox', `${currentX} 0 ${pageWidth} 90`);
+                    frame++;
+                    requestAnimationFrame(stepAnimation);
+                } else {
+                    svg.setAttribute('viewBox', `${targetX} 0 ${pageWidth} 90`);
+                }
+            }
+            requestAnimationFrame(stepAnimation);
+        }
+        
+        function showPage(index) {
+            let xOffset = index * pageWidth;
+            animateViewBox(xOffset);
+        }
+        
+        function nextPage() {
+            if (currentIndex < totalPages - 1) {
+                currentIndex++;
+                showPage(currentIndex);
+            }
+        }
+        
+        function prevPage() {
+            if (currentIndex > 0) {
+                currentIndex--;
+                showPage(currentIndex);
+            }
+        }
+
+        function toggleDrawingMode() {
+            if (isErasing) {
+                isErasing = false;
+                eraserButton.classList.remove('active');
+            }
+
+            isDrawingMode = !isDrawingMode;
+            penButton.classList.toggle('active', isDrawingMode);
+        }
+
+        function startDrawing(event) {
+            if (!isDrawingMode || isErasing) return; // Eğer silgi aktifse çizimi başlatma
+            drawing = true;
+            currentDrawGroup = []; // Yeni çizim grubu başlat
+            const point = getMousePosition(event);
+            lastX = point.x;
+            lastY = point.y;
+        }
+
+        function ensureDrawingLayer() {
+            let drawingLayer = document.getElementById('drawing-layer');
+            if (!drawingLayer) {
+                drawingLayer = document.createElementNS("http://www.w3.org/2000/svg", "g");
+                drawingLayer.setAttribute("id", "drawing-layer");
+                svg.appendChild(drawingLayer);
+            }
+            return drawingLayer;
+        }
+
+        function isPointOnPath(point, pathElement, size) {
+            const pathLength = pathElement.getTotalLength();
+            for (let i = 0; i < pathLength; i++) {
+                const { x, y } = pathElement.getPointAtLength(i);
+                const distance = Math.sqrt(Math.pow(point.x - x, 2) + Math.pow(point.y - y, 2));
+                if (distance < size) { // Silme boyutuna göre mesafeyi kontrol et
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        function isPointOnLine(px, py, x1, y1, x2, y2, tolerance = 5) {
+            const dx = x2 - x1;
+            const dy = y2 - y1;
+            const len = Math.sqrt(dx * dx + dy * dy);
+            const cross = (px - x1) * dy - (py - y1) * dx;
+            return Math.abs(cross) < tolerance && Math.abs((px - x1) * dy - (py - y1) * dx) / len < tolerance;
+        }
+
+        function draw(event) {
+            if (!drawing || !isDrawingMode || isErasing) return;
+            const drawingLayer = ensureDrawingLayer();
+            const point = getMousePosition(event);
+            const newLine = document.createElementNS("http://www.w3.org/2000/svg", "line");
+            newLine.setAttribute("x1", lastX);
+            newLine.setAttribute("y1", lastY);
+            newLine.setAttribute("x2", point.x);
+            newLine.setAttribute("y2", point.y);
+            newLine.setAttribute("stroke", currentColor);
+            newLine.setAttribute("stroke-width", currentThickness);
+            newLine.setAttribute("stroke-linecap", "round");
+            drawingLayer.appendChild(newLine);
+            currentDrawGroup.push(newLine); // Çizimi geçici listeye ekl
+            lastX = point.x;
+            lastY = point.y;
+        }
+
+        function stopDrawing() {
+            if (drawing) {
+                drawing = false; // Çizimi durdur
+                if (currentDrawGroup.length > 0) {
+                    actionHistory.push({ type: 'draw', elements: [...currentDrawGroup] });
+                    updateUndoButton();
+                }
+                currentDrawGroup = []; // Geçici listeyi sıfırla
+            }
+        }
+
+        function getMousePosition(event) {
+            const rect = svg.getBoundingClientRect();
+            return {
+                x: ((event.clientX - rect.left) / rect.width) * pageWidth + currentIndex * pageWidth,
+                y: ((event.clientY - rect.top) / rect.height) * 90
+            };
+        }
+
+        function undoDrawing() {
+            if (actionHistory.length > 0) {
+                const lastAction = actionHistory.pop(); // Son işlemi geri al
+
+                if (lastAction.type === 'draw') {
+                    lastAction.elements.forEach(element => element.remove()); // Çizimleri kaldır
+                } else if (lastAction.type === 'erase') {
+                    lastAction.elements.forEach(({ element, parent }) => {
+                        parent.appendChild(element); // Silinenleri geri ekle
+                    });
+                } else if (lastAction.type === 'clear') {
+                    lastAction.elements.forEach(el => ensureDrawingLayer().appendChild(el)); // Temizlenenleri geri yükle
+                }
+            }
+
+            updateUndoButton();
+        }
+
+        function updateUndoButton() {
+            undoButton.disabled = actionHistory.length === 0;
+        }
+
+        function toggleFullScreen() {
+          const button = document.getElementById("fscreen-btn");
+          const icon = document.getElementById("fullscreenIcon");
+
+          if (!document.fullscreenElement && 
+              !document.webkitFullscreenElement && 
+              !document.mozFullScreenElement && 
+              !document.msFullscreenElement) { 
+            if (document.documentElement.requestFullscreen) {
+              document.documentElement.requestFullscreen();
+            } else if (document.documentElement.webkitRequestFullscreen) { // Safari
+              document.documentElement.webkitRequestFullscreen();
+            } else if (document.documentElement.mozRequestFullScreen) { // Firefox
+              document.documentElement.mozRequestFullScreen();
+            } else if (document.documentElement.msRequestFullscreen) { // IE/Edge
+              document.documentElement.msRequestFullscreen();
+            }
+          } else { 
+            if (document.exitFullscreen) {
+              document.exitFullscreen();
+            } else if (document.webkitExitFullscreen) { // Safari
+              document.webkitExitFullscreen();
+            } else if (document.mozCancelFullScreen) { // Firefox
+              document.mozCancelFullScreen();
+            } else if (document.msExitFullscreen) { // IE/Edge
+              document.msExitFullscreen();
+            }
+          }
+        }
+
+        initializeSVG();
+        showPage(currentIndex);
+        document.getElementById('next').addEventListener('click', nextPage);
+        document.getElementById('prev').addEventListener('click', prevPage);
+        document.getElementById('fscreen-btn').addEventListener('click', toggleFullScreen);
+        penButton.addEventListener('click', toggleDrawingMode);
+        eraserButton.addEventListener('click', toggleEraserMode);
+
+        colorSelectButton.addEventListener("click", () => {
+            colorPickerNew.click();
+        });
+
+        colorPickerNew.addEventListener("input", () => {
+            colorSelectButton.style.backgroundColor = colorPickerNew.value;
+            currentColor = colorPickerNew.value;
+        });
+
+        svg.addEventListener('mousedown', event => {
+            if (isErasing) startErasing(event);
+            else startDrawing(event);
+        });
+
+        svg.addEventListener('mousemove', event => {
+            if (isErasing && event.buttons === 1) eraseDrawing(event);
+            else if (drawing) draw(event);
+        });
+
+        svg.addEventListener('mouseup', () => {
+            stopDrawing();
+            stopErasing();
+        });
+
+        svg.addEventListener('mouseleave', () => {
+            stopDrawing();
+            stopErasing();
+        });
+
+        document.addEventListener("keydown", function(event) {
+            if (event.key === "ArrowRight") nextPage();
+            if (event.key === "ArrowLeft") prevPage();
+        });
+        undoButton.addEventListener('click', undoDrawing);
+        updateUndoButton();
+
+    </script>
+</body>
+</html>

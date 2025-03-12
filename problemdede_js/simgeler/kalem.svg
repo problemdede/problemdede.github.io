@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="48"
+   height="48"
+   viewBox="0 0 12.7 12.7"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   sodipodi:docname="kalem.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="8.1669023"
+     inkscape:cx="71.202027"
+     inkscape:cy="30.611362"
+     inkscape:window-width="1870"
+     inkscape:window-height="1054"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Katman 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g3">
+      <path
+         style="fill:#f4eed7;stroke:none;stroke-width:0.529"
+         d="M 11.037522,11.037523 10.252627,9.0660452 9.0522969,10.266375 Z"
+         id="path3" />
+      <path
+         style="fill:#ffe680;stroke:none;stroke-width:0.264583"
+         d="M 3.1697096,4.8440554 8.6132105,10.273815 10.292614,8.5944111 4.8671498,3.192804 Z"
+         id="path2" />
+      <path
+         style="fill:#ff8080;stroke:none;stroke-width:0.264583"
+         d="M 1.3279293,3.0080487 3.1697096,4.8440554 4.8671498,3.192804 3.0022749,1.3279293 Z"
+         id="path1" />
+      <path
+         id="rect1"
+         style="baseline-shift:baseline;display:inline;overflow:visible;vector-effect:none;stroke-width:0.857099;enable-background:accumulate;stop-color:#000000"
+         d="M 2.9825758,1.0583333 1.0583333,2.9825759 8.4345963,10.358839 11.641667,11.641667 10.358839,8.4345966 Z M 3.0051253,1.5838671 4.5939406,3.1726826 3.1723693,4.5942542 1.5835539,3.0054388 Z M 4.8845818,3.4633234 10.060681,8.6394231 9.6081211,9.0919833 4.4320215,3.9158837 Z M 10.487873,9.6629297 11.037522,11.037523 9.66293,10.487873 Z M 3.9155703,4.4323349 9.0916702,9.6084346 8.6391096,10.060995 3.46301,4.884895 Z" />
+    </g>
+  </g>
+</svg>

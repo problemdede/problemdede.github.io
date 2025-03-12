@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="48"
+   height="48"
+   viewBox="0 0 12.7 12.7"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   sodipodi:docname="cop.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="6.402615"
+     inkscape:cx="94.883106"
+     inkscape:cy="52.79093"
+     inkscape:window-width="1870"
+     inkscape:window-height="1054"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Katman 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g5"
+       transform="matrix(0.5833098,-0.5833098,0.5833098,0.5833098,-2.3916633,5.0113284)">
+      <rect
+         style="fill:#d38d5f;stroke:#000000;stroke-width:0.529;stroke-dasharray:none"
+         id="rect1"
+         width="7.3240862"
+         height="2.068635"
+         x="2.6836345"
+         y="7.1284046" />
+      <rect
+         style="fill:#d38d5f;stroke:#000000;stroke-width:0.529;stroke-dasharray:none"
+         id="rect2"
+         width="1.649317"
+         height="6.205905"
+         x="5.521019"
+         y="0.9224996" />
+      <rect
+         style="fill:#ffe680;stroke:#000000;stroke-width:0.529;stroke-dasharray:none"
+         id="rect3"
+         width="6.4393144"
+         height="4.7548079"
+         x="3.1140947"
+         y="9.1970396" />
+      <path
+         style="fill:#d38d5f;stroke:#000000;stroke-width:0.529;stroke-dasharray:none"
+         d="m 4.7035233,10.033602 v 3.057994"
+         id="path3" />
+      <path
+         style="fill:#d38d5f;stroke:#000000;stroke-width:0.529;stroke-dasharray:none"
+         d="m 6.3337519,10.033602 v 3.057994"
+         id="path4" />
+      <path
+         style="fill:#d38d5f;stroke:#000000;stroke-width:0.529;stroke-dasharray:none"
+         d="m 7.9639805,10.033602 v 3.057994"
+         id="path5" />
+    </g>
+  </g>
+</svg>

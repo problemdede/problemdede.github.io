@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1600mm" height="90mm" version="1.1" viewBox="0 0 1600 90" xmlns="http://www.w3.org/2000/svg">
+<rect width="160" height="90" fill="#fff" stroke-width=".265"/>
+<text transform="matrix(.26458 0 0 .26458 .80431 30.342)" x="110.47995" fill="#000000" font-family="FreeSerif" font-size="80px" stroke-width="1.0016" text-align="center" style="shape-inside:url(#rect2);white-space:pre" xml:space="preserve"><tspan x="186.44235" y="74">Sayfa 1</tspan></text>
+<g transform="translate(160)">
+<rect width="160" height="90" fill="#fff" stroke-width=".265"/>
+<text transform="matrix(.26458 0 0 .26458 .80431 30.342)" x="110.47995" fill="#000000" font-family="FreeSerif" font-size="80px" stroke-width="1.0016" text-align="center" style="shape-inside:url(#rect4);white-space:pre" xml:space="preserve"><tspan x="186.44235" y="74">Sayfa 2</tspan></text>
+</g>
+<g transform="translate(320)">
+<rect width="160" height="90" fill="#fff" stroke-width=".265"/>
+<text transform="matrix(.26458 0 0 .26458 .80431 30.342)" x="110.47995" fill="#000000" font-family="FreeSerif" font-size="80px" stroke-width="1.0016" text-align="center" style="shape-inside:url(#rect7);white-space:pre" xml:space="preserve"><tspan x="186.44235" y="74">Sayfa 3</tspan></text>
+</g>
+<g transform="translate(480)">
+<rect width="160" height="90" fill="#fff" stroke-width=".265"/>
+<text transform="matrix(.26458 0 0 .26458 .80431 30.342)" x="110.47995" fill="#000000" font-family="FreeSerif" font-size="80px" stroke-width="1.0016" text-align="center" style="shape-inside:url(#rect8);white-space:pre" xml:space="preserve"><tspan x="186.44235" y="74">Sayfa 4</tspan></text>
+</g>
+<g transform="translate(640)">
+<rect width="160" height="90" fill="#fff" stroke-width=".265"/>
+<text transform="matrix(.26458 0 0 .26458 .80431 30.342)" x="110.47995" fill="#000000" font-family="FreeSerif" font-size="80px" stroke-width="1.0016" text-align="center" style="shape-inside:url(#rect13);white-space:pre" xml:space="preserve"><tspan x="186.44235" y="74">Sayfa 5</tspan></text>
+</g>
+<g transform="translate(800)">
+<rect width="160" height="90" fill="#fff" stroke-width=".265"/>
+<text transform="matrix(.26458 0 0 .26458 .80431 30.342)" x="110.47995" fill="#000000" font-family="FreeSerif" font-size="80px" stroke-width="1.0016" text-align="center" style="shape-inside:url(#rect14);white-space:pre" xml:space="preserve"><tspan x="186.44235" y="74">Sayfa 6</tspan></text>
+</g>
+<g transform="translate(960)">
+<rect width="160" height="90" fill="#fff" stroke-width=".265"/>
+<text transform="matrix(.26458 0 0 .26458 .80431 30.342)" x="110.47995" fill="#000000" font-family="FreeSerif" font-size="80px" stroke-width="1.0016" text-align="center" style="shape-inside:url(#rect15);white-space:pre" xml:space="preserve"><tspan x="186.44235" y="74">Sayfa 7</tspan></text>
+</g>
+<g transform="translate(1120)">
+<rect width="160" height="90" fill="#fff" stroke-width=".265"/>
+<text transform="matrix(.26458 0 0 .26458 .80431 30.342)" x="110.47995" fill="#000000" font-family="FreeSerif" font-size="80px" stroke-width="1.0016" text-align="center" style="shape-inside:url(#rect16);white-space:pre" xml:space="preserve"><tspan x="186.44235" y="74">Sayfa 8</tspan></text>
+</g>
+<g transform="translate(1280)">
+<rect width="160" height="90" fill="#fff" stroke-width=".265"/>
+<text transform="matrix(.26458 0 0 .26458 .80431 30.342)" x="110.47995" fill="#000000" font-family="FreeSerif" font-size="80px" stroke-width="1.0016" text-align="center" style="shape-inside:url(#rect19);white-space:pre" xml:space="preserve"><tspan x="186.44235" y="74">Sayfa 9</tspan></text>
+</g>
+<g transform="translate(1440)">
+<rect width="160" height="90" fill="#fff" stroke-width=".265"/>
+<text transform="matrix(.26458 0 0 .26458 .80431 30.342)" x="110.47995" fill="#000000" font-family="FreeSerif" font-size="80px" stroke-width="1.0016" text-align="center" style="shape-inside:url(#rect20);white-space:pre" xml:space="preserve"><tspan x="166.44235" y="74">Sayfa 10</tspan></text>
+</g>
+</svg>
