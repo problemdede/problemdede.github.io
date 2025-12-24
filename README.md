@@ -4,18 +4,13 @@ Bu sitede ortaokul öğrencileri için farklı içerikler sunuyoruz.
 
 ## Sınıf Bazlı İçerikler
 
-### [5. Sınıf](/5/)
+* [5. Sınıf](/5/)
 
-### [6. Sınıf](/6/)
+* [6. Sınıf](/6/)
 
-### [7. Sınıf](/7/)
+* [7. Sınıf](/7/)
 
-### [8. Sınıf](/8/)
-
-
-
-
-
+* [8. Sınıf](/8/)
 
 ## Hakkımızda
 
