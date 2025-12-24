@@ -1,5 +1,9 @@
-# Hoş Geldiniz 👋
+# ProblemDede'ye Hoş Geldiniz.
 
-Bu sitede 5, 6, 7 ve 8. sınıf ders notlarını bulabilirsiniz.
+Bu sitede ortaokul öğrencileri için farklı içerikler sunuyoruz.
 
-Üst menüden sınıf seçerek başlayabilirsiniz.
+* Sınıf bazlı içerikler için lütfen tıklayınız.
+  * [5. Sınıf](/5/)
+  * [6. Sınıf](/6/)
+  * [7. Sınıf](/7/)
+  * [8. Sınıf](/8/)
