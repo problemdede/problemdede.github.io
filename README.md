@@ -2,17 +2,14 @@
 
 Bu sitede ortaokul öğrencileri için farklı içerikler sunuyoruz.
 
-## Sınıf Bazlı İçerikler
+# Sınıf Bazlı İçerikler
 
 * [5. Sınıf](/5/)
-
 * [6. Sınıf](/6/)
-
 * [7. Sınıf](/7/)
-
 * [8. Sınıf](/8/)
 
-## Hakkımızda
+# Hakkımızda
 
 ProblemDede matematik öğretmenlerinin derslerinde kullanmak için hazırladığı içerikleri organize edilmiş bir şekilde meslektaşlarıyla paylaşması için kurulmuş bir web sitesidir. Site ve içerikler herhangi bir kâr amacı gütmemektedir. İçerikler Milli Eğitim Bakanlığı okullarında eğitim gören öğrenciler için ticari olmayan amaçlarla basılabilir, çoğaltılabilir, dağıtılabilir. Sunmak istediğiniz her türlü katkı için problemdede@gmail.com adresinden veya @problemdede instagram hesabından bizimle iletişime geçebilirsiniz.
 
