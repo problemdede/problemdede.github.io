@@ -5,20 +5,19 @@
   <title>ProblemDede</title>
   <style>
     /* Cevap gizliyken görünecek stil */
-    .gizli-cevap .cevap-icerik {
+    .g-c .c-i {
       display: none;
     }
-    .gizli-cevap .cevap-tetikleyici {
+    .g-c .c-t {
       color: #42b983;
       cursor: pointer;
       text-decoration: underline;
-      font-weight: bold;
     }
     /* Tıklandığında tetikleyiciyi gizle, içeriği göster */
-    .cevap-goster .cevap-tetikleyici {
+    .c-g .c-t {
       display: none;
     }
-    .cevap-goster .cevap-icerik {
+    .c-g .c-i {
       display: inline;
     }
   </style>
@@ -48,7 +47,7 @@
   <script src="https://cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
   <script>
     // Tıklanan elemanın sınıfını değiştirerek cevabı gösteren fonksiyon
-    function cevabiAc(el) {
+    function cA(el) {
       el.parentElement.classList.add('cevap-goster');
     }
   </script>
