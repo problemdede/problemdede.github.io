@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="10mm"
+   height="6mm"
+   viewBox="0 0 10 6"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   sodipodi:docname="5_1_1_11.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="15.31361"
+     inkscape:cx="21.64741"
+     inkscape:cy="9.1421944"
+     inkscape:window-width="1920"
+     inkscape:window-height="1014"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <rect
+       x="13.485725"
+       y="-52.819092"
+       width="225.2477"
+       height="118.63495"
+       id="rect1" />
+    <rect
+       x="37.795277"
+       y="37.795277"
+       width="483.77954"
+       height="718.11023"
+       id="rect2721" />
+    <rect
+       x="37.795277"
+       y="37.795277"
+       width="483.77954"
+       height="718.11023"
+       id="rect2722" />
+    <rect
+       x="37.795277"
+       y="37.795277"
+       width="483.77954"
+       height="718.11023"
+       id="rect2723" />
+    <rect
+       x="37.795277"
+       y="37.795277"
+       width="483.77954"
+       height="718.11023"
+       id="rect2724" />
+    <rect
+       x="37.795277"
+       y="37.795277"
+       width="483.77954"
+       height="718.11023"
+       id="rect2725" />
+    <rect
+       x="37.795277"
+       y="37.795277"
+       width="483.77954"
+       height="718.11023"
+       id="rect2726" />
+    <rect
+       x="37.795277"
+       y="37.795277"
+       width="483.77954"
+       height="718.11023"
+       id="rect2727" />
+    <rect
+       x="37.795277"
+       y="37.795277"
+       width="483.77954"
+       height="718.11023"
+       id="rect2728" />
+    <rect
+       x="37.795277"
+       y="37.795277"
+       width="483.77954"
+       height="718.11023"
+       id="rect2729" />
+    <rect
+       x="37.795277"
+       y="37.795277"
+       width="483.77954"
+       height="718.11023"
+       id="rect2730" />
+    <rect
+       x="37.795277"
+       y="37.795277"
+       width="483.77954"
+       height="718.11023"
+       id="rect2731" />
+    <rect
+       x="37.795277"
+       y="37.795277"
+       width="483.77954"
+       height="718.11023"
+       id="rect2732" />
+    <rect
+       x="37.795277"
+       y="37.795277"
+       width="483.77954"
+       height="718.11023"
+       id="rect2733" />
+    <rect
+       x="37.795277"
+       y="37.795277"
+       width="483.77954"
+       height="718.11023"
+       id="rect2734" />
+  </defs>
+  <g
+     inkscape:label="Katman 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g49"
+       transform="matrix(0.45000001,0,0,0.45000001,3.7147101,1.0715625)">
+      <path
+         fill="#ee1c25"
+         d="m -7.1438,-2.38125 h 20 v 13.333333 h -20"
+         id="path1-65"
+         style="stroke-width:0.0222222" />
+      <g
+         transform="matrix(0.06666667,0,0,0.06666667,-3.8105,0.952083)"
+         id="g1-6">
+        <path
+           id="s-3"
+           d="M 0,-30 17.63355,24.27051 -28.53171,-9.27051 h 57.06342 l -46.16526,33.54102"
+           fill="#ffff00" />
+      </g>
+      <use
+         xlink:href="#s-3"
+         transform="matrix(0.02045017,0.00869585,-0.00869585,0.02045017,-0.4771,-1.047917)"
+         id="use1-9" />
+      <use
+         xlink:href="#s-3"
+         transform="matrix(0.01547311,0.01595024,-0.01595024,0.01547311,0.8562,0.285417)"
+         id="use2" />
+      <use
+         xlink:href="#s-3"
+         transform="matrix(0.00762034,0.02087481,-0.02087481,0.00762034,0.8562,2.285416)"
+         id="use3-4" />
+      <use
+         xlink:href="#s-3"
+         transform="matrix(0.02079315,0.00784041,-0.00784041,0.02079315,-0.4771,3.61875)"
+         id="use4-8" />
+    </g>
+  </g>
+</svg>
