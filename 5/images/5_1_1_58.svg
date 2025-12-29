@@ -23,10 +23,10 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="2.6668401"
-     inkscape:cx="109.68037"
-     inkscape:cy="77.619951"
-     inkscape:window-width="960"
+     inkscape:zoom="2.8185937"
+     inkscape:cx="122.04668"
+     inkscape:cy="102.88819"
+     inkscape:window-width="1075"
      inkscape:window-height="1011"
      inkscape:window-x="20"
      inkscape:window-y="20"
@@ -364,12 +364,6 @@
        d="M 12.777433,28.037567 V 0"
        id="path6438"
        sodipodi:nodetypes="cc" />
-    <circle
-       style="fill:#eef4d7;fill-opacity:1;stroke:#000000;stroke-width:0.264999;stroke-opacity:1"
-       id="circle6439"
-       cx="12.778251"
-       cy="26.537569"
-       r="1.5" />
     <rect
        style="fill:#ffd5d5;fill-opacity:1;stroke:#000000;stroke-width:0.264999;stroke-opacity:1"
        id="rect2596"
@@ -431,12 +425,6 @@
        d="M 27.777533,28.037567 V 0"
        id="path2618"
        sodipodi:nodetypes="cc" />
-    <circle
-       style="fill:#ffd5d5;fill-opacity:1;stroke:#000000;stroke-width:0.264999;stroke-opacity:1"
-       id="circle2618"
-       cx="27.778131"
-       cy="26.537569"
-       r="1.5" />
     <rect
        style="fill:#fff6d5;fill-opacity:1;stroke:#000000;stroke-width:0.264999;stroke-opacity:1"
        id="rect6405"
@@ -475,6 +463,18 @@
        d="M 37.631833,28.037567 V 0"
        id="path6422"
        sodipodi:nodetypes="cc" />
+    <circle
+       style="fill:#ffeeaa;fill-opacity:1;stroke:#000000;stroke-width:0.264999;stroke-opacity:1"
+       id="circle6423"
+       cx="37.6325"
+       cy="26.537569"
+       r="1.5" />
+    <circle
+       style="fill:#ffeeaa;fill-opacity:1;stroke:#000000;stroke-width:0.264999;stroke-opacity:1"
+       id="circle6424"
+       cx="37.6325"
+       cy="23.537569"
+       r="1.5" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.264999;stroke-opacity:1"
        d="M 42.777533,28.037567 V 0"
@@ -528,30 +528,6 @@
        id="circle6469"
        cx="57.78521"
        cy="26.537569"
-       r="1.5" />
-    <circle
-       style="fill:#ffd5d5;fill-opacity:1;stroke:#000000;stroke-width:0.264999;stroke-opacity:1"
-       id="circle7680"
-       cx="27.778131"
-       cy="23.537569"
-       r="1.5" />
-    <circle
-       style="fill:#ffd5d5;fill-opacity:1;stroke:#000000;stroke-width:0.264999;stroke-opacity:1"
-       id="circle7681"
-       cx="27.778131"
-       cy="20.537569"
-       r="1.5" />
-    <circle
-       style="fill:#ffd5d5;fill-opacity:1;stroke:#000000;stroke-width:0.264999;stroke-opacity:1"
-       id="circle7682"
-       cx="27.778131"
-       cy="17.537569"
-       r="1.5" />
-    <circle
-       style="fill:#ffd5d5;fill-opacity:1;stroke:#000000;stroke-width:0.264999;stroke-opacity:1"
-       id="circle7683"
-       cx="27.778131"
-       cy="14.537569"
        r="1.5" />
     <path
        style="font-size:13.3333px;font-family:FreeSans;-inkscape-font-specification:FreeSans;white-space:pre;stroke-width:0.264583"
@@ -634,46 +610,70 @@
        id="text46"
        aria-label="B" />
     <circle
-       style="fill:#eef4d7;fill-opacity:1;stroke:#000000;stroke-width:0.264999;stroke-opacity:1"
-       id="circle1"
-       cx="12.778251"
-       cy="23.537569"
-       r="1.5" />
-    <circle
        style="fill:#ff8080;fill-opacity:1;stroke:#000000;stroke-width:0.264999;stroke-opacity:1"
-       id="circle2"
+       id="circle1"
        cx="17.6325"
        cy="17.537569"
        r="1.5" />
     <circle
        style="fill:#ff8080;fill-opacity:1;stroke:#000000;stroke-width:0.264999;stroke-opacity:1"
-       id="circle3"
+       id="circle2"
        cx="17.6325"
        cy="14.537569"
        r="1.5" />
     <circle
        style="fill:#ff8080;fill-opacity:1;stroke:#000000;stroke-width:0.264999;stroke-opacity:1"
-       id="circle4"
+       id="circle3"
        cx="17.6325"
        cy="11.537569"
        r="1.5" />
     <circle
        style="fill:#ff8080;fill-opacity:1;stroke:#000000;stroke-width:0.264999;stroke-opacity:1"
-       id="circle5"
+       id="circle4"
        cx="17.6325"
        cy="8.537569"
        r="1.5" />
     <circle
-       style="fill:#d7eef4;fill-opacity:1;stroke:#000000;stroke-width:0.264999;stroke-opacity:1"
+       style="fill:#ffeeaa;fill-opacity:1;stroke:#000000;stroke-width:0.264999;stroke-opacity:1"
+       id="circle5"
+       cx="37.6325"
+       cy="20.537569"
+       r="1.5" />
+    <circle
+       style="fill:#ffeeaa;fill-opacity:1;stroke:#000000;stroke-width:0.264999;stroke-opacity:1"
        id="circle6"
-       cx="57.78521"
-       cy="23.537569"
+       cx="37.6325"
+       cy="17.537569"
        r="1.5" />
     <circle
        style="fill:#d7eef4;fill-opacity:1;stroke:#000000;stroke-width:0.264999;stroke-opacity:1"
        id="circle7"
        cx="57.78521"
+       cy="23.537569"
+       r="1.5" />
+    <circle
+       style="fill:#d7eef4;fill-opacity:1;stroke:#000000;stroke-width:0.264999;stroke-opacity:1"
+       id="circle8"
+       cx="57.78521"
        cy="20.537569"
+       r="1.5" />
+    <circle
+       style="fill:#d7eef4;fill-opacity:1;stroke:#000000;stroke-width:0.264999;stroke-opacity:1"
+       id="circle9"
+       cx="57.78521"
+       cy="17.537569"
+       r="1.5" />
+    <circle
+       style="fill:#d7eef4;fill-opacity:1;stroke:#000000;stroke-width:0.264999;stroke-opacity:1"
+       id="circle10"
+       cx="57.78521"
+       cy="14.537569"
+       r="1.5" />
+    <circle
+       style="fill:#d7eef4;fill-opacity:1;stroke:#000000;stroke-width:0.264999;stroke-opacity:1"
+       id="circle11"
+       cx="57.78521"
+       cy="11.537569"
        r="1.5" />
   </g>
 </svg>
