@@ -1,0 +1,187 @@
+/* GENEL STILLER */
+body { margin:0; overflow:hidden; font-family:sans-serif;}
+
+/* ARAÇ ÇUBUĞU */
+#toolbar {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  gap: 15px;
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  z-index: 10;
+  align-items: center;
+}
+.toolbar-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#toolbar button {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  border: none;
+  background: #f2f2f2;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+#toolbar button:hover {
+  background: #ddd;
+}
+#toolbar button.active {
+  background: #4CAF50;
+  color: white;
+}
+#toolbar input[type=color] {
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  margin: 0 5px;
+  padding: 0;
+  border-radius: 6px;
+  box-sizing: border-box;
+  vertical-align: middle;
+  display: block;
+}
+
+/* PDF/CANVAS ALANI */
+#container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+}
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: top left;
+}
+#drawCanvas {
+  cursor: default;
+}
+#loadingOverlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+/* DROPDOWN ÖZEL STILLER */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropbtn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 6px;
+  background: #f2f2f2;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 60px;
+  padding: 5px;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+  z-index: 20;
+  margin-top: 5px;
+  border-radius: 6px;
+  text-align: center;
+  
+  flex-direction: column;
+  align-items: center;
+}
+.circle-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 10px;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+}
+.circle-option:hover {
+  background-color: #f0f0f0;
+}
+.circle {
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0;
+}
+
+/* Silgi göstergesinin başlangıçta yuvarlak görünmesini sağlamak için varsayılan boyut */
+#eraserSizeBtn .circle {
+  width: 40px;
+  height: 40px;
+  background: #aaa;
+}
+
+/* Kalem göstergesi için de başlangıç boyutu */
+#penSizeBtn .circle {
+  width: 2px;
+  height: 2px;
+}
+
+/* pdf-editor.js dosyasındaki pageNumberInput için stil */
+#pageNumberInput {
+    /* 1. Boyut ve Hizalama */
+    height: 40px; /* Butonlarla aynı yükseklik */
+    width: 60px !important; /* Genişliği artırdık */
+    text-align: center; /* Numarayı ortala */
+    padding: 0 5px; /* İç boşluk ekle */
+    margin: 0 5px; /* Yan boşluk ekle */
+    box-sizing: border-box; /* Padding'i genişliğe dahil et */
+
+    /* 2. Görünüm (Butonlara Benzerlik) */
+    background-color: #f0f0f0; /* Butonların normal arka planı */
+    color: #333; /* Okunabilir metin rengi */
+    border: 1px solid #ccc; /* Hafif bir kenarlık */
+    border-radius: 4px; /* Butonlarla aynı yuvarlak köşeler */
+    font-size: 14px; /* Buton metinleriyle uyumlu font */
+    font-family: inherit;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+/* Hover ve Focus Durumu */
+#pageNumberInput:hover {
+    background-color: #e5e5e5;
+}
+
+#pageNumberInput:focus {
+    outline: none; /* Varsayılan odak çerçevesini kaldır */
+    border-color: #007bff; /* Aktif renkle vurgula */
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+/* Sayı girişlerinin (spinner) oklarını gizleme (isteğe bağlı ama daha temiz bir görünüm sağlar) */
+#pageNumberInput::-webkit-outer-spin-button,
+#pageNumberInput::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+#pageNumberInput[type=number] {
+    -moz-appearance: textfield; /* Firefox'ta okları gizle */
+}

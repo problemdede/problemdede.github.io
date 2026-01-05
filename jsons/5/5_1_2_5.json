@@ -1,0 +1,23 @@
+[
+  {
+    "type": "short",
+    "question": "<p>7 Şubat'ta başlayan okulun ikinci dönemi 4 ay 10 gün sonra bitmiştir. Okulun ikinci dönemi ne zaman bitmiştir?</p><p>(Gün Ay olarak yazınız.)</p>",
+    "answers": ["17 Haziran"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "<p>24 Nisan'da başlayan bir inşaatın bitmesi 6 ay 23 gün sürmüştür. İnşaat ne zaman bitmiştir?</p><p>(Gün Ay olarak yazınız.)(Her ayı 30 gün kabul ediniz.)</p>",
+    "answers": ["17 Kasım"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "<p>8 Ağustos tarihinde başlayan Futbol Ligi 9 ay 20 gün sonra sona erecektir. Futbol Ligi'nin bitiş tarihi ne zamandır?</p><p>(Gün Ay olarak yazınız.)(Her ayı 30 gün kabul ediniz.)</p>",
+    "answers": ["28 Mayıs"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "<p>17 Şubat 2012 yılında ekilen bir zeytin ağacı 7 yıl 4 ay 25 gün sonra ilk meyvesini vermiştir. Zeytin ağacı ilk meyvesini hangi tarihte vermiştir?</p><p>(Gün Ay Yıl olarak yazınız.)(Her ayı 30 gün kabul ediniz.)</p>",
+    "answers": ["12 Temmuz 2019"],
+    "time": 60
+  }
+]

@@ -1,0 +1,130 @@
+[
+  {
+    "type": "multiple",
+    "question": "88 5<u>5</u>2 170 327 sayısında altı çizili sayının basamak değeri aşağıdakilerden hangisidir?",
+    "options": ["50 000 000", "5 000 000", "500 000 000", "500 000"],
+    "correct_answer": "50 000 000",
+    "time": 30
+  },{
+    "type": "multiple",
+    "question": "6<u>3</u> 825 723 210 sayısında altı çizili sayının basamak değeri aşağıdakilerden hangisidir?",
+    "options": ["30 000 000 000", "300 000 000", "3 000 000 000", "30 000 000"],
+    "correct_answer": "3 000 000 000",
+    "time": 30
+  },{
+    "type": "multiple",
+    "question": "49 921 93<u>3</u> 106 sayısında altı çizili sayının basamak değeri aşağıdakilerden hangisidir?",
+    "options": ["300", "30", "3 000", "30 000"],
+    "correct_answer": "3 000",
+    "time": 30
+  },{
+    "type": "multiple",
+    "question": "32 322 980 96<u>7</u> sayısında altı çizili sayının basamak değeri aşağıdakilerden hangisidir?",
+    "options": ["70", "7", "700", "7 000"],
+    "correct_answer": "7",
+    "time": 30
+  },{
+    "type": "multiple",
+    "question": "24 886 <u>4</u>05 208 sayısında altı çizili sayının basamak değeri aşağıdakilerden hangisidir?",
+    "options": ["40 000", "4 000", "400", "400 000"],
+    "correct_answer": "400 000",
+    "time": 30
+  },{
+    "type": "multiple",
+    "question": "27 5<u>9</u>5 000 300 sayısında altı çizili sayının basamak değeri aşağıdakilerden hangisidir?",
+    "options": ["90 000", "90 000 000", "9 000 000", "900 000"],
+    "correct_answer": "90 000 000",
+    "time": 30
+  },{
+    "type": "short",
+    "question": "27 <u>2</u>89 120 080 sayısında altı çizili sayının basamak değerini yazınız.",
+    "answers": ["200 000 000"],
+    "time": 30
+  },{
+    "type": "short",
+    "question": "<u>3</u>8 503 607 098 sayısında altı çizili sayının basamak değerini yazınız.",
+    "answers": ["30 000 000 000"],
+    "time": 30
+  },{
+    "type": "short",
+    "question": "72 <u>0</u>09 408 174 sayısında altı çizili sayının basamak değerini yazınız.",
+    "answers": ["0"],
+    "time": 30
+  },{
+    "type": "short",
+    "question": "804 296 52<u>8</u> sayısında altı çizili sayının basamak değerini yazınız.",
+    "answers": ["8"],
+    "time": 30
+  },{
+    "type": "multiple",
+    "question": "72 030 400 sayısının çözümlenmiş hali aşağıdakilerden hangisidir?",
+    "options": ["(7x10 000 000)+(2x1 000 000)+(3x10 000)+(4x100)",
+                "(7x1 000 000)+(2x1 000 000)+(3x10 000)+(4x100)",
+                "(7x10 000 000)+(2x100 000)+(3x10 000)+(4x100)",
+                "(7x10 000 000)+(2x1 000 000)+(3x1 000)+(4x100)"],
+    "correct_answer": "(7x10 000 000)+(2x1 000 000)+(3x10 000)+(4x100)",
+    "time": 30
+  },{
+    "type": "multiple",
+    "question": "9 040 006 500 sayısının çözümlenmiş hali aşağıdakilerden hangisidir?",
+    "options": ["(9x1 000 000 000)+(4x10 000 000)+(6x1 000)+(5x100)",
+                "(9x1 000 000 000)+(4x1 000 000)+(6x1 000)+(5x100)",
+                "(9x1 000 000 000)+(4x10 000 000)+(6x100)+(5x100)",
+                "(9x1 000 000 000)+(4x10 000 000)+(6x1 000)+(5x10)"],
+    "correct_answer": "(9x1 000 000 000)+(4x10 000 000)+(6x1 000)+(5x100)",
+    "time": 30
+  },{
+    "type": "multiple",
+    "question": "58 070 090 sayısının çözümlenmiş hali aşağıdakilerden hangisidir?",
+    "options": ["(5x10 000 000)+(8x1 000 000)+(7x10 000)+(9x10)",
+                "(5x100 000 000)+(8x1 000 000)+(7x10 000)+(9x10)",
+                "(5x10 000 000)+(8x100 000)+(7x10 000)+(9x10)",
+                "(5x10 000 000)+(8x1 000 000)+(7x1 000)+(9x10)"],
+    "correct_answer": "(5x10 000 000)+(8x1 000 000)+(7x10 000)+(9x10)",
+    "time": 30
+  },{
+    "type": "multiple",
+    "question": "72 000 400 sayısının çözümlenmiş hali aşağıdakilerden hangisidir?",
+    "options": ["(7x100 000 000)+(2x1 000 000)+(4x100)",
+                "(7x10 000 000)+(2x1 000 000)+(4x100)",
+                "(7x10 000 000)+(2x1 000 000)+(4x10)",
+                "(7x10 000 000)+(2x100 000)+(4x100)"],
+    "correct_answer": "(7x10 000 000)+(2x1 000 000)+(4x100)",
+    "time": 30
+  },{
+    "type": "short",
+    "question": "(7x1 000 000 000)+(4x10 000 000)+(5x100 000)+(6x100)+(8x10) şeklinde çözümlenen sayıyı yazınız.",
+    "answers": ["7 040 500 680"],
+    "time": 30
+  },{
+    "type": "short",
+    "question": "(8x100 000 000)+(3x1 000 000)+(4x10 000)+(7x1) şeklinde çözümlenen sayıyı yazınız.",
+    "answers": ["803 040 007"],
+    "time": 30
+  },{
+    "type": "short",
+    "question": "(9x1 000 000 000)+(7x10 000 000)+(7x100 000)+(7x10) şeklinde çözümlenen sayıyı yazınız.",
+    "answers": ["9 070 700 070"],
+    "time": 30
+  },{
+    "type": "short",
+    "question": "(8x10 000 000 000) şeklinde çözümlenen sayıyı yazınız.",
+    "answers": ["80 000 000 000"],
+    "time": 30
+  },{
+    "type": "short",
+    "question": "40 000 000 000 + 3 000 000 + 500 000 + 20 000 şeklinde çözümlenen sayıyı yazınız.",
+    "answers": ["40 003 520 000"],
+    "time": 30
+  },{
+    "type": "short",
+    "question": "7 000 000 000 + 20 000 000 + 8 000 000 + 500 + 60 şeklinde çözümlenen sayıyı yazınız.",
+    "answers": ["7 028 000 560"],
+    "time": 30
+  },{
+    "type": "short",
+    "question": "800 000 000 + 40 000 000 + 9 000 000 + 400 000 + 3 000 şeklinde çözümlenen sayıyı yazınız.",
+    "answers": ["849 403 000"],
+    "time": 30
+  }
+]

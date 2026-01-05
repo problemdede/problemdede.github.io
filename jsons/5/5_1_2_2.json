@@ -1,0 +1,93 @@
+[
+  {
+    "type": "multiple",
+    "question": "Müzeyi günde ortalama 514 kişi ziyaret etmektedir. 30 günde müzeyi kaç kişi ziyaret eder?",
+    "options": ["15 420", "17", "1 542", "18"],
+    "correct_answer": "15 420",
+    "time": 60
+  },{
+    "type": "multiple",
+    "question": "Bir günde 48 cm yol alan salyangoz 216 günde kaç cm yol gider?",
+    "options": ["10 368", "4", "2600", "9 720"],
+    "correct_answer": "10 368",
+    "time": 60
+  },{
+    "type": "multiple",
+    "question": "Bir çitçi bahçesinden 3 990 kg portakal toplamış ve bu portakalı 7 kglık kasalara koymak istiyor. Kaç kasaya ihtiyaç varmış?",
+    "options": ["570", "27 930", "580", "28 000"],
+    "correct_answer": "570",
+    "time": 60
+  },{
+    "type": "multiple",
+    "question": "824 tane kurşun kalem, kutulara eşit şekilde yerleştirilmiştir. Her kutuda 8 kalem olduğuna göre kaç kalem kutusu gerekir?",
+    "options": ["103", "100", "6 592", "6 608"],
+    "correct_answer": "103",
+    "time": 60
+  },{
+    "type": "multiple",
+    "question": "Bir konser salonunda 56 sıra ve her sırada 64 koltuk vardır. Bu konser salonu kaç kişiliktir?",
+    "options": ["3 584", "704", "1", "3 204"],
+    "correct_answer": "3 584",
+    "time": 60
+  },{
+    "type": "short",
+    "question": "Paketi 263 gr olan kakaodan 4 paket alırsanız kaç gr kakao olur?",
+    "answers": ["1052"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "Her servis 24 öğrenci almaktadır. 17 servisle geziye gidildiğine göre geziye kaç kişi gidilmiştir?",
+    "answers": ["408"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "Oyundan kazanılan 1 602 puan 9 arkadaşa eşit paylaştırılıyor. Oyuncu başı kaç puan düşer",
+    "answers": ["178"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "Fiyatı 19 800 TL olan bir ürün 12 taksitle satılacaktır. Bir taksit kaç TL dir?",
+    "answers": ["1 650"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "1 m³ doğal gaz 19 TL ise 256 m³ doğal gaz kaç TLdir?",
+    "answers": ["4 864"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "28 günde 1 484 üyelik satan bir site her gün eşit sayıda üylek sattıysa günlük kaç üyelik satmıştır?",
+    "answers": ["53"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "Her hafta 210 km bisiklet süren bisikletçi bir yılda kaç km bisiklet sürer?",
+    "answers": ["10 920"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "450 öğrenci stadyuma taşınacaktır.Her otobüs 53 öğrenci taşıyabildğine göre kaç otobüs gerekir?",
+    "answers": ["9"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "Bir çiftçi 870 kg mercimeği 12 kglık torbalara yerleştirecektir. Kaç torbaya ihtiyaç vardır?",
+    "answers": ["73"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "1 118 m dikenli tel 25 metrelik makaralara sarılmıştır. Kaç makara elde edilmiştir?",
+    "answers": ["45"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "588 m kabloyu keserek aynı büyüklükte 84 adet kablo elde edilmiştir. Bir kablo kaç mdir?",
+    "answers": ["7"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "Bir bakkalın 185 adet yumurtayı 12 yumurta alan kutulara yerleştirmek isteniyor. Kaç kutu gerekir?",
+    "answers": ["16"],
+    "time": 60
+  }
+]

@@ -1,0 +1,105 @@
+[
+  {
+    "type": "multiple",
+    "question": "Birinci havuzda 5 274 litre su vardır. Havuza 3 415 litre daha su eklenirse havuzda ne kadar su olur?",
+    "options": ["1 859", "8 700", "8 689", "8 999"],
+    "correct_answer": "8 689",
+    "time": 60
+  },{
+    "type": "multiple",
+    "question": "Bir futbol maçında 8 566 kadın 39 587 erkek seyirci vardır. Erkek seyirci sayısı, kadın seyirci sayısından kaç fazladır?",
+    "options": ["48 153", "30 000", "31 131", "31 021"],
+    "correct_answer": "31 021",
+    "time": 60
+  },{
+    "type": "multiple",
+    "question": "Adım sayarın birinci hafta 85 768 adım, ikinci hafta 79 876 adım atarsanız iki haftada ne kadar adım atmış olursunuz?",
+    "options": ["165 644", "165 654", "5 892", "165 645"],
+    "correct_answer": "165 644",
+    "time": 60
+  },{
+    "type": "multiple",
+    "question": "Baba fil 7 684 kg, anne fil 4 982 kg ağırlığındadir. Baba fil, anne filden kaç kg ağırdır?",
+    "options": ["2 702", "3 302", "2 692", "2 712"],
+    "correct_answer": "2 702",
+    "time": 60
+  },{
+    "type": "multiple",
+    "question": "Bir sakız makinesine 9 565 tane sakız eklenince toplam sakız sayısı 17 850 olmuştur. Başlangıçta makinede kaç sakız vardır?",
+    "options": ["8 285", "8 295", "12 315", "27 415"],
+    "correct_answer": "8 285",
+    "time": 60
+  },{
+    "type": "multiple",
+    "question": "Elektrik sayacında okunan değer 65 482 dir. Bir ay sonra tekrar okunduğunda 67 156 olmuştur. Bir aylık elektrik kullanımı ne kadardır?",
+    "options": ["1 684", "132 638", "1 674", "2 334"],
+    "correct_answer": "1 674",
+    "time": 60
+  },{
+    "type": "multiple",
+    "question": "3 785 TLsi olan bir çocuk istediği oyuncağı alabilmek için 1 965 TLye daha ihtiyaç duyuyor. Oyuncağın fiyatı kaç TLdir?",
+    "options": ["1 820", "5 750", "4 640", "2 334"],
+    "correct_answer": "5 750",
+    "time": 60
+  },{
+    "type": "short",
+    "question": "1 555 fide dikili olan ormana 1 368 fide daha dikiliyor. Ormanda kaç fide olur?",
+    "answers": ["2 923"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "Bir müzeyi ilk ay 25 441 kişi ikinci ay 12 637 kişi ziyaret ediyor. Bu müzeyi iki ayda kaç kişi ziyaret etmiştir?",
+    "answers": ["38 078"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "68 750 kg ceviz toplanmış ve 25 250 kilogramı satılmıştır. Geriye kaç kg ceviz kalır?",
+    "answers": ["43 500"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "Geri dönüşüm için 58 349 şişe ve 28 671 pil toplanmıştır. Şişeler pillerden kaç fazladır?",
+    "answers": ["29 678"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "Bir sitede yeşil alan için 2 538 m², binalar için 1 352 m², sosyal tesisler için 864 m² alan ayrılmıştır. Bu sitenin alanı kaç m² dir?",
+    "answers": ["4 754"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "Samsunda 96 420 ton, Trabzonda 41 594 ton fındık yetiştirmiştir. Samsun, Trabzondan kaç ton fazla fındık üretmiştir?",
+    "answers": ["54 826"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "Bir ekmek fırınında sabahleyin 12 340, öğleden sonra 9 865 ekmek üretilmiştir. Bir günde kaç ekmek üretilmiştir?",
+    "answers": ["22 205"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "Cumartesi günü 43 510 gazete basılıp 36 278 gazete satılmıştır. Kaç gazete satılmamıştır?",
+    "answers": ["7 232"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "Bir fabrika üretilen 24 500 adet ürünün önce 8 310 tanesi, sonrada 13 475 tanesi satılmıştır. Satılmayan kaç ürün kalmıştır?",
+    "answers": ["2 715"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "Bir kömür deposunda 72 000 kg kömür vardır. Kömürün 24 750 kgı satıldı. Depoya kamyonla 16 250 kg daha kömür getirildi. Son durumda depoda kaç kg kömür vardır?",
+    "answers": ["63 500"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "Üretilen buğdayın 3 158 kgını kendi ihtiyacı ve tohumluk olarak ayırmış, geriye kalan 24 650 kgını da satmıştır. Bu çiftçi ne kadar buğday üretmiştir?",
+    "answers": ["27 808"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "Bir sirkte izleyicilerin oturması için 13 456 sandalye vardır. Pazar günü yapılacak gösteri için 9 897 bilet satılmıştır. Kaç sandalye boş kalmıştır?",
+    "answers": ["3 559"],
+    "time": 60
+  }
+]

@@ -1,0 +1,149 @@
+[
+  {
+    "type": "drag-match",
+    "question": "Sayılarla okunuşları eşleştiriniz.",
+    "pairs": [
+      {
+        "left": "23 398 000",
+        "right": "Yirmi üç milyon üç yüz doksan sekiz"
+      },
+      {
+        "left": "8 000 800",
+        "right": "Sekiz milyon sekiz yüz"
+      },
+      {
+        "left": "1 547 000",
+        "right": "Bir milyon beş yüz kırk yedi bin"
+      },
+      {
+        "left": "4 000 000",
+        "right": "Dört milyon"
+      },
+      {
+        "left": "902 842",
+        "right": "Dokuz yüz iki bin sekiz yüz kırk iki"
+      },
+      {
+        "left": "597 034",
+        "right": "Beş yüz doksan yedi bin otuz dört"
+      }
+    ],
+    "time": 60
+  },{
+    "type": "multiple",
+    "question": "40 027 040 sayısının okunuşu aşağıdakilerden hangisidir?",
+    "options": ["Dört milyon yirmi yedi bin kırk",
+                "Kırk milyon yirmi yedi bin kırk",
+                "Dört milyon yedi bin kırk",
+                "Dört yüz yirmi yedi bin kırk"],
+    "correct_answer": "Kırk milyon yirmi yedi bin kırk",
+    "time": 30
+  },{
+    "type": "multiple",
+    "question": "335 934 376 sayısının okunuşu aşağıdakilerden hangisidir?",
+    "options": ["Üç yüz otuz beş milyon dokuz yüz otuz dört bin üç yüz yetmiş altı",
+                "Otuz beş milyon dokuz yüz otuz dört bin üç yüz yetmiş altı",
+                "Dokuz yüz otuz dört milyon üç yüz otuz beş bin üç yüz yetmiş altı",
+                "Üç yüz yetmiş altı milyon dokuz yüz otuz dört bin üç yüz otuz beş"],
+    "correct_answer": "Üç yüz otuz beş milyon dokuz yüz otuz dört bin üç yüz yetmiş altı",
+    "time": 30
+  },{
+    "type": "multiple",
+    "question": "203 000 512 sayısının okunuşu aşağıdakilerden hangisidir?",
+    "options": ["İki yüz üç bin beş yüz on iki",
+                "İki milyar üç milyon beş yüz on iki",
+                "iki yüz üç milyon sıfır bin beş yüz on iki",
+                "İki yüz üç milyon beş yüz on iki"],
+    "correct_answer": "İki yüz üç milyon beş yüz on iki",
+    "time": 30
+  },{
+    "type": "multiple",
+    "question": "68 000 000 sayısının okunuşu aşağıdakilerden hangisidir?",
+    "options": ["Altı milyon sekiz yüz bin",
+                "Altmış sekiz milyon",
+                "Altmış sekiz bin",
+                "Seksen altı milyon"],
+    "correct_answer": "Altmış sekiz milyon",
+    "time": 30
+  },{
+    "type": "multiple",
+    "question": "11 000 313 sayısının okunuşu aşağıdakilerden hangisidir?",
+    "options": ["On bir bin üç yüz on üç",
+                "On bir milyon üç yüz on üç",
+                "On milyon üç yüz üç",
+                "Bir milyon üç yüz on üç"],
+    "correct_answer": "On bir milyon üç yüz on üç",
+    "time": 30
+  },{
+    "type": "multiple",
+    "question": "1 409 670 000 sayısının okunuşu aşağıdakilerden hangisidir?",
+    "options": ["Bir milyar dört yüz dokuz milyon altı yüz yetmiş bin",
+                "Bir milyar dört yüz dokuz bin altı yüz yetmiş",
+                "Bir milyar dört yüz dokuz milyon altı yüz yetmiş",
+                "On milyar dört yüz dokuz milyon altı yüz yetmiş bin"],
+    "correct_answer": "Bir milyar dört yüz dokuz milyon altı yüz yetmiş bin",
+    "time": 30
+  },{
+    "type": "multiple",
+    "question": "27 000 389 020 sayısının okunuşu aşağıdakilerden hangisidir?",
+    "options": ["Yirmi yedi milyar üç yüz seksen dokuz bin yirmi",
+                "Yirmi yedi milyon üç yüz seksen dokuz bin yirmi",
+                "Yirmi yedi bin üç yüz seksen dokuz milyon yirmi",
+                "Yirmi yedi milyar üç yüz seksen bin yirmi"],
+    "correct_answer": "Yirmi yedi milyar üç yüz seksen dokuz bin yirmi",
+    "time": 30
+  },{
+    "type": "multiple",
+    "question": "6647003 sayısının okunuşu aşağıdakilerden hangisidir?",
+    "options": ["Altı milyon altı yüz kırk yedi bin üç",
+                "Altı yüz altmış yedi bin üç",
+                "Altı yüz altmış milyon altı yüz yedi bin üç",
+                "Altı milyon altı yüz kırk yedi bin"],
+    "correct_answer": "Altı milyon altı yüz kırk yedi bin üç",
+    "time": 30
+  },{
+    "type": "multiple",
+    "question": "146424729 sayısının okunuşu aşağıdakilerden hangisidir?",
+    "options": ["Yüz kırk altı milyon dört yüz yirmi dört bin yedi yüz yirmi dokuz",
+                "Yüz kırk altı milyon dört yüz yirmi beş bin yedi yüz yirmi dokuz",
+                "Yüz kırk altı milyar dört yüz yirmi dört bin yedi yüz yirmi dokuz",
+                "Yüz kırk altı milyon dört yüz yirmi dört bin yedi yüz yirmi sekiz"],
+    "correct_answer": "Yüz kırk altı milyon dört yüz yirmi dört bin yedi yüz yirmi dokuz",
+    "time": 30
+  },{
+    "type": "short",
+    "question": "70 004 030 sayısının okunuşunu yazınız.",
+    "answers": ["yetmiş milyon dört bin otuz"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "45 000 450 sayısının okunuşunu yazınız.",
+    "answers": ["kırk beş milyon dört yüz elli"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "305 007 000 090 sayısının okunuşunu yazınız.",
+    "answers": ["üç yüz beş milyar yedi milyon doksan"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "140 000 090 100 sayısının okunuşunu yazınız.",
+    "answers": ["yüz kırk milyar doksan bin yüz"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "65 000 000 000 sayısının okunuşunu yazınız.",
+    "answers": ["altmış beş milyar"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "95 800 007 030 sayısının okunuşunu yazınız.",
+    "answers": ["doksan beş milyar sekiz yüz milyon yedi bin otuz"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "1 010 001 100 sayısının okunuşunu yazınız.",
+    "answers": ["bir milyar on milyon bin yüz"],
+    "time": 60
+  }
+]

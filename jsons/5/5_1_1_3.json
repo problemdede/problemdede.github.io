@@ -1,0 +1,223 @@
+[
+  {
+    "type": "drag-match",
+    "question": "Mısır rakamlarıyla yazılmış sayıları günümüz rakamlarıyla eşleştiriniz.",
+    "pairs": [
+      {
+        "left": "2 304 009",
+        "right": "<img src='./jsons/5/images/5_1_1_3_5.svg'/>"
+      },
+      {
+        "left": "600 470",
+        "right": "<img src='./jsons/5/images/5_1_1_3_1.svg'/>"
+      },
+      {
+        "left": "1 023 041",
+        "right": "<img src='./jsons/5/images/5_1_1_3_7.svg'/>"
+      },
+      {
+        "left": "42 150",
+        "right": "<img src='./jsons/5/images/5_1_1_3_6.svg'/>"
+      },
+      {
+        "left": "3 705",
+        "right": "<img src='./jsons/5/images/5_1_1_3_3.svg'/>"
+      },
+      {
+        "left": "208 132",
+        "right": "<img src='./jsons/5/images/5_1_1_3_4.svg'/>"
+      },
+      {
+        "left": "3 006 025",
+        "right": "<img src='./jsons/5/images/5_1_1_3_2.svg'/>"
+      }
+    ],
+    "time": 120
+  },{
+    "type": "multiple",
+    "question": "<p><img src='./jsons/5/images/5_1_1_3_8.svg'/></p><p>Yukarıda mısır rakamlarının günümüz rakamlarıyla ifade ettiği büyüklükler verilmiştir. Buna göre 2 003 049 şeklinde yazılan sayı aşağıdakilerden hangisine eşittir?",
+    "options": ["<img src='./jsons/5/images/5_1_1_3_17.svg'/>", "<img src='./jsons/5/images/5_1_1_3_16.svg'/>", "<img src='./jsons/5/images/5_1_1_3_15.svg'/>", "<img src='./jsons/5/images/5_1_1_3_14.svg'/>"],
+    "correct_answer": "<img src='./jsons/5/images/5_1_1_3_14.svg'/>",
+    "time": 30
+  },{
+    "type": "multiple",
+    "question": "<p><img src='./jsons/5/images/5_1_1_3_8.svg'/></p><p>Yukarıda mısır rakamlarının günümüz rakamlarıyla ifade ettiği büyüklükler verilmiştir. Buna göre 207 000 şeklinde yazılan sayı aşağıdakilerden hangisine eşittir?",
+    "options": ["<img src='./jsons/5/images/5_1_1_3_18.svg'/>", "<img src='./jsons/5/images/5_1_1_3_19.svg'/>", "<img src='./jsons/5/images/5_1_1_3_20.svg'/>", "<img src='./jsons/5/images/5_1_1_3_21.svg'/>"],
+    "correct_answer": "<img src='./jsons/5/images/5_1_1_3_18.svg'/>",
+    "time": 30
+  },{
+    "type": "multiple",
+    "question": "<p><img src='./jsons/5/images/5_1_1_3_8.svg'/></p><p>Yukarıda mısır rakamlarının günümüz rakamlarıyla ifade ettiği büyüklükler verilmiştir. Buna göre;</p><p><img src='./jsons/5/images/5_1_1_3_9.svg'/></p>şeklinde yazılan sayı aşağıdakilerden hangisine eşittir?",
+    "options": ["4 001 523", "4 105 203", "4 150 203", "4 105 023"],
+    "correct_answer": "4 105 203",
+    "time": 30
+  },{
+    "type": "multiple",
+    "question": "<p><img src='./jsons/5/images/5_1_1_3_8.svg'/></p><p>Yukarıda mısır rakamlarının günümüz rakamlarıyla ifade ettiği büyüklükler verilmiştir. Buna göre;</p><p><img src='./jsons/5/images/5_1_1_3_10.svg'/></p>şeklinde yazılan sayı aşağıdakilerden hangisine eşittir?",
+    "options": ["401 305", "400 135", "410 305", "401 350"],
+    "correct_answer": "401 305",
+    "time": 30
+  },{
+    "type": "multiple",
+    "question": "<p><img src='./jsons/5/images/5_1_1_3_8.svg'/></p><p>Yukarıda mısır rakamlarının günümüz rakamlarıyla ifade ettiği büyüklükler verilmiştir. Buna göre;</p><p><img src='./jsons/5/images/5_1_1_3_11.svg'/></p>şeklinde yazılan sayı aşağıdakilerden hangisine eşittir?",
+    "options": ["83 207", "83 027", "80 327", "803 207"],
+    "correct_answer": "83 027",
+    "time": 30
+  },{
+    "type": "short",
+    "question": "<p><img src='./jsons/5/images/5_1_1_3_8.svg'/></p><p>Yukarıda mısır rakamlarının günümüz rakamlarıyla ifade ettiği büyüklükler verilmiştir. Buna göre;</p><p><img src='./jsons/5/images/5_1_1_3_12.svg'/></p>şeklinde yazılan sayıyı yazınız.",
+    "answers": ["3 240 051"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "<p><img src='./jsons/5/images/5_1_1_3_8.svg'/></p><p>Yukarıda mısır rakamlarının günümüz rakamlarıyla ifade ettiği büyüklükler verilmiştir. Buna göre;</p><p><img src='./jsons/5/images/5_1_1_3_13.svg'/></p>şeklinde yazılan sayıyı yazınız.",
+    "answers": ["500 300"],
+    "time": 60
+  },{
+    "type": "multiple",
+    "question": "<p><img src='./jsons/5/images/5_1_1_3_22.svg'/></p><p>Abaküste gösterilen sayı aşağıdakilerden hangisidir?</p>",
+    "options": ["131 356 423 471", "131 356 324 471", "113 563 423 471", "131 356 243 174"],
+    "correct_answer": "131 356 423 471",
+    "time": 30
+  },{
+    "type": "multiple",
+    "question": "<p><img src='./jsons/5/images/5_1_1_3_23.svg'/></p><p>Abaküste gösterilen sayı aşağıdakilerden hangisidir?</p>",
+    "options": ["26 000 745 209", "26 745 209", "26 000 209 745", "26 000 574 902"],
+    "correct_answer": "26 000 745 209",
+    "time": 30
+  },{
+    "type": "multiple",
+    "question": "<p><img src='./jsons/5/images/5_1_1_3_24.svg'/></p><p>Abaküste gösterilen sayı aşağıdakilerden hangisidir?</p>",
+    "options": ["300 090 001 005", "300 090 010 500", "300 900 001 500", "300 090 001 500"],
+    "correct_answer": "300 090 001 500",
+    "time": 30
+  },{
+    "type": "short",
+    "question": "<p><img src='./jsons/5/images/5_1_1_3_25.svg'/></p><p>Abaküste gösterilen sayıyı yazınız.</p>",
+    "answers": ["12 000 800 072"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "<p><img src='./jsons/5/images/5_1_1_3_26.svg'/></p><p>Abaküste gösterilen sayıyı yazınız.</p>",
+    "answers": ["3 500 000 140"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "<p><img src='./jsons/5/images/5_1_1_3_27.svg'/></p><p>Abaküste gösterilen sayıyı yazınız.</p>",
+    "answers": ["70 040 200"],
+    "time": 60
+  },{
+    "type": "drag-match",
+    "question": "Bir emlak oyununda ev almak için 10 309 800 235 oyun parası vermek gerekmektedir. Sağ tarafta paralar sol tarafta ise parlardan kaç tane kullanılması gerektiği verilmiştir. Verilenleri eşleştiriniz.",
+    "pairs": [
+      {
+        "left": "1 tane",
+        "right": "10 000 000 000"
+      },
+      {
+        "left": "3 tane",
+        "right": "100 000 000"
+      },
+      {
+        "left": "9 tane",
+        "right": "1 000 000"
+      },
+      {
+        "left": "8 tane",
+        "right": "100 000"
+      },
+      {
+        "left": "2 tane",
+        "right": "100"
+      },
+      {
+        "left": "3 tane",
+        "right": "10"
+      },
+      {
+        "left": "5 tane",
+        "right": "1"
+      }
+    ],
+    "time": 120
+  },{
+    "type": "drag-match",
+    "question": "Bir emlak oyununda ev almak için 805 247 009 136 oyun parası vermek gerekmektedir. Sağ tarafta paralar sol tarafta ise parlardan kaç tane kullanılması gerektiği verilmiştir. Verilenleri eşleştiriniz.",
+    "pairs": [
+      {
+        "left": "8 tane",
+        "right": "100 000 000 000"
+      },
+      {
+        "left": "5 tane",
+        "right": "1 000 000 000"
+      },
+      {
+        "left": "2 tane",
+        "right": "100 000 000"
+      },
+      {
+        "left": "4 tane",
+        "right": "10 000 000"
+      },
+      {
+        "left": "7 tane",
+        "right": "1 000 000"
+      },
+      {
+        "left": "9 tane",
+        "right": "1 000"
+      },
+      {
+        "left": "1 tane",
+        "right": "100"
+      },
+      {
+        "left": "3 tane",
+        "right": "10"
+      },
+      {
+        "left": "6 tane",
+        "right": "1"
+      }
+    ],
+    "time": 120
+  },{
+    "type": "drag-match",
+    "question": "Bir emlak oyununda kaykay almak için 13 000 700 oyun parası vermek gerekmektedir. Sağ tarafta paralar sol tarafta ise parlardan kaç tane kullanılması gerektiği verilmiştir. Verilenleri eşleştiriniz.",
+    "pairs": [
+      {
+        "left": "1 tane",
+        "right": "10 000 000"
+      },
+      {
+        "left": "3 tane",
+        "right": "1 000 000"
+      },
+      {
+        "left": "7 tane",
+        "right": "100"
+      }
+    ],
+    "time": 120
+  },{
+    "type": "drag-match",
+    "question": "Bir emlak oyununda bisiklet almak için 40 305 090 oyun parası vermek gerekmektedir. Sağ tarafta paralar sol tarafta ise parlardan kaç tane kullanılması gerektiği verilmiştir. Verilenleri eşleştiriniz.",
+    "pairs": [
+      {
+        "left": "4 tane",
+        "right": "10 000 000"
+      },{
+        "left": "3 tane",
+        "right": "100 000"
+      },{
+        "left": "5 tane",
+        "right": "1 000"
+      },{
+        "left": "9 tane",
+        "right": "10"
+      }
+    ],
+    "time": 120
+  }
+]

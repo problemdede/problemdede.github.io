@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>ProblemDede</title>
+<link rel="shortcut icon" href="./images/problemdede.svg">
+<meta name="description" content="Farklı soru türleri, anında geri bildirim ve süreli ücretsiz quiz.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript" id="MathJax-script" async
+      src="mathjax/es5/tex-mml-chtml.js">
+</script>
+<script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']] // $...$ ve \(...\) satır içi için
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+</script>
+<link rel="stylesheet" href="style.css"> 
+
+</head>
+
+<body>
+<div class="progress">
+  Soru <span id="current">?</span> / <span id="total">?</span>
+</div>
+
+<div class="quiz-card">
+  <div class="time-bar"><div id="timeFill"></div></div>
+  <div id="quiz"></div>
+  <div id="feedback" class="feedback"></div>
+  <button id="nextBtn" style="display:none">Sonraki Soru</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

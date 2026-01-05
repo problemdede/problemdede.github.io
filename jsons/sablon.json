@@ -1,0 +1,76 @@
+[
+  {
+    "type": "multiple",
+    "question": "$3^2$ aşağıdakilerden hangisine eşittir?",
+    "options": ["3", "6", "9", "12"],
+    "correct_answer": "9",
+    "time": 10
+  },
+  {
+    "type": "short",
+    "question": "Türkiye'nin başkenti nedir?",
+    "answers": ["ankara"],
+    "time": 10,
+    "explanation": "Türkiye'nin başkenti Ankara'dır."
+  },
+  {
+    "type": "order",
+    "question": "Küçükten büyüğe sırala:",
+    "items": ["10", "2", "5"],
+    "correct": ["2", "5", "10"],
+    "time": 15
+  },
+  {
+    "type": "match",
+    "question": "Ülkeleri başkentleriyle eşleştir (Seçmeli):",
+    "pairs": [
+      {
+        "left": "Türkiye",
+        "right": "Ankara"
+      },
+      {
+        "left": "Fransa",
+        "right": "Paris"
+      }
+    ],
+    "time": 20
+  },
+  {
+    "type": "drag-match",
+    "question": "Şehirleri ülkeleriyle eşleştir (Sürükle-Bırak):",
+    "pairs": [
+      {
+        "left": "İstanbul",
+        "right": "Türkiye"
+      },
+      {
+        "left": "Berlin",
+        "right": "Almanya"
+      },
+      {
+        "left": "Madrid",
+        "right": "İspanya"
+      }
+    ],
+    "time": 25
+  },
+  {
+    "type": "drag-match",
+    "question": "Aşağıda verilen kesirleri denkleriyle eşleştiriniz:",
+    "pairs": [
+      {
+        "left": "$\\frac{3}{2}$",
+        "right": "$1\\frac{1}{2}$"
+      },
+      {
+        "left": "$\\frac{7}{4}$",
+        "right": "$1\\frac{3}{4}$"
+      },
+      {
+        "left": "$\\frac{10}{4}$",
+        "right": "$2\\frac{1}{2}$"
+      }
+    ],
+    "time": 25
+  }
+]

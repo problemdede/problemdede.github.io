@@ -1,0 +1,119 @@
+[
+  {
+    "type": "multiple",
+    "question": "Elli iki milyon yüz elli altı bin doksan beş diye okunan sayı hangisidir?",
+    "options": ["52 156 950",
+                "52 516 095",
+                "52 156 095",
+                "5 215 695"],
+    "correct_answer": "52 156 095",
+    "time": 30
+  },{
+    "type": "multiple",
+    "question": "Yüz on milyon diye okunan sayı hangisidir?",
+    "options": ["110 000 000 000",
+                "11 000 000",
+                "110 000",
+                "110 000 000"],
+    "correct_answer": "110 000 000",
+    "time": 30
+  },{
+    "type": "multiple",
+    "question": "Yüz kırk sekiz milyon kırk sekiz bin kırk sekiz diye okunan sayı hangisidir?",
+    "options": ["148 408 048",
+                "148 048 048",
+                "148 048 480",
+                "148 048 048 000"],
+    "correct_answer": "148 048 048",
+    "time": 30
+  },{
+    "type": "multiple",
+    "question": "Yüz kırk sekiz milyon üç yüz seksen dört diye okunan sayı hangisidir?",
+    "options": ["148 384 000",
+                "148 000 384",
+                "148 000 000 384",
+                "148 384 000 000"],
+    "correct_answer": "148 000 384",
+    "time": 30
+  },{
+    "type": "multiple",
+    "question": "İki yüz otuz milyon yetmiş beş diye okunan sayı hangisidir?",
+    "options": ["230 000 075",
+                "230 075 000",
+                "230 075 000 000",
+                "230 000 075 000"],
+    "correct_answer": "230 000 075",
+    "time": 30
+  },{
+    "type": "multiple",
+    "question": "Bir milyar dört yüz otuz sekiz milyon diye okunan sayı hangisidir?",
+    "options": ["1 438 000 000",
+                "1 000 438 000",
+                "1 438",
+                "1 438 000"],
+    "correct_answer": "1 438 000 000",
+    "time": 30
+  },{
+    "type": "multiple",
+    "question": "İki milyar dokuz yüz yetmiş milyon iki yüz beş bin sekiz diye okunan sayı hangisidir?",
+    "options": ["2 972 205 800",
+                "29 722 058",
+                "2 972 205 008",
+                "2 205 972 008"],
+    "correct_answer": "2 972 205 008",
+    "time": 30
+  },{
+    "type": "multiple",
+    "question": "Üç yüz milyar kırk beş bin diye okunan sayı hangisidir?",
+    "options": ["300 045 000 000",
+                "300 000 045 000",
+                "300 045 000",
+                "300 045"],
+    "correct_answer": "300 000 045 000",
+    "time": 30
+  },{
+    "type": "multiple",
+    "question": "Kırk sekiz milyar iki bin altı yüz üç diye okunan sayı hangisidir?",
+    "options": ["48 200 603",
+                "48 002 603",
+                "48 002 000 603",
+                "48 000 002 603"],
+    "correct_answer": "48 000 002 603",
+    "time": 30
+  },{
+    "type": "short",
+    "question": "Otuz yedi milyon kırk üç bin altı yüz yirmi bir diye okunan sayıyı yazınız.",
+    "answers": ["37 043 621"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "Dokuz milyon dokuz bin dokuz yüz dokuz diye okunan sayıyı yazınız.",
+    "answers": ["9 009 909"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "Üç yüz üç milyon otuz üç bin otuz diye okunan sayıyı yazınız.",
+    "answers": ["303 033 030"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "On beş milyon diye okunan sayıyı yazınız.",
+    "answers": ["15 000 000"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "Yirmi yedi milyar dokuz yüz otuz beş bin diye okunan sayıyı yazınız.",
+    "answers": ["27 000 935 000"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "Altmış milyar altı milyon iki yüz diye okunan sayıyı yazınız.",
+    "answers": ["60 006 000 200"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "Sekiz milyar diye okunan sayıyı yazınız.",
+    "answers": ["8 000 000 000"],
+    "time": 60
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "type": "short",
+    "question": "<p>11:30'da başlayan bir seminer 12:45'te bitmiştir. Seminer ne kadar sürmüştür?</p><p>(Saat:Dakika olarak yazınız.)</p>",
+    "answers": ["1:15","01:15"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "<p>09:25'te fırına atılan bir yemek 10:15'te fırından çıkarılmıştır. Yemek fırında ne kadar kalmıştır?</p><p>(Saat:Dakika olarak yazınız.)</p>",
+    "answers": ["00:50","50"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "<p>07:53'te koşuya başlayan bir sporcu koşusunu 10:17'de bitirmiştir. Koşucu ne kadar koşmuştur?</p><p>(Saat:Dakika olarak yazınız.)</p>",
+    "answers": ["02:24","2:24"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "<p>21:45'te başlayan bir voleybol maçı 23:17'de bitmiştir. Voleybol maçı ne kadar sürmüştür?</p><p>(Saat:Dakika olarak yazınız.)</p>",
+    "answers": ["01:32","1:32"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "<p>Öğleden önce 08:30'da başlayan bir okul öğleden sonra 03:20'de bitmiştir. Okul ne kadar sürmüştür?</p><p>(Saat:Dakika olarak yazınız.)</p>",
+    "answers": ["06:50","6:50"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "<p>Öğleden önce 11:40'ta başlayan bir film öğleden sonra 01:22'de bitmiştir. Film ne kadar sürmüştür?</p><p>(Saat:Dakika olarak yazınız.)</p>",
+    "answers": ["01:42","1:42"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "<p>21:38'de uyuyan bir kişi 07:12'de uyanmıştır. Bu kişi ne kadar uyumuştur?</p><p>(Saat:Dakika olarak yazınız.)</p>",
+    "answers": ["09:34","9:34"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "<p>Öğleden sonra 11:42'de otobüse binen bir yolcu öğleden önce 05:27'de otobüsten inmiştir. Bu yolcunun yolculuğu ne kadar sürmüştür?</p><p>(Saat:Dakika olarak yazınız.)</p>",
+    "answers": ["05:45","5:45"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "<p>10:30'da başlayan ve 2 saat 30 dakika süren bir sınav ne zaman bitmiştir?</p><p>(Saat:Dakika olarak yazınız.)</p>",
+    "answers": ["13:00"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "<p>20:18'de fırına atılan ve 55 dakika fırında kalması gereken bir yemek ne zaman fırından çıkarılmalıdır?</p><p>(Saat:Dakika olarak yazınız.)</p>",
+    "answers": ["21:13"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "<p>Öğleden sonra 09:48'de uyuyan bir kişi 8 saat 27 dakika uyumuştur. Bu kişi saat kaçta uyanmıştır?</p><p>(Saat:Dakika olarak yazınız.)</p>",
+    "answers": ["06:15","6:15"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "<p>Öğleden önce 11:35' te fırlatılan bir uzay aracı 13 saat 12 dakikada Ay'a ulaşmıştır. Bu uzay aracı fırlatıldığı konumun saatine göre saat kaçta Ay'a ulaşmıştır?</p><p>(Saat:Dakika olarak yazınız.)</p>",
+    "answers": ["00:47","0:47","47"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "<p>1 saat 20 dakika süren bir sınav 11:50'de bitmiştir. Sınav ne zaman başlamıştır?</p><p>(Saat:Dakika olarak yazınız.)</p>",
+    "answers": ["10:30"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "<p>2 saat 52 dakika süren bir filmden izleyiciler 23:22'de çıkmıştır. Film ne zaman başlamıştır?</p><p>(Saat:Dakika olarak yazınız.)</p>",
+    "answers": ["20:30"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "<p>Bir öğrenci proje ödevi üzerine 2 saat 41 dakika çalışmış ve öğleden sonra 08:17'de ödevini bitirmiştir. Bu öğrenci ödevini yapmaya ne zaman başlamıştır?</p><p>(Saat:Dakika olarak yazınız.)</p>",
+    "answers": ["17:36"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "<p>7 saat 45 dakika uyuyan bir kişi 06:38'de uyanmıştır. Bu kişi ne zaman uyumuştur?</p><p>(Saat:Dakika olarak yazınız.)</p>",
+    "answers": ["22:53"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "Uşak’tan arabasıyla yola çıkan Rezzan, 1 saat 30 dakika sonra Afyon’da mola vermiştir. Mola sonrası 2 saat 50 dakika daha giderek Ankara’ya ulaşmıştır. Buna göre Rezzan toplam kaç <u>dakika</u> araba kullanmıştır?",
+    "answers": ["260"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "Gözde, bir uçak maketini birinci gün 3 sa 40 dk, ikinci gün 2 sa 20 dk çalışarak tamamlamıştır. Gözde maketi kaç <u>dakikada</u> tamamlamıştır?",
+    "answers": ["300"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "Bir kırlangıç saniyede 15 defa kanat çırpar. Bu kırlangıç 40 dakikada kaç defa kanat çırpar?",
+    "answers": ["36 000"],
+    "time": 60
+  }
+]

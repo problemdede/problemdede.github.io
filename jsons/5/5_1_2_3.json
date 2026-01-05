@@ -1,0 +1,143 @@
+[
+  {
+    "type": "short",
+    "question": "4 835 + __________ = 5 947 işlemindeki boşluğa hangi sayı yazılmalıdır?",
+    "answers": ["1 112"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "__________ + 1 322 = 6 557 işlemindeki boşluğa hangi sayı yazılmalıdır?",
+    "answers": ["5 235"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "53 043 + __________ = 56 841 işlemindeki boşluğa hangi sayı yazılmalıdır?",
+    "answers": ["3 798"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "__________ + 7 245 = 75 351 işlemindeki boşluğa hangi sayı yazılmalıdır?",
+    "answers": ["68 106"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "7 384 - __________ = 5 262 işlemindeki boşluğa hangi sayı yazılmalıdır?",
+    "answers": ["2 122"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "__________ - 15 381 = 11 618 işlemindeki boşluğa hangi sayı yazılmalıdır?",
+    "answers": ["26 999"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "__________ - 8 939 = 273 işlemindeki boşluğa hangi sayı yazılmalıdır?",
+    "answers": ["9 212"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "41 882 - __________ = 38 065 işlemindeki boşluğa hangi sayı yazılmalıdır?",
+    "answers": ["3 817"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "45 x ____ = 360 işlemindeki boşluğa hangi sayı yazılmalıdır?",
+    "answers": ["8"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "____ x 45 = 2 430 işlemindeki boşluğa hangi sayı yazılmalıdır?",
+    "answers": ["54"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "225 x ____ = 4 050 işlemindeki boşluğa hangi sayı yazılmalıdır?",
+    "answers": ["18"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "25 x ____ = 1 600 işlemindeki boşluğa hangi sayı yazılmalıdır?",
+    "answers": ["64"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "____ : 15 = 39 işlemindeki boşluğa hangi sayı yazılmalıdır?",
+    "answers": ["585"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "364 : ____ = 13 işlemindeki boşluğa hangi sayı yazılmalıdır?",
+    "answers": ["28"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "____ : 12 = 72 ve işlemdeki <u>kalan 10</u> ise boşluğa hangi sayı yazılmalıdır?",
+    "answers": ["874"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "648 : ____ = 16 ve işlemdeki <u>kalan 8</u> ise boşluğa hangi sayı yazılmalıdır?",
+    "answers": ["40"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "____ : 15 = 75 ve işlemdeki <u>kalan 13</u> ise boşluğa hangi sayı yazılmalıdır?",
+    "answers": ["1 138"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "1 000 : ____ = 111 ve işlemdeki <u>kalan 1</u> ise boşluğa hangi sayı yazılmalıdır?",
+    "answers": ["9"],
+    "time": 60
+  },{
+    "type": "short",
+    "question": "2 000 x 6 = ______ ise boşluğa hangi sayı yazılmalıdır?",
+    "answers": ["12 000"],
+    "time": 10
+  },{
+    "type": "short",
+    "question": "30 x 800 = ______ ise boşluğa hangi sayı yazılmalıdır?",
+    "answers": ["24 000"],
+    "time": 10
+  },{
+    "type": "short",
+    "question": "900 x 500 = ______ ise boşluğa hangi sayı yazılmalıdır?",
+    "answers": ["450 000"],
+    "time": 10
+  },{
+    "type": "short",
+    "question": "102 x 70 = ______ ise boşluğa hangi sayı yazılmalıdır?",
+    "answers": ["7 140"],
+    "time": 10
+  },{
+    "type": "short",
+    "question": "500 x 48 = ______ ise boşluğa hangi sayı yazılmalıdır?",
+    "answers": ["24 000"],
+    "time": 10
+  },{
+    "type": "short",
+    "question": "4 000 : 20 = ______ ise boşluğa hangi sayı yazılmalıdır?",
+    "answers": ["200"],
+    "time": 10
+  },{
+    "type": "short",
+    "question": "7 500 : 30 = ______ ise boşluğa hangi sayı yazılmalıdır?",
+    "answers": ["250"],
+    "time": 10
+  },{
+    "type": "short",
+    "question": "80 000 : 4 000 = ______ ise boşluğa hangi sayı yazılmalıdır?",
+    "answers": ["20"],
+    "time": 10
+  },{
+    "type": "short",
+    "question": "55 000 : 1100 = ______ ise boşluğa hangi sayı yazılmalıdır?",
+    "answers": ["50"],
+    "time": 10
+  },{
+    "type": "short",
+    "question": "90 000 : 250 = ______ ise boşluğa hangi sayı yazılmalıdır?",
+    "answers": ["360"],
+    "time": 10
+  }
+]
