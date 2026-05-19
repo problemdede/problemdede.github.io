@@ -1,14 +1,88 @@
-<h2>Quiz Seçimi</h2>
-<ul>
-    <li><a href="base.html?quiz=jsons/sablon.json">0. Sablon: Tüm Sorulardan Oluşan Şablon</a></li>
-    <li><a href="base.html?quiz=jsons/5/5_1_1_1.json">1. Çok Büyük Sayıları Okuma</a></li>
-    <li><a href="base.html?quiz=jsons/5/5_1_1_2.json">2. Çok Büyük Sayılar Yazma</a></li>
-    <li><a href="base.html?quiz=jsons/5/5_1_1_3.json">3. Basamak Kavramı ve Çözümleme - 1</a></li>
-    <li><a href="base.html?quiz=jsons/5/5_1_1_4.json">4. Basamak Kavramı ve Çözümleme - 2</a></li>
-    <li><a href="base.html?quiz=jsons/5/5_1_1_5.json">5. Çok Büyük Sayıları Sıralama</a></li>
-    <li><a href="base.html?quiz=jsons/5/5_1_2_1.json">6. Toplama ve Çıkarma İşlemi</a></li>
-    <li><a href="base.html?quiz=jsons/5/5_1_2_2.json">7. Çarpma ve Bölme İşlemi</a></li>
-    <li><a href="base.html?quiz=jsons/5/5_1_2_3.json">8. Eksik Eleman ve Zihinden İşlemler</a></li>
-    <li><a href="base.html?quiz=jsons/5/5_1_2_4.json">9. Zaman Soruları (Saat-Dakika)</a></li>
-    <li><a href="base.html?quiz=jsons/5/5_1_2_5.json">10. Zaman Soruları (Tarih)</a></li>
-</ul>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>PDF Kütüphanesi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 40px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .dizin-baslik {
+            font-size: 18px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-top: 20px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #3498db;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0 0;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px;
+            background: #ecf0f1;
+            color: #34495e;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.2s;
+        }
+        a:hover {
+            background: #3498db;
+            color: white;
+            transform: translateX(5px);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1><i class="fa-solid fa-book-open"></i> PDF Kitaplığı</h1>
+
+    <!-- 5. Dizin -->
+    <div class="dizin-baslik"><i class="fa-solid fa-folder"></i> 5. Dizin</div>
+    <ul>
+        <li><a href="viewer.html?pdf=5/5_1_1.pdf"><i class="fa-regular fa-file-pdf"></i> 5_1_1.pdf Dosyasını Aç</a></li>
+        <li><a href="viewer.html?pdf=5/5_1_2.pdf"><i class="fa-regular fa-file-pdf"></i> 5_1_2.pdf Dosyasını Aç</a></li>
+    </ul>
+
+    <!-- 6. Dizin -->
+    <div class="dizin-baslik"><i class="fa-solid fa-folder"></i> 6. Dizin</div>
+    <ul>
+        <li><a href="viewer.html?pdf=6/6_1_1.pdf"><i class="fa-regular fa-file-pdf"></i> 6_1_1.pdf Dosyasını Aç</a></li>
+        <li><a href="viewer.html?pdf=6/6_1_2.pdf"><i class="fa-regular fa-file-pdf"></i> 6_1_2.pdf Dosyasını Aç</a></li>
+    </ul>
+
+    <!-- 7. Dizin -->
+    <div class="dizin-baslik"><i class="fa-solid fa-folder"></i> 7. Dizin</div>
+    <ul>
+        <li><a href="viewer.html?pdf=7/7_1_1.pdf"><i class="fa-regular fa-file-pdf"></i> 7_1_1.pdf Dosyasını Aç</a></li>
+    </ul>
+</div>
+
+</body>
+</html>
