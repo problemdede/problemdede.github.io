@@ -1,0 +1,449 @@
+/* ==========================================================================
+   GITHUB TARZI AÇIK RENK SUNUM TEMASI (ORTAOKUL UYGUNLUĞU)
+   ========================================================================== */
+
+html {
+    /* SİHİRLİ AYAR: Sınıfın boyutuna göre burayı değiştirdiğin an (örn: 18px veya 22px) 
+       sunumdaki tüm başlıklar, yazılar, tablolar ve boşluklar oranını bozmadan küçülür veya büyür.
+    */
+    font-size: 28px; 
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    background-color: #f6f8fa; /* GitHub açık gri arka plan */
+    color: #24292f; /* GitHub koyu metin rengi */
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* --- Sunum Konteyneri ve Slayt Yapısı --- */
+#presentation-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 3.5rem 5rem; /* rem cinsinden esnek iç boşluk */
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.98) translateX(20px);
+    transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.4s ease;
+    background-color: #ffffff; /* Slayt içi temiz beyaz */
+}
+
+/* Aktif Slayt Durumu */
+.slide.active {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1) translateX(0);
+    z-index: 10;
+}
+
+/* --- Sabit Arayüz Elemanları (Overlay) --- */
+.overlay-element {
+    position: absolute;
+    z-index: 100;
+}
+
+/* Navigasyon Okları (Yumuşak Fade-in / Fade-out) */
+.nav-arrow {
+    top: 50%;
+    transform: translateY(-50%);
+    background: #ffffff;
+    border: 1px solid #d0d7de;
+    color: #57606a;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 6px rgba(140,149,159,0.15);
+    opacity: 0.15; /* Varsayılan olarak soluk (Fade-out) */
+    transition: opacity 0.3s ease, background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.nav-arrow:hover {
+    opacity: 1; /* Üzerine gelince net (Fade-in) */
+    background: #f6f8fa;
+    border-color: #0969da; /* GitHub Mavisi */
+    color: #0969da;
+}
+
+.nav-left { left: 1rem; }
+.nav-right { right: 1rem; }
+
+.site-logo {
+    position: absolute !important;
+    bottom: 1rem !important;    /* Alt bar çizgisi hizası */
+    left:1rem !important;      /* Sol kenar hizası */
+    width: 2rem !important;      /* İstediğin o devasa genişlik */
+    height: 2rem !important;     /* İstediğin o devasa yükseklik */
+    z-index: 100 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block !important;
+    overflow: visible !important;
+}
+
+/* 2️⃣ SİHİRLİ DOKUNUŞ: Esas büyümesi gereken SVG'nin kendisini yakalıyoruz! */
+.site-logo svg {
+    width: 100% !important;      /* Üstteki 7rem'lik kutunun tamamını kapla */
+    height: 100% !important;     /* Üstteki 7rem'lik kutunun tamamını kapla */
+    display: block !important;
+    
+    /* Inkscape'in içerideki matrix(-556, -178) dikey kaymasını 
+       ve o gizemli boşluklarını tamamen iptal edip, çizimi sol alt köşeye çiviler: */
+    object-fit: contain !important;
+    object-position: bottom left !important;
+}
+
+/* Sayfa Numarası (Alt Orta) */
+.page-counter {
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #57606a;
+    background: #ffffff;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    border: 1px solid #d0d7de;
+    box-shadow: 0 1px 3px rgba(140,149,159,0.12);
+}
+
+/* Tam Ekran Butonu Stili */
+.fullscreen-btn {
+    bottom: 1rem;
+    left: calc(50% + 3.5rem); /* Sayfa numarasının hemen sağında hizalı */
+    background: #ffffff;
+    border: 1px solid #d0d7de;
+    color: #57606a;
+    width: 1.9rem;
+    height: 1.9rem;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 3px rgba(140,149,159,0.12);
+    transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.fullscreen-btn:hover {
+    background: #f6f8fa;
+    border-color: #0969da;
+    color: #0969da;
+}
+
+/* --- Slayt İçi Tipografi --- */
+.slide-title {
+    font-size: 2.0rem; /* Büyük ve net başlıklar */
+    font-weight: 700;
+    color: #24292f;
+    margin-bottom: 1.8rem;
+    border-left: 6px solid #0969da; /* GitHub sol şerit rengi */
+    padding-left: 0.8rem;
+    line-height: 1.2;
+}
+
+/* --- CSS Grid Yerleşim Planları (Layouts) --- */
+.layout-grid {
+    display: grid;
+    /* Hem yan yana (column) hem alt alta (row) 1.5rem boşluk bırakır */
+    gap: 1.5rem; 
+    width: 100%;
+    align-items: stretch;
+
+    /* SİHİRLİ DOKUNUŞ: Eğer slayt içinde birden fazla peş peşe ".layout-grid" 
+       kullanıyorsan, alt alta gelen gridlerin arasına da tam 1.5rem boşluk kilitler. */
+    margin-bottom: 1.5rem; 
+}
+
+/* Slaytın son elemanının altındaki gereksiz boşluğu sıfırlayarak taşmayı önler */
+.layout-grid:last-child {
+    margin-bottom: 0;
+}
+
+/* Tek Parça Yerleşim */
+.layout-single { grid-template-columns: 1fr; }
+
+/* İki Parça Yerleşim */
+.layout-double { grid-template-columns: 1fr 1fr; }
+
+/* Üç Parça Yerleşim */
+.layout-triple { grid-template-columns: repeat(3, 1fr); }
+
+.layout-col {
+    background: #f6f8fa;
+    border: 1px solid #d0d7de;
+    border-radius: 12px;
+    padding: 1.5rem;
+    color: #24292f;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+    
+    display: flex;
+    flex-direction: column;
+    
+    /* Eğer alt alta sarkan eleman tek bir grid içindeki sütunların otomatik kırılmasıysa 
+       (flex-wrap veya auto-fill gibi), her ihtimale karşı dikey emniyet payı: */
+    margin-bottom: 0 !important; 
+}
+.layout-col:hover {
+    background: #ffffff;
+    border-color: #0969da;
+}
+
+.layout-col h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+    color: #0969da;
+}
+
+/* --- Slayt İçi Eleman Animasyonları (Fade-In) --- */
+.fade-item {
+    opacity: 0;
+    transform: translateY(15px); /* Hafif aşağıdan gelme efekti */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Eleman görünür olduğunda JS tarafından eklenecek sınıf */
+.fade-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- Modern GitHub Tarzı Tablo --- */
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+.custom-table th {
+    background-color: #f6f8fa;
+    color: #24292f;
+    font-weight: 600;
+    padding: 0.7rem 0.9rem;
+    border: 1px solid #d0d7de;
+}
+
+.custom-table td {
+    padding: 0.7rem 0.9rem;
+    border: 1px solid #d0d7de;
+    background-color: #ffffff;
+}
+
+.custom-table tr:nth-child(even) td {
+    background-color: #fbfcfd; /* Satırları ayırt etmek için hafif kırık beyaz */
+}
+
+/* --- Matematik Sembolleri Semantiği --- */
+.math {
+    /* Özel tırnaklı font kaldırıldı, body ile aynı modern font ailesi atandı */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-style: normal; /* İtalik eğiklik kaldırılarak akıllı tahtada netlik sağlandı */
+    font-weight: 700; /* Öğrencilerin formülleri rahat seçmesi için kalınlaştırıldı */
+    color: #0969da; /* Önemli matematik ifadeleri için GitHub Mavisi vurgu */
+    padding: 0 0.2rem;
+    letter-spacing: 0.5px; /* Harflerin birbirine yapışmaması için hafif boşluk */
+}
+
+/* Matematik Formül Kutusu */
+.math-display {
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 1.6rem; /* Formüller arka sıralar için ekstra büyük */
+    background: #f0f7ff; /* Açık mavi arka plan */
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid #ddf4ff;
+    border-left: 5px solid #0969da;
+    color: #0550ae;
+}
+
+/* --- Genel HTML Etiket Destekleyicileri --- */
+p { margin-bottom: 0.8rem; }
+ul, ol { margin-left: 1.8rem; margin-bottom: 0.8rem; }
+li { margin-bottom: 0.5rem; }
+.text-center { text-align: center; }
+
+.svg-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10rem;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 0.5rem;
+}
+/* --- Gelişmiş Kesir Gösterim Yapısı (Alt Alta Durma Garantili) --- */
+.fraction {
+    display: inline-flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    vertical-align: middle !important;
+    text-align: center !important;
+    padding: 0 6px !important; /* Font yapısına göre yan boşluklar biraz artırıldı */
+    line-height: 1.1 !important;
+}
+
+/* Kesrin Üst Kısmı (Pay) */
+.fraction .num {
+    display: block !important;
+    border-bottom: 2px solid #0969da !important; /* Gerçek Kesir Çizgisi */
+    padding-bottom: 2px !important;
+    margin-bottom: 2px !important;
+    width: 100% !important;
+}
+
+/* Kesrin Alt Kısmı (Payda) */
+.fraction .den {
+    display: block !important;
+    padding-top: 1px !important;
+    width: 100% !important;
+}
+
+/* --- SAYFA NUMARASIYLA EŞ ZAMANLI BÜYÜYEN ZOOM PANELİ --- */
+.zoom-fixed-panel {
+    position: fixed !important;
+    bottom: 1rem !important; /* Sayfa numarasıyla dikeyde aynı hizada */
+    right: 1.5rem !important; /* Ekranın en sağına tam otursun */
+    z-index: 99999 !important;
+    display: flex !important;
+    align-items: center !important;
+    background: #ffffff !important;
+    border: 1px solid #d0d7de !important;
+    border-radius: 6px !important;
+    box-shadow: 0 1px 3px rgba(140,149,159,0.12) !important;
+    height: 1.9rem !important; /* Sayfa numarası ve tam ekran butonuyla milimetrik aynı yükseklik */
+    width: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* Panel içindeki butonlar da artık rem tabanlı büyüyor */
+.zoom-fixed-panel button {
+    position: relative !important;
+    width: 1.9rem !important;
+    height: 1.9rem !important;
+    background: transparent !important;
+    border: none !important;
+    cursor: pointer !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: block !important;
+}
+
+.zoom-fixed-panel button:hover {
+    background-color: #f6f8fa !important;
+}
+
+/* ORTADAKİ DEĞİŞEN %100 YAZISI (Sayfa numarasıyla aynı yazı font boyutunda) */
+.zoom-label {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif !important;
+    font-size: 0.85rem !important; /* Sayfa numarası yazısıyla tam olarak aynı boyuta getirildi */
+    font-weight: 600 !important;
+    color: #57606a !important;
+    min-width: 2.8rem !important;
+    text-align: center !important;
+    border-left: 1px solid #d0d7de !important;
+    border-right: 1px solid #d0d7de !important;
+    height: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+/* --- KORUMALI ARTI VE EKSİ ÇİZGİLERİ (ASLA BOZULMAZLAR) --- */
+/* Eksi Çizgisi */
+.zoom-btn-minus::before {
+    content: "" !important;
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 0.5rem !important; /* rem yapıldı, panelle birlikte tatlıca ölçeklenir */
+    height: 2px !important;  /* Kalınlığı sabit tutuldu ki kabalaşmasın */
+    background-color: #57606a !important;
+}
+
+/* Artı Çizgisi (Yatay) */
+.zoom-btn-plus::before {
+    content: "" !important;
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 0.5rem !important;
+    height: 2px !important;
+    background-color: #57606a !important;
+}
+/* Artı Çizgisi (Dikey) */
+.zoom-btn-plus::after {
+    content: "" !important;
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 2px !important;
+    height: 0.5rem !important;
+    background-color: #57606a !important;
+}
+
+.zoom-fixed-panel button:hover::before,
+.zoom-fixed-panel button:hover::after {
+    background-color: #0969da !important;
+}
+
+/* Esnek Yerleşimlerde Elemanları Ortalamak İçin Sınıf */
+.text-center {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+}
+
+/* Esnek Yerleşimlerde Elemanları Sola Yaslamak İçin Sınıf */
+.text-left {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: center !important;
+    text-align: left !important;
+}
+
+.renk-kirmizi { color: #cf222e !important; font-weight: 600; }
+.renk-mavi    { color: #0969da !important; font-weight: 600; }
+.renk-yesil   { color: #1a7f37 !important; font-weight: 600; }
+.renk-turuncu { color: #9a6700 !important; font-weight: 600; } /* Koyu hardal/turuncu (Beyazda en iyi okunan sarı tonu) */
+.renk-mor     { color: #8250df !important; font-weight: 600; }
+.renk-pembe   { color: #bf3989 !important; font-weight: 600; }
+.renk-turkuaz { color: #127487 !important; font-weight: 600; }
+.renk-gri     { color: #57606a !important; }

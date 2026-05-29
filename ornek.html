@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gelişmiş Eğitim Sunumu (GitHub Açık Renk Teması)</title>
+    <!-- Dışarıdan bağlanan CSS Dosyamız -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="presentation-container">
+
+        <!-- SABİT ELEMANLAR (OVERLAY - KATMANI) -->
+        <!-- Yönlendirme Okları (Üzerine gelince yumuşakça parlar / Fade-in) -->
+        <button class="overlay-element nav-arrow nav-left" id="prev-btn" onclick="navigate(-1)">&#10094;</button>
+        <button class="overlay-element nav-arrow nav-right" id="next-btn" onclick="navigate(1)">&#10095;</button>
+
+        <!-- Sol Alttaki Kurumsal / Okul Logosu -->
+        <div class="overlay-element site-logo">
+            <svg width="24" height="24" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+             <g transform="matrix(2.0134 0 0 2.0134 -556.07 -178.84)">
+              <circle cx="282.14" cy="94.785" r="5.96"/>
+              <path d="m283.89 89.433c-0.631-0.013-1.506 0.12-1.924 0.249-0.557 0.172-0.904 0.522-0.904 0.522s-0.504-0.57-0.863-0.582c-0.36-0.012-0.652 0.398-0.964 0.562s-0.613 0.019-0.903 0.421c-0.29 0.403-0.238 1.415-0.22 1.968 5e-3 0.177 0 0.445-9e-3 0.724a0.69 0.69 0 0 0-0.585 0.289c-0.347 0.481 0 1.079 0 1.415s-0.047 0.355 0 0.602 0.161 0.6 0.331 0.843c0.063 0.09 0.167 0.186 0.273 0.275-0.012 0.196-0.049 0.875-0.018 1.193 0.036 0.367 0.06 0.61 0.185 0.852 0.124 0.242 0.17 0.341 0.51 0.56 0.343 0.22 1.107 0.438 1.598 0.512s1.01-0.094 1.306-0.015c0.295 0.08 0.454 0.27 0.454 0.27s0.311-0.275 0.632-0.348c0.32-0.073 0.842 0.113 1.25 0.071 0.407-0.042 0.85-0.165 1.163-0.312s0.53-0.274 0.71-0.504 0.32-0.816 0.32-0.816l-0.02-1.457c0.073-0.067 0.14-0.136 0.186-0.2 0.17-0.244 0.284-0.596 0.331-0.843s0-0.267 0-0.603 0.347-0.934 0-1.415c-0.19-0.264-0.462-0.303-0.67-0.286 0-0.034 0-0.072 3e-3 -0.105 0.038-0.516 0.42-0.93 0.421-1.244 0-0.315-0.095-0.262-0.18-0.542-0.087-0.28-0.073-0.885-0.322-1.145-0.25-0.26-0.66-0.154-0.924-0.3-0.263-0.148-0.12-0.373-0.642-0.543a2 2 0 0 0-0.524-0.068z" fill="#fff"/>
+              <path d="m279.87 92.812c-0.739 0-2.19 0.13-2.19 0.13l-0.057 0.534s0.145 0.26 0.23 0.567 0.12 2.155 1.907 2.241 2.159-2.361 2.159-2.361l0.386 0.01s0.333 2.413 2.096 2.38c1.762-0.034 1.888-1.735 1.93-2.09s0.276-0.682 0.276-0.682l-0.06-0.567s-1.325-0.159-2.04-0.146c-0.713 0.013-1.762 0.24-2.228 0.241s-0.175-0.015-0.554-0.056c-0.378-0.042-1.04-0.179-1.717-0.2zm0.038 0.321c1.17 2e-3 1.49 0.463 1.49 0.463s0.052 1.012-0.23 1.446-0.84 0.887-1.375 0.893-1.056-0.384-1.336-0.823c-0.28-0.44-0.18-1.546-0.18-1.546s0.252-0.402 1.515-0.431zm4.343 0 0.115 2e-3c1.264 0.03 1.516 0.431 1.516 0.431s0.1 1.107-0.18 1.546-0.801 0.83-1.336 0.823c-0.534-6e-3 -1.093-0.46-1.375-0.893-0.282-0.434-0.23-1.446-0.23-1.446s0.32-0.46 1.49-0.463"/>
+              <path d="m280.31 94.006c-0.136 0-0.26 0.03-0.369 0.077a0.484 0.46 0 0 0-0.09 0.267 0.484 0.46 0 0 0 0.314 0.43q0.127 0.027 0.243 0.025h4e-3a0.484 0.46 0 0 0 0.407-0.455 0.484 0.46 0 0 0-0.081-0.254 1.3 1.3 0 0 0-0.428-0.09"/>
+              <ellipse cx="280.26" cy="94.221" rx=".156" ry=".158" fill="#fff"/>
+              <path d="m284.07 93.974c0.136 0 0.26 0.03 0.369 0.077a0.484 0.46 0 0 1 0.09 0.267 0.484 0.46 0 0 1-0.314 0.43 1.2 1.2 0 0 1-0.243 0.025h-4e-3a0.484 0.46 0 0 1-0.407-0.455 0.484 0.46 0 0 1 0.081-0.254 1.3 1.3 0 0 1 0.428-0.09"/>
+              <ellipse transform="scale(-1,1)" cx="-283.95" cy="94.19" rx=".156" ry=".158" fill="#fff"/>
+             </g>
+            </svg>
+        </div>
+
+        <div class="zoom-fixed-panel">
+            <button onclick="zoomPresentation(-2)" class="zoom-btn-minus" title="Küçült (Klavye: -)"></button>
+            
+            <span class="zoom-label">100%</span>
+            
+            <button onclick="zoomPresentation(2)" class="zoom-btn-plus" title="Büyüt (Klavye: +)"></button>
+        </div>
+
+        <!-- Dinamik Sayfa Numarası Bölümü -->
+        <div class="overlay-element page-counter" id="page-indicator">1 / 4</div>
+
+        <button class="overlay-element fullscreen-btn" id="fullscreen-toggle" onclick="toggleFullscreen()">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
+        </button>
+
+
+        <!-- SLAYT İÇERİKLERİ BAŞLANGICI -->
+        
+        <!-- Slayt 1: Tek Parçalı Yerleşim (Layout Single) -->
+        <section class="slide">
+            <h1 class="slide-title">Dersimize Hoş Geldiniz Çocuklar! 👋</h1>
+            <div class="layout-grid layout-single">
+                <div class="layout-col">
+                    <p>Bugün sizlerle birlikte HTML, CSS ve JavaScript teknolojilerini kullanarak hazırladığımız yepyeni bir sunum tasarımını inceleyeceğiz.</p>
+                    <p>Bu tasarım <strong>GitHub Açık Renk Teması</strong> esas alınarak yapılmıştır. Gözü yormaz, sade ve odaklanması kolaydır.</p>
+                    <p>
+                        Bir pastanın 
+                        <span class="math">
+                            <span class="fraction">
+                                <span class="num">3<sup>5</sup></span>
+                                <span class="den">4+5</span>
+                            </span>
+                        </span> 
+                        'ünü yedik.
+                    </p>
+                    <ul>
+                        <li>Yazı boyutları sizlerin arkalardan da rahatça okuyabilmesi için <strong>büyük boyutlara</strong> getirilmiştir.</li>
+                        <li>Klavyeden <strong>Boşluk (Space)</strong> veya <strong>Sağ Ok</strong> tuşuna basarak bir sonraki sayfaya geçebilirsiniz.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slayt 2: İki Parçalı Yerleşim (Layout Double) & SVG Çizim -->
+        <section class="slide">
+            <h1 class="slide-title">Görseller ve Geometrik Şekiller</h1>
+            <div class="layout-grid layout-double">
+                <!-- Sol Taraf -->
+                <div class="layout-col">
+                    <h3>Vektörel Çizimler (SVG)</h3>
+                    <p>Slaytlarımızın içerisine akıllı tahtada kalitesi hiç bozulmayan akıllı çizimler ekleyebiliriz.</p>
+                    <p>Sağ tarafta gördüğünüz renkli dairesel grafik bir <strong>SVG</strong> dosyasıdır. Ne kadar yakından bakarsanız bakın, kenarları her zaman pürüzsüz kalır!</p>
+                </div>
+                <!-- Sağ Taraf -->
+                <div class="layout-col">
+                    <div class="svg-wrapper">
+                        <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="100" cy="100" r="80" fill="#ddf4ff" stroke="#0969da" stroke-width="4" />
+                            <polygon points="100,45 145,135 55,135" fill="#54aeff" />
+                            <circle cx="100" cy="105" r="18" fill="#0969da" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slayt 3: Üç Parçalı Yerleşim (Layout Triple) & Matematik Sembolleri -->
+        <section class="slide">
+            <h1 class="slide-title">Matematik Dünyası ve Formüller 📐</h1>
+            <div class="layout-grid layout-triple">
+                <!-- Sütun 1 -->
+                <div class="layout-col">
+                    <h3>1. Derece Denklem</h3>
+                    <p>Bilinmeyenli denklemler:</p>
+                    <div class="math-display">
+                        <span class="math">y = mx + n</span>
+                    </div>
+                    <p>Burada <span class="math">m</span> katsayısı doğrunun eğimini belirtir.</p>
+                </div>
+                <!-- Sütun 2 -->
+                <div class="layout-col">
+                    <h3>Üslü İfadeler</h3>
+                    <p>Einstein'ın ünlü formülü:</p>
+                    <div class="math-display">
+                        <span class="math">E = mc²</span>
+                    </div>
+                    <p>Üst simgeler (<span class="math"><sup>2</sup></span>) hiçbir bozulma olmadan büyükçe görünür.</p>
+                </div>
+                <!-- Sütun 3 -->
+                <div class="layout-col">
+                    <h3>Alan Hesaplama</h3>
+                    <p>Dairenin Alan Formülü:</p>
+                    <div class="math-display">
+                        <span class="math">A = π · r²</span>
+                    </div>
+                    <p>Pi (<span class="math">π</span>) gibi özel matematik sembollerini doğrudan yazabiliriz.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slayt 4: Tek Parçalı Yerleşim İçinde Tablo Örneği -->
+        <section class="slide">
+            <h1 class="slide-title">Veri Analizi: Haftalık Ders Programı Örneği</h1>
+            <div class="layout-grid layout-single">
+                <div class="layout-col">
+                    <p>Aşağıdaki tabloda, GitHub tarzında sade çizgilerle oluşturulmuş örnek bir veri listesi yer almaktadır:</p>
+                    
+                    <table class="custom-table">
+                        <thead>
+                            <tr>
+                                <th>Ders Adı</th>
+                                <th>Haftalık Saat</th>
+                                <th>Kullanılan Materyal</th>
+                                <th>Zorluk Seviyesi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Matematik</td>
+                                <td>4 Saat</td>
+                                <td>Geometri Seti, Akıllı Tahta</td>
+                                <td>⭐⭐⭐</td>
+                            </tr>
+                            <tr>
+                                <td>Fen Bilimleri</td>
+                                <td>3 Saat</td>
+                                <td>Laboratuvar Malzemeleri, SVG Şemaları</td>
+                                <td>⭐⭐</td>
+                            </tr>
+                            <tr>
+                                <td>Bilişim Teknolojileri</td>
+                                <td>2 Saat</td>
+                                <td>HTML5 / CSS3 / Vanilla JS Kodları</td>
+                                <td>⭐</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </section>
+        <section class="slide">
+            <h1 class="slide-title">Dersimize Hoş Geldiniz Çocuklar! 👋</h1>
+            <div class="layout-grid layout-single">
+                <div class="layout-col">
+                    <p>Bugün sizlerle birlikte harika bir konuyu işleyeceğiz.</p>
+                    
+                    <ul>
+                        <li class="fade-item" data-step="1">🚀 Birinci önemli kuralımız: Dersi dikkatli dinlemek.</li>
+                        <li class="fade-item" data-step="2">🎯 İkinci önemli kuralımız: Notlar almak.</li>
+                        <li class="fade-item" data-step="1">🧠 Üçüncü önemli kuralımız: Soru sormaktan çekinmemek!</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="slide">
+        <div class="layout-grid layout-double">
+              <div class="layout-col">
+                  <h3>Fotosentez Nedir?</h3>
+                  <p>Bitkilerin güneş ışığı kullanarak kendi besinlerini üretmesi olayıdır.</p>
+              </div>
+              <div class="layout-col fade-item" data-step="1">
+                  <div class="svg-wrapper">
+                      <svg>...</svg>
+                  </div>
+              </div>
+          </div>
+        </section>
+        <section class="slide">
+        <div class="layout-grid layout-triple">
+            <div class="layout-col fade-item" data-step="1">
+                <h3>1. Katılar</h3>
+                <p>Belirli bir şekilleri ve hacimleri vardır. Örnek: Taş, Buz.</p>
+            </div>
+            
+            <div class="layout-col fade-item" data-step="1">
+                <h3>2. Sıvılar</h3>
+                <p>Belirli bir hacimleri vardır ama şekilleri yoktur. Örnek: Su, Süt.</p>
+            </div>
+            
+            <div class="layout-col fade-item" data-step="1">
+                <h3>3. Gazlar</h3>
+                <p>Belirli bir şekilleri ve hacimleri yoktur. Örnek: Hava, Buhar.</p>
+            </div>
+        </div>
+        <div class="layout-grid layout-single">
+        <table class="custom-table fade-item" data-step="2">
+            <thead>
+                <tr><th>Element</th><th>Sembol</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Hidrojen</td><td>H</td></tr>
+                
+                <tr><td>Helyum</td><td>He</td></tr>
+                <tr><td>Lityum</td><td>Li</td></tr>
+            </tbody>
+        </table>
+        </div>
+        </section>
+    </div>
+
+    <!-- Dışarıdan bağlanan JavaScript Dosyamız -->
+    <script src="script.js"></script>
+</body>
+</html>
