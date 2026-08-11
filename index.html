@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./images/problemdede.svg">
+  <title>ProblemDEDE</title>
+  <style>
+    :root {
+      --primary-color: #0284c7;
+      --primary-hover: #0369a1;
+      --bg-color: #f8fafc;
+      --card-bg: #ffffff;
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --border-color: #e2e8f0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Üst Header ve Panoramik SVG Banner */
+    .site-header {
+      width: 100%;
+      height: 140px;
+      overflow: hidden;
+      background: #0f172a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+
+    .panoramic-logo {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    /* Breadcrumb (Yol Çubuğu) Alanı */
+    .breadcrumb-container {
+      max-width: 1200px;
+      width: 100%;
+      margin: 20px auto 0 auto;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--text-muted);
+    }
+
+    .breadcrumb-item {
+      cursor: pointer;
+      color: var(--primary-color);
+      transition: color 0.2s;
+    }
+
+    .breadcrumb-item:hover {
+      text-decoration: underline;
+      color: var(--primary-hover);
+    }
+
+    .breadcrumb-separator {
+      color: #94a3b8;
+    }
+
+    .breadcrumb-current {
+      color: var(--text-main);
+      font-weight: 600;
+    }
+
+    /* Ana İçerik ve Grid Yapısı */
+    main {
+      max-width: 1200px;
+      width: 100%;
+      margin: 20px auto 40px auto;
+      padding: 0 20px;
+      flex: 1;
+    }
+
+    .section-title {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: var(--text-main);
+      border-bottom: 2px solid var(--border-color);
+      padding-bottom: 10px;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    /* Kart Tasarımları */
+    .card {
+      background: var(--card-bg);
+      border-radius: 12px;
+      border: 1px solid var(--border-color);
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+      border-color: var(--primary-color);
+    }
+
+    /* Kart İçi SVG Alanı (300x300 oranlı esnek kutu) */
+    .card-svg-wrapper {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      max-width: 200px;
+      margin-bottom: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f1f5f9;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .card-svg-wrapper svg {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .card-title {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--text-main);
+      margin-bottom: 8px;
+    }
+
+    .card-desc {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #ffffff;
+      border-top: 1px solid var(--border-color);
+      color: var(--text-muted);
+      font-size: 14px;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Üst Header & Panoramik SVG -->
+  <header class="site-header">
+    <svg class="panoramic-logo" viewBox="0 0 1200 200" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+          <stop offset="100%" style="stop-color:#1e293b;stop-opacity:1" />
+        </linearGradient>
+      </defs>
+      
+      <rect width="1200" height="200" fill="url(#grad)" />
+
+      <!-- Geometrik ve Matematiksel Arka Plan Motifleri -->
+      <g stroke="#334155" stroke-width="1.5" fill="none" opacity="0.35">
+        <!-- Yatay Kılavuz Çizgileri -->
+        <line x1="0" y1="40" x2="1200" y2="40" />
+        <line x1="0" y1="100" x2="1200" y2="100" stroke-dasharray="5,5" />
+        <line x1="0" y1="160" x2="1200" y2="160" />
+
+        <!-- Daireler -->
+        <circle cx="150" cy="100" r="50" />
+        <circle cx="150" cy="100" r="25" />
+        <circle cx="1050" cy="100" r="60" />
+        <circle cx="900" cy="50" r="30" />
+
+        <!-- Yarım Daireler -->
+        <path d="M 320,150 A 40,40 0 0,1 400,150 Z" />
+        <path d="M 750,50 A 35,35 0 0,0 820,50 Z" />
+
+        <!-- Kareler -->
+        <rect x="230" y="60" width="40" height="40" transform="rotate(15 250 80)" />
+        <rect x="960" y="120" width="35" height="35" transform="rotate(45 977 137)" />
+
+        <!-- Üçgenler -->
+        <polygon points="500,40 470,90 530,90" />
+        <polygon points="700,130 670,180 730,180" />
+
+        <!-- Yıldızlar (Poligon) -->
+        <polygon points="350,50 358,68 378,70 363,83 367,102 350,92 332,102 336,83 321,70 341,68" stroke-width="1" />
+        <polygon points="860,140 865,152 878,153 868,161 872,173 860,166 848,173 852,161 842,153 855,152" stroke-width="1" />
+
+        <!-- Açık Çizgiler / Eğriler -->
+        <path d="M 50,160 Q 100,130 150,160 T 250,160" />
+        <path d="M 950,40 Q 1000,80 1050,40" />
+      </g>
+
+      <!-- Başlık Metni -->
+      <text x="600" y="115" font-size="36" font-family="system-ui, sans-serif" font-weight="bold" text-anchor="middle" fill="#ffffff" letter-spacing="2">YAPILANDIRMACI MATEMATİK</text>
+    </svg>
+
+  </header>
+
+  <!-- Breadcrumb Konteyneri -->
+  <nav class="breadcrumb-container" id="breadcrumb">
+    <!-- Dinamik doldurulacak -->
+  </nav>
+
+  <!-- Ana İçerik Konteyneri -->
+  <main>
+    <h2 class="section-title" id="section-title">Ana Menü</h2>
+    <div class="grid-container" id="grid-container">
+      <!-- Dinamik kartlar buraya basılacak -->
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2026 ProblemDEDE - Tüm Hakları Saklıdır.
+  </footer>
+
+  <script>
+    // Sağladığınız JSON Veri Yapısı
+    const siteData = {
+        id: "root",
+        title: "Ana Sayfa",
+        children: [
+            {
+                id: "kitaplar",
+                title: "Kitaplar",
+                description: "Sınıf düzeyine göre PDF ders kitapları",
+                img: "images/kapak_kitaplar.svg",
+                children: [
+                    {
+                        id: "sinif-5-kitap",
+                        title: "5. Sınıf",
+                        img: "images/kapak_kitap_5.svg",
+                        description: "Maarif Modeline Uygun Yeni Nesil Kitabımız",
+                        type: "link", url: "https://drive.google.com/file/d/1X7TOy4RNEjG90gN-tBqqR52twP_Tk5Gd/view?usp=drivesdk"
+                    },{
+                        id: "sinif-6-kitap",
+                        title: "6. Sınıf",
+                        img: "images/kapak_kitap_6.svg",
+                        description: "Maarif Modeline Uygun Yeni Nesil Kitabımız",
+                        type: "link", url: "https://drive.google.com/file/d/13TZgKQDc4tWhADzrAneVpwkPyVFd87FM/view?usp=drivesdk"
+                    },{
+                        id: "sinif-7-kitap",
+                        title: "7. Sınıf",
+                        img: "images/kapak_kitap_7.svg",
+                        description: "Maarif Modeline Uygun Yeni Nesil Kitabımız",
+                        type: "link", url: "https://drive.google.com/file/d/1cFbHbsk3NDSq1H1d6H--8yzkLNQvfZgq/view?usp=drivesdk"
+                    }
+                ]
+            },
+            {
+                id: "sunumlar",
+                title: "Sunumlar",
+                description: "İnteraktif sunumlar",
+                img: "images/kapak_sunumlar.svg",
+                children: [
+                    {
+                        id: "nobuyuki",
+                        title: "Nobuyuki Yoshigahara'dan Bulmacalar",
+                        description: "Aynı isimli kitaptan ortaokul seviyesine uygun seçilmiş bulmaca sunumları.",
+                        img: "images/kapak_sunumlar_nobuyuki.svg",
+                        children: [
+                            {
+                                id: "nobuyuki_baslangic",
+                                title: "Başlangıç Bulmacaları",
+                                description: "Aynı isimli kitabın 1.bölümünden seçmeler",
+                                type: "link",
+                                img: "images/kapak_sunumlar_nobuyuki_1.svg",
+                                url: "sunum.html?file=sunumlar/nobuyuki/1_baslangic.md",
+                            },{
+                                id: "nobuyuki_sekil",
+                                title: "Şekil Bulmacaları",
+                                description: "Aynı isimli kitabın 2.bölümünden seçmeler",
+                                type: "link",
+                                img: "images/kapak_sunumlar_nobuyuki_2.svg",
+                                url: "sunum.html?file=sunumlar/nobuyuki/2_sekil.md"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: "eski-icerikler",
+                title: "Eski İçerikler",
+                description: "Arşivlenmiş konu ve testler",
+                children: [
+                    { title: "Açılar", description: "Konu anlatımı ve testler", type: "link", url: "https://drive.google.com/file/d/17jCZSvIhJg2yKQSoek-18lsZUj-Zaz9s/view?usp=drivesdk" },
+                    { title: "Alan Ölçü Birimleri", description: "Konu anlatımı ve testler", type: "link", url: "https://drive.google.com/file/d/1GzZvDGbEPhCwF_hAv-UwrocS3nC5Tn7n/view?usp=drivesdk" },
+                    { title: "Araştırma Tablo Grafik", description: "Konu anlatımı ve testler", type: "link", url: "https://drive.google.com/file/d/1EDLfvosgAOMJbJHvdGc8SuVkcndymaVR/view?usp=drivesdk" },
+                    { title: "Benzerlik", description: "Konu anlatımı ve testler", type: "link", url: "https://drive.google.com/file/d/1nosQpiVXIekoeaOz6EZ-UaqygfeP-fep/view?usp=drivesdk" },
+                    { title: "Bölünebilme", description: "Konu anlatımı ve testler", type: "link", url: "https://drive.google.com/file/d/1lhK9RKeS_QiNckZcXtf-Tjvn105H4Zob/view?usp=drivesdk" },
+                    { title: "Çarpanlar Katlar", description: "Konu anlatımı ve testler", type: "link", url: "https://drive.google.com/file/d/15rmRXZsyQMkzkuS88KV69vzyF3gcbNQr/view?usp=drivesdk" },
+                    { title: "Cebirsel İfadeler", description: "Konu anlatımı ve testler", type: "link", url: "https://drive.google.com/file/d/1DRKzFLN9l8jokR6DHxRk9RPPmOLPT5Mz/view?usp=drivesdk" },
+                    { title: "Çember Daire", description: "Konu anlatımı ve testler", type: "link", url: "https://drive.google.com/file/d/1WTdI1hEzPOrxRhvHADQuAPKRlzJ7nhBu/view?usp=drivesdk" },
+                    { title: "Çokgenler", description: "Konu anlatımı ve testler", type: "link", url: "https://drive.google.com/file/d/1yb66c2_2GPpIYQfPeyihOsshjMvTsNp7/view?usp=drivesdk" },
+                    { title: "Dağılma Ortak Çarpan", description: "Konu anlatımı ve testler", type: "link", url: "https://drive.google.com/file/d/1tiOPIWki2OxagwRosiIs_vea0jN1SlOy/view?usp=drivesdk" },
+                    { title: "Denklemler", description: "Konu anlatımı ve testler", type: "link", url: "https://drive.google.com/file/d/1mlhdUQND25I7Eir4fg69qznVmOACAAdM/view?usp=drivesdk" },
+                    { title: "Doğrusal Denklemler", description: "Konu anlatımı ve testler", type: "link", url: "https://drive.google.com/file/d/1U_IAIEZ1sG8_iPQBjpXHfYfKeSyJfgQ6/view?usp=drivesdk" },
+                    { title: "Dörtgenler", description: "Konu anlatımı ve testler", type: "link", url: "https://drive.google.com/file/d/1TK0wXxjCbue788f1j7t5UEJEwgYCQrbT/view?usp=drivesdk" },
+                    { title: "Dört İşlem", description: "Konu anlatımı ve testler", type: "link", url: "https://drive.google.com/file/d/1CQPMza4PsjGy6K6h4uxE3DcM5Ir2q0PD/view?usp=drivesdk" },
+                    { title: "Dört İşlem Tahmin", description: "Konu anlatımı ve testler", type: "link", url: "https://drive.google.com/file/d/1iWz97Aq2Wrdb3UeD9PAvvWr0pX8MNaCD/view?usp=drivesdk" },
+                    { title: "Eğim", description: "Konu anlatımı ve testler", type: "link", url: "https://drive.google.com/file/d/1D9YhG3pfp2lANwpIey97MDe2IdX-8u_Z/view?usp=drivesdk" },
+                    { title: "Eşitsizlik", description: "Konu anlatımı ve testler", type: "link", url: "https://drive.google.com/file/d/1fXCFbRJcDpsQ-l0-Wh_5n-K_AMmfdD-c/view?usp=drivesdk" },
+                    { title: "Geometrik Cisimler", description: "Konu anlatımı ve testler", type: "link", url: "https://drive.google.com/file/d/1bhk2VV2Qe3ytERFIVNBmYuCEm29GUC0w/view?usp=drivesdk" },
+                    { title: "Hacim", description: "Konu anlatımı ve testler", type: "link", url: "https://drive.google.com/file/d/16xch7bOm3oTQkkWHDGxxbZ1gvkmqLFez/view?usp=drivesdk" },
+                    { title: "Hahbuldum", description: "Konu anlatımı ve testler", type: "link", url: "https://drive.google.com/file/d/1Do82rTEELwpE3x4AMByTJX3ejDBVLBGI/view?usp=drivesdk" },
+                    { title: "İşlem Önceliği", description: "Konu anlatımı ve testler", type: "link", url: "https://drive.google.com/file/d/1HcsIHgqyIV9vazku2EJf7hi-0tcvYxh2/view?usp=drivesdk" },
+                    { title: "İstatistik", description: "Konu anlatımı ve testler", type: "link", url: "https://drive.google.com/file/d/1aWy-hQ8SFWcrvYBXu7WBF1R0RaLkkVTx/view?usp=drivesdk" },
+                    { title: "Kağıtlar", description: "Konu anlatımı ve testler", type: "link", url: "https://drive.google.com/file/d/198armLh94u7ageWSgm6vrqm-emqNr_Si/view?usp=drivesdk" },
+                    { title: "Kareköklü Sayılar", description: "Konu anlatımı ve testler", type: "link", url: "https://drive.google.com/file/d/11CMwlOHKAeVtlwqvajucqQQOjG6Hs9rK/view?usp=drivesdk" },
+                    { title: "Kesirler", description: "Konu anlatımı ve testler", type: "link", url: "https://drive.google.com/file/d/1KnjjrWFOjp1RYLGU8xQiY_uasS_8bdY9/view?usp=drivesdk" },
+                    { title: "Konum Koordinat", description: "Konu anlatımı ve testler", type: "link", url: "https://drive.google.com/file/d/1lXKwWkdPYqsTo4fgpTu2xTWIABo7POZu/view?usp=drivesdk" },
+                    { title: "Kümeler", description: "Konu anlatımı ve testler", type: "link", url: "https://drive.google.com/file/d/10T4cLgS3FoiN810u5EIqtufDKF2qK7Vs/view?usp=drivesdk" },
+                    { title: "Lfg", description: "Konu anlatımı ve testler", type: "link", url: "https://drive.google.com/file/d/1BAuEyRiPfUNymTJnP633Mk720fZSrxMF/view?usp=drivesdk" },
+                    { title: "Milyonlu Sayılar", description: "Konu anlatımı ve testler", type: "link", url: "https://drive.google.com/file/d/1SoUO0ISdJi7AsMxHEnZv-GS4BUKLur_o/view?usp=drivesdk" },
+                    { title: "Olasılık", description: "Konu anlatımı ve testler", type: "link", url: "https://drive.google.com/file/d/1kINJfoojf34yDXizYj217LZ28bVy0Qx1/view?usp=drivesdk" },
+                    { title: "Ondalık Kesirler", description: "Konu anlatımı ve testler", type: "link", url: "https://drive.google.com/file/d/14CpPox-2LmGTyl0T7fLzCFj9HlnVK4xG/view?usp=drivesdk" },
+                    { title: "Oran Orantı", description: "Konu anlatımı ve testler", type: "link", url: "https://drive.google.com/file/d/18OCK8Yx5k_Qdt_HgGe86CPSTJNAnALhs/view?usp=drivesdk" },
+                    { title: "Örüntüler", description: "Konu anlatımı ve testler", type: "link", url: "https://drive.google.com/file/d/1359t-qsy9QfUY10icIz49goDxQlc59xU/view?usp=drivesdk" },
+                    { title: "Öteleme Yansıma", description: "Konu anlatımı ve testler", type: "link", url: "https://drive.google.com/file/d/1kR5MpD_Qvn3sdIkQ7QK0R0a6B4iI4TPu/view?usp=drivesdk" },
+                    { title: "Projeler", description: "Konu anlatımı ve testler", type: "link", url: "https://drive.google.com/file/d/1omJXIAI04F7dbow6kiW75lg97qjDFZEo/view?usp=drivesdk" },
+                    { title: "Rasyonel Sayılar", description: "Konu anlatımı ve testler", type: "link", url: "https://drive.google.com/file/d/1gdtxIIPAgw8xFDnJsgVa9tdqXAdYgZCh/view?usp=drivesdk" },
+                    { title: "Sıvı Ölçüleri", description: "Konu anlatımı ve testler", type: "link", url: "https://drive.google.com/file/d/1jIw6aQrdQ1O7WGM-4oPBK65qnJljq7Dt/view?usp=drivesdk" },
+                    { title: "Tam Sayılar", description: "Konu anlatımı ve testler", type: "link", url: "https://drive.google.com/file/d/1Q1OSjK14IAuzCuF2tiSaZt0EwLTan-TS/view?usp=drivesdk" },
+                    { title: "Temel Geometrik Kavramlar", description: "Konu anlatımı ve testler", type: "link", url: "https://drive.google.com/file/d/1uFMc75eVPLC5NFbgfw7FqzikOjFvVWqr/view?usp=drivesdk" },
+                    { title: "Temel Sayma", description: "Konu anlatımı ve testler", type: "link", url: "https://drive.google.com/file/d/1-WR-WUQdZNAMZ4HOxpgGNrTCoNBiF5mK/view?usp=drivesdk" },
+                    { title: "Üç Boyutlu Cisimler", description: "Konu anlatımı ve testler", type: "link", url: "https://drive.google.com/file/d/13Jhbs3Ls3etlRzzAE86CpnFDytPf4-PU/view?usp=drivesdk" },
+                    { title: "Üçgenler", description: "Konu anlatımı ve testler", type: "link", url: "https://drive.google.com/file/d/1sieDFfU_8WtE734oVrRPTvl1-sdiFkKH/view?usp=drivesdk" },
+                    { title: "Üslü Sayılar", description: "Konu anlatımı ve testler", type: "link", url: "https://drive.google.com/file/d/1n9FJGlyQVrJv78xGwKwXqJ_ncgT_YkJt/view?usp=drivesdk" },
+                    { title: "Uygulama 5", description: "Konu anlatımı ve testler", type: "link", url: "https://drive.google.com/file/d/1opwo5ZW7Ias8beN4TOYvspANaD29_D6H/view?usp=drivesdk" },
+                    { title: "Uygulama 6", description: "Konu anlatımı ve testler", type: "link", url: "https://drive.google.com/file/d/1NeCPLTbpe1tq7JcvTlFavLm21IXNX2bm/view?usp=drivesdk" },
+                    { title: "Uygulama 7", description: "Konu anlatımı ve testler", type: "link", url: "https://drive.google.com/file/d/1gzf1Mxi4RUOhbE06d4V9IUkzaep2Yu2c/view?usp=drivesdk" },
+                    { title: "Uygulama 8", description: "Konu anlatımı ve testler", type: "link", url: "https://drive.google.com/file/d/1VSUDaUnW0Pn0UYWEx_JFbf4anrMmsOij/view?usp=drivesdk" },
+                    { title: "Uzunluk Ölçüleri", description: "Konu anlatımı ve testler", type: "link", url: "https://drive.google.com/file/d/1YyYXbyLflRMfEpa4MkYGaWLr3Yv67_Q3/view?usp=drivesdk" },
+                    { title: "Yüzdeler", description: "Konu anlatımı ve testler", type: "link", url: "https://drive.google.com/file/d/1447Bab-9eiAxrbqeTSff3F9mKhsTqZ7X/view?usp=drivesdk" },
+                    { title: "Zaman Ölçüleri", description: "Konu anlatımı ve testler", type: "link", url: "https://drive.google.com/file/d/1rlhC0bNtpRuE94-euev7nJCznJi3Ku0v/view?usp=drivesdk" }
+                ]
+            }
+        ]
+    };
+
+    // Dinamik SVG Üreteci (Her kart için 300x300 boyutunda dinamik çizim veya ikon)
+    function getCardSvg(title) {
+      return `
+        <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+          <rect width="300" height="300" fill="#f8fafc"/>
+          <circle cx="150" cy="120" r="50" fill="#e0f2fe" stroke="#0284c7" stroke-width="4"/>
+          <text x="150" y="130" font-size="32" font-family="system-ui, sans-serif" font-weight="bold" text-anchor="middle" fill="#0284c7">${title.charAt(0)}</text>
+          <rect x="50" y="200" width="200" height="12" rx="6" fill="#cbd5e1"/>
+          <rect x="80" y="225" width="140" height="10" rx="5" fill="#e2e8f0"/>
+        </svg>
+      `;
+    }
+
+    // Gezinme Geçmişi Yığını (Stack)
+    let historyStack = [siteData];
+
+    function render() {
+          const currentNode = historyStack[historyStack.length - 1];
+          
+          // Başlık Güncelleme
+          document.getElementById('section-title').textContent = currentNode.title;
+
+          // Breadcrumb Güncelleme (Breadcrumb mantığını bozmadan koruduk)
+          const breadcrumbEl = document.getElementById('breadcrumb');
+          breadcrumbEl.innerHTML = '';
+          
+          historyStack.forEach((node, index) => {
+            if (index > 0) {
+              const sep = document.createElement('span');
+              sep.className = 'breadcrumb-separator';
+              sep.textContent = '>';
+              breadcrumbEl.appendChild(sep);
+            }
+
+            const item = document.createElement('span');
+            if (index === historyStack.length - 1) {
+              item.className = 'breadcrumb-current';
+              item.textContent = node.title;
+            } else {
+              item.className = 'breadcrumb-item';
+              item.textContent = node.title;
+              item.onclick = () => {
+                historyStack = historyStack.slice(0, index + 1);
+                render();
+              };
+            }
+            breadcrumbEl.appendChild(item);
+          });
+
+          // Grid Kartlarını Oluşturma (Geri dönüş yapısını bozmadan sadece img kontrolü ekledik)
+          const container = document.getElementById('grid-container');
+          container.innerHTML = '';
+
+          if (!currentNode.children || currentNode.children.length === 0) {
+            container.innerHTML = '<p style="color:var(--text-muted); grid-column: 1/-1; text-align:center; padding:40px;">Bu klasör henüz boş.</p>';
+            return;
+          }
+
+          currentNode.children.forEach(child => {
+            // --- SADECE BU SATIR EKLENDİ ---
+            const cardVisual = child.img 
+                ? `<img src="${child.img}" alt="${child.title}" style="width:100%; height:100%; object-fit:cover;">` 
+                : getCardSvg(child.title);
+            // ------------------------------
+
+            if (child.type === 'link') {
+              const a = document.createElement('a');
+              a.className = 'card';
+              a.href = child.url;
+              a.target = '_blank';
+              a.rel = 'noopener noreferrer';
+              a.innerHTML = `
+                <div class="card-svg-wrapper">${cardVisual}</div>
+                <div class="card-title">${child.title}</div>
+                <div class="card-desc">${child.description || 'İçeriği Görüntüle / İndir'}</div>
+              `;
+              container.appendChild(a);
+            } else {
+              const div = document.createElement('div');
+              div.className = 'card';
+              div.onclick = () => {
+                historyStack.push(child);
+                render();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              };
+              div.innerHTML = `
+                <div class="card-svg-wrapper">${cardVisual}</div>
+                <div class="card-title">${child.title}</div>
+                <div class="card-desc">${child.description || 'Alt kategorileri incele'}</div>
+              `;
+              container.appendChild(div);
+            }
+          });
+        }
+
+    // Sayfa ilk açıldığında çalıştır
+    render();
+  </script>
+</body>
+</html>

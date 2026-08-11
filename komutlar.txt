@@ -1,0 +1,8 @@
+komutlar
+========
+
+svgo resim.svg -o resim_temiz.svg
+
+Direk üzerine sadeleştirir
+
+svgo *.svg

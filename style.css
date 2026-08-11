@@ -1,0 +1,789 @@
+:root {
+  --bg-color: #f6f8fa;
+  --card-bg: #ffffff;
+  --text-main: #0f172a;
+  --text-muted: #475569;
+  --accent-color: #0284c7;
+  --success-color: #15803d;
+  --success-bg: #dcfce7;
+  --warning-bg: #fef9c3;
+  --warning-border: #ca8a04;
+  --border-color: #cbd5e1;
+  --slot-bg: #ffffff;
+  --bottom-bar-height: 64px;
+  --app-font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+body {
+  font-family: var(--app-font);
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+#stage-container {
+  flex: 1;
+  width: 100%;
+  height: calc(100vh - var(--bottom-bar-height));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.aspect-16-9 {
+  width: 1600px !important;
+  height: 900px !important;
+  background: var(--card-bg);
+  border: 2px solid var(--border-color);
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  position: absolute;
+  transform-origin: center center;
+  transition: transform 0.1s ease-out;
+}
+
+.layout-single { display: grid !important; grid-template-columns: 100% !important; height: 100%; }
+.layout-split-2 { display: grid !important; grid-template-columns: calc(50% - 12px) calc(50% - 12px) !important; gap: 24px !important; height: 100%; }
+.layout-split-3 { display: grid !important; grid-template-columns: calc(33.33% - 16px) calc(33.33% - 16px) calc(33.33% - 16px) !important; gap: 24px !important; height: 100%; }
+
+.slot {
+  background: var(--slot-bg);
+  border: 2px solid var(--border-color);
+  border-radius: 12px;
+  padding: 24px;
+  height: 100%;
+  width: 100%;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+
+.slot h1, .slot h2, .slot h3 { color: var(--text-main); font-weight: 700; font-size: 36px !important; margin-bottom: 8px; }
+.slot p, .slot div, .step-item { font-size: 28px !important; line-height: 1.5 !important; color: var(--text-main) !important; font-weight: 500 !important; }
+.slot ul, .slot ol { padding-left: 32px !important; }
+.slot li { font-size: 28px !important; line-height: 1.5 !important; margin-bottom: 8px; }
+
+.katex { font-size: 1.1em !important; font-family: var(--app-font) !important; }
+.katex * { font-family: var(--app-font) !important; font-style: normal !important; }
+
+table { 
+  width: 100% !important; 
+  border-collapse: collapse !important; 
+  margin: 12px 0 !important; 
+  font-size: 28px !important; 
+  font-family: inherit !important; 
+}
+
+th, td { 
+  border: 2px solid var(--border-color) !important; 
+  padding: 10px 14px !important;
+  font-size: 28px !important; 
+  font-family: inherit !important;
+  color: var(--text-main) !important;
+  font-weight: 500 !important;
+  vertical-align: middle !important; /* Hücre içeriğinin dikeyde kaymasını önler */
+}
+
+th { 
+  background: #f1f5f9 !important; 
+  font-weight: 700 !important; 
+}
+
+table, th, td, table span, table td span, table th span {
+  font-family: inherit !important;
+}
+
+.slot svg, .slot img { max-width: 100%; max-height: 100%; height: auto; display: block; margin: 12px auto; }
+.step-item { transition: all 0.2s ease-in-out; margin-bottom: 12px; display: block; }
+.step-hidden { display: none !important; }
+
+/* ALT BÖLÜM TASARIMI */
+#bottom-bar {
+  width: 100%;
+  height: var(--bottom-bar-height);
+  background: #ffffff;
+  border-top: 2px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 100;
+}
+
+#progress-container { height: 4px; width: 100%; background: #e2e8f0; position: absolute; top: 0; left: 0; }
+#progress-bar { height: 100%; width: 0%; background: var(--accent-color); transition: width 0.2s ease; }
+
+#nav-controls {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  gap: 12px;
+}
+
+/* LOGO */
+.brand-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Logo ile yazı arasındaki boşluğu ayarlar (İstediğiniz gibi artırıp azaltabilirsiniz) */
+  color: var(--accent-color);
+  text-decoration: none; /* Linkin varsayılan alt çizgisini kaldırır */
+  padding: 6px;
+  border-radius: 8px;
+  transition: background 0.15s;
+}
+
+.brand-logo:hover { 
+  background: #f0f9ff; 
+  color: var(--accent-color); /* Hover durumunda linkin mavi/mor olmasını engeller, rengini korur */
+}
+
+/* Eğer metnin rengi hala mavi kalmaya devam ederse, içindeki span veya h1/a etiketini doğrudan hedefleyebilirsiniz */
+.brand-logo span,
+.brand-logo a {
+  color: inherit; /* Rengi üst kapsayıcıdan (brand-logo) alır */
+  text-decoration: none;
+}
+
+/* BUTONLAR VE İKONLAR */
+.nav-btn {
+  background: #f8fafc;
+  border: 1.5px solid var(--border-color);
+  color: var(--text-main);
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+
+.nav-btn:hover { background: #e2e8f0; }
+
+.step-controls { display: flex; gap: 6px; }
+
+.btn-step { background: var(--success-bg); color: var(--success-color); border-color: #86efac; }
+.btn-step:hover { background: #bbf7d0; }
+
+.btn-step-back { background: #f1f5f9; color: var(--text-muted); }
+.btn-step-back:hover { background: #e2e8f0; }
+
+.btn-icon-only { padding: 8px; border-radius: 8px; }
+
+#question-scroll-container {
+  flex: 1;
+  overflow-x: auto;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  scroll-behavior: smooth;
+}
+
+.q-pill {
+  min-width: 36px;
+  height: 34px;
+  border-radius: 6px;
+  background: #ffffff;
+  border: 1.5px solid var(--border-color);
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.q-pill.active { background: var(--accent-color); color: #ffffff; border-color: var(--accent-color); }
+.q-pill.in-solution::after { content: ''; position: absolute; bottom: 2px; width: 5px; height: 5px; background: var(--success-color); border-radius: 50%; }
+
+#mode-badge { font-size: 0.75rem; padding: 4px 8px; border-radius: 6px; font-weight: 700; }
+.badge-question { background: #e0f2fe; color: #0284c7; }
+.badge-solution { background: var(--success-bg); color: var(--success-color); }
+
+.slot blockquote {
+  background-color: var(--warning-bg) !important;
+  border-left: 5px solid var(--warning-border) !important;
+  color: #713f12 !important;
+  padding: 12px 18px !important;
+  border-radius: 8px !important;
+  margin: 12px 0 !important;
+  box-shadow: 0 2px 6px rgba(202, 138, 4, 0.12) !important;
+}
+
+.slot blockquote p {
+  font-size: 26px !important;
+  line-height: 1.4 !important;
+  color: #713f12 !important;
+  margin: 0 !important;
+}
+
+#slide-card table {
+  border-collapse: collapse;
+  margin: 0 auto; /* Tabloyu ortalar */
+}
+
+#slide-card th, 
+#slide-card td {
+  padding: 4px 8px !important; /* Hücre içindeki boşlukları minimuma indirir */
+  line-height: 1.1 !important; /* Satır yüksekliğini sıkılaştırır */
+  vertical-align: middle;
+}
+
+/* Tablo içindeki resimlerin altındaki ve üstündeki boşlukları sıfırlar */
+#slide-card table img,
+#slide-card table svg {
+  display: block;
+  margin: 0 auto;
+  max-height: 120px; /* Görselin tablodayken aşırı büyüyüp boşluk yaratmasını engeller */
+}
+
+@media print {
+
+    /* =========================================================
+       A4 YATAY
+       ========================================================= */
+
+    @page {
+        size: A4 landscape;
+        margin: 0;
+    }
+
+
+    /* =========================================================
+       HTML
+       ========================================================= */
+
+    html {
+        margin: 0 !important;
+        padding: 0 !important;
+
+        width: 297mm !important;
+        height: auto !important;
+
+        background: #ffffff !important;
+    }
+
+
+    /* =========================================================
+       BODY
+       ========================================================= */
+
+    body {
+        display: block !important;
+
+        width: 297mm !important;
+        height: auto !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        background: #ffffff !important;
+        color: #000000 !important;
+
+        overflow: visible !important;
+    }
+
+
+    /* =========================================================
+       EKRAN ARAYÜZÜNÜ GİZLE
+       ========================================================= */
+
+    header,
+    footer,
+    .bottom-nav,
+    #bottom-bar,
+    #question-scroll-container,
+    button,
+    #mode-badge,
+    .fullscreen-btn {
+        display: none !important;
+    }
+
+
+    /* =========================================================
+       STAGE
+       ========================================================= */
+
+    #stage-container {
+        display: block !important;
+
+        position: static !important;
+
+        width: 297mm !important;
+        height: auto !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        flex: none !important;
+
+        overflow: visible !important;
+
+        transform: none !important;
+    }
+
+
+    /* =========================================================
+       GERÇEK EKRAN SLAYTI GİZLE
+       ========================================================= */
+
+    #slide-card {
+        display: none !important;
+    }
+
+
+    /* =========================================================
+       HER SORU = 1 A4
+       ========================================================= */
+
+    .print-page {
+
+        display: block !important;
+
+        position: relative !important;
+
+        width: 297mm !important;
+        height: 210mm !important;
+
+        min-width: 297mm !important;
+        min-height: 210mm !important;
+
+        max-width: 297mm !important;
+        max-height: 210mm !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        box-sizing: border-box !important;
+
+        background: #ffffff !important;
+
+        overflow: hidden !important;
+
+        flex: none !important;
+        flex-shrink: 0 !important;
+
+        page-break-before: auto !important;
+        page-break-after: always !important;
+
+        break-before: auto !important;
+        break-after: page !important;
+
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+    }
+
+
+    /* =========================================================
+       SON SAYFADAN SONRA BOŞ SAYFA OLMA
+       ========================================================= */
+
+    .print-page:last-child {
+        page-break-after: auto !important;
+        break-after: auto !important;
+    }
+
+
+    /* =========================================================
+       1600 × 900 SLAYT
+
+       A4:
+       297mm × 210mm
+
+       Sol boşluk:
+       6mm
+
+       Sağ boşluk:
+       yaklaşık 6mm
+
+       16:9 ORANI KORUNUYOR.
+       ========================================================= */
+
+    .print-slide-clone {
+
+        position: absolute !important;
+
+        left: 6mm !important;
+
+        /*
+         * Dikeyde ortalanmış konum.
+         */
+        top: 13.8mm !important;
+
+        width: 1600px !important;
+        height: 900px !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        box-sizing: border-box !important;
+
+        background: #ffffff !important;
+
+        border: none !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+
+        /*
+         * 1600 × 900
+         *
+         * A4 kullanılabilir genişliğe
+         * mümkün olduğunca yaklaştırılıyor.
+         */
+        transform: scale(0.67275) !important;
+
+        transform-origin: top left !important;
+
+        overflow: hidden !important;
+
+        flex: none !important;
+        flex-shrink: 0 !important;
+    }
+
+
+    /* =========================================================
+       SLIDE CONTENT
+
+       1600 × 900 KOORDİNAT SİSTEMİ
+       ========================================================= */
+
+    .print-slide-clone .slide-content {
+
+        position: absolute !important;
+
+        left: 32px !important;
+        top: 32px !important;
+
+        width: calc(100% - 64px) !important;
+        height: calc(100% - 64px) !important;
+
+        min-width: 0 !important;
+        min-height: 0 !important;
+
+        box-sizing: border-box !important;
+
+        display: grid !important;
+
+        overflow: hidden !important;
+    }
+
+
+    /* =========================================================
+       TEK SLOT
+       ========================================================= */
+
+    .print-slide-clone .slide-content.layout-single {
+
+        grid-template-columns:
+            minmax(0, 1fr) !important;
+
+        grid-template-rows:
+            minmax(0, 1fr) !important;
+
+        gap: 0 !important;
+    }
+
+
+    /* =========================================================
+       2 SLOT — YAN YANA
+       ========================================================= */
+
+    .print-slide-clone .slide-content.layout-split-2 {
+
+        grid-template-columns:
+            minmax(0, 1fr)
+            minmax(0, 1fr) !important;
+
+        grid-template-rows:
+            minmax(0, 1fr) !important;
+
+        column-gap: 24px !important;
+
+        row-gap: 0 !important;
+    }
+
+
+    /* =========================================================
+       3 SLOT — YAN YANA
+       ========================================================= */
+
+    .print-slide-clone .slide-content.layout-split-3 {
+
+        grid-template-columns:
+            minmax(0, 1fr)
+            minmax(0, 1fr)
+            minmax(0, 1fr) !important;
+
+        grid-template-rows:
+            minmax(0, 1fr) !important;
+
+        column-gap: 24px !important;
+
+        row-gap: 0 !important;
+    }
+
+
+    /* =========================================================
+       SLOT
+       ========================================================= */
+
+    .print-slide-clone .slot {
+
+        width: 100% !important;
+        height: 100% !important;
+
+        min-width: 0 !important;
+        min-height: 0 !important;
+
+        max-width: none !important;
+        max-height: none !important;
+
+        box-sizing: border-box !important;
+
+        padding: 24px !important;
+
+        margin: 0 !important;
+
+        overflow: hidden !important;
+
+        text-align: left !important;
+
+        display: flex !important;
+
+        flex-direction: column !important;
+    }
+
+
+    /* =========================================================
+       BAŞLIKLAR
+       ========================================================= */
+
+    .print-slide-clone .slot h1,
+    .print-slide-clone .slot h2,
+    .print-slide-clone .slot h3 {
+
+        text-align: left !important;
+
+        margin-top: 0 !important;
+    }
+
+
+    /* =========================================================
+       METİNLER
+       ========================================================= */
+
+    .print-slide-clone .slot p,
+    .print-slide-clone .slot div,
+    .print-slide-clone .slot span,
+    .print-slide-clone .slot li,
+    .print-slide-clone .step-item {
+
+        text-align: left !important;
+    }
+
+
+    /* =========================================================
+       LİSTELER
+       ========================================================= */
+
+    .print-slide-clone .slot ul,
+    .print-slide-clone .slot ol {
+
+        padding-left: 32px !important;
+
+        margin-top: 8px !important;
+
+        margin-bottom: 8px !important;
+    }
+
+
+    /* =========================================================
+       TABLOLAR
+       ========================================================= */
+
+    .print-slide-clone table {
+
+        width: 100% !important;
+
+        margin: 4px 0 !important;
+
+        padding: 0 !important;
+
+        border-collapse: collapse !important;
+
+        border-spacing: 0 !important;
+
+        font-size: 24px !important;
+
+        table-layout: auto !important;
+
+        text-align: left !important;
+    }
+
+
+    .print-slide-clone table th,
+    .print-slide-clone table td {
+
+        padding: 4px 7px !important;
+
+        margin: 0 !important;
+
+        border: 2px solid var(--border-color) !important;
+
+        font-size: 24px !important;
+
+        line-height: 1.1 !important;
+
+        vertical-align: middle !important;
+
+        text-align: left !important;
+
+        box-sizing: border-box !important;
+    }
+
+
+    .print-slide-clone table th {
+
+        background: #f1f5f9 !important;
+
+        font-weight: 700 !important;
+    }
+
+
+    /* =========================================================
+       TABLE İÇİ METİNLER
+       ========================================================= */
+
+    .print-slide-clone table p,
+    .print-slide-clone table div,
+    .print-slide-clone table span {
+
+        margin: 0 !important;
+
+        padding: 0 !important;
+
+        font-size: 24px !important;
+
+        line-height: 1.1 !important;
+
+        text-align: left !important;
+    }
+
+
+    /* =========================================================
+       TABLE RESİMLERİ
+       ========================================================= */
+
+    .print-slide-clone table img,
+    .print-slide-clone table svg {
+
+        display: block !important;
+
+        width: auto !important;
+        height: auto !important;
+
+        max-width: 100% !important;
+        max-height: 90px !important;
+
+        margin: 0 auto !important;
+    }
+
+
+    /* =========================================================
+       NORMAL RESİMLER / SVG
+       ========================================================= */
+
+    .print-slide-clone .slot img,
+    .print-slide-clone .slot svg {
+
+        display: block !important;
+
+        width: auto !important;
+        height: auto !important;
+
+        max-width: 100% !important;
+        max-height: 100% !important;
+
+        object-fit: contain !important;
+
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+
+    /* =========================================================
+       BLOCKQUOTE
+       ========================================================= */
+
+    .print-slide-clone .slot blockquote {
+
+        text-align: left !important;
+
+        padding: 10px 14px !important;
+
+        margin: 8px 0 !important;
+
+        box-sizing: border-box !important;
+    }
+
+
+    .print-slide-clone .slot blockquote p {
+
+        text-align: left !important;
+
+        margin: 0 !important;
+    }
+
+
+    /* =========================================================
+       KATEX
+       ========================================================= */
+
+    .print-slide-clone .katex {
+
+        font-size: 1.05em !important;
+    }
+
+
+    /* =========================================================
+       RENKLERİ KORU
+       ========================================================= */
+
+    .print-page,
+    .print-slide-clone,
+    .print-slide-clone .slot {
+
+        -webkit-print-color-adjust: exact !important;
+
+        print-color-adjust: exact !important;
+    }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./images/problemdede.svg">
+  <title>ProblemDEDE</title>
+  
+  <!-- KaTeX CSS & JS -->
+  <link rel="stylesheet" href="lib/katex.min.css">
+  <script src="lib/katex.min.js"></script>
+  <script src="lib/auto-render.min.js"></script>
+  <script src="lib/marked.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- SUNUM SAHNESİ -->
+  <div id="stage-container">
+    <div id="slide-card" class="aspect-16-9 layout-single"></div>
+  </div>
+
+  <!-- BİRLEŞTİRİLMİŞ ALT NAVİGASYON BARI -->
+  <div id="bottom-bar">
+    <div id="progress-container"><div id="progress-bar"></div></div>
+    
+    <div id="nav-controls">
+      <!-- SİTE LOGOSU (SVG) VE ANA SAYFA BAĞLANTISI -->
+      <a href="index.html" class="brand-logo" title="Ana Sayfa">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 7.408 7.408"><g transform="translate(-171.636 -55.203)scale(.62147)"><circle cx="282.135" cy="94.785" r="5.96" style="opacity:1;fill:#000;fill-opacity:1;stroke:none;stroke-width:.635006;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"/><path d="M1073.018 9.197c-2.388-.05-5.694.453-7.274.94-2.107.649-3.416 1.972-3.416 1.972s-1.904-2.156-3.262-2.2-2.463 1.507-3.642 2.124c-1.18.617-2.32.071-3.414 1.594s-.898 5.345-.834 7.435c.02.67 0 1.682-.031 2.737-.733.005-1.59.227-2.213 1.092-1.31 1.82 0 4.078 0 5.35 0 1.27-.177 1.341 0 2.275s.611 2.267 1.252 3.187c.237.34.63.701 1.031 1.037-.043.742-.184 3.308-.066 4.51.136 1.388.227 2.308.697 3.22.471.913.641 1.291 1.932 2.12s4.18 1.652 6.037 1.931 3.82-.354 4.936-.054 1.716 1.02 1.716 1.02 1.176-1.04 2.387-1.315 3.184.426 4.723.267c1.54-.158 3.215-.623 4.398-1.18s2.006-1.036 2.684-1.904c.677-.867 1.207-3.085 1.207-3.085l-.074-5.506c.278-.254.532-.513.703-.758.64-.92 1.075-2.252 1.252-3.186.177-.933 0-1.006 0-2.277s1.31-3.53 0-5.35c-.718-.997-1.745-1.143-2.535-1.08 0-.13 0-.273.012-.394.143-1.954 1.591-3.518 1.593-4.705 0-1.188-.358-.99-.683-2.05s-.273-3.342-1.215-4.323-2.493-.584-3.49-1.139-.453-1.408-2.428-2.049c-.494-.16-1.187-.239-1.982-.256z" style="fill:#fff;fill-opacity:1;stroke:none;stroke-width:.0531143px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" transform="translate(0 87)scale(.26458)"/><path d="M279.867 92.812c-.739 0-2.19.13-2.19.13l-.057.534s.145.26.23.567.12 2.155 1.907 2.241 2.159-2.361 2.159-2.361l.386.01s.333 2.414 2.096 2.38c1.762-.034 1.888-1.735 1.93-2.089.04-.355.276-.683.276-.683l-.06-.567s-1.325-.159-2.04-.146c-.713.013-1.762.24-2.228.242-.466.001-.175-.016-.554-.057-.378-.041-1.04-.178-1.717-.199zm.038.322c1.17.002 1.49.463 1.49.463s.052 1.011-.23 1.445-.84.887-1.375.893-1.056-.383-1.336-.823-.18-1.546-.18-1.546.252-.402 1.516-.431zm4.343 0h.115c1.264.03 1.516.433 1.516.433s.1 1.106-.18 1.545c-.28.44-.8.83-1.336.823-.534-.006-1.093-.46-1.375-.893-.282-.434-.23-1.445-.23-1.445s.32-.461 1.49-.463" style="fill:#000;fill-opacity:1;stroke:none;stroke-width:.0140532px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"/><path d="M280.308 94.006c-.136 0-.26.03-.369.077a.484.46 0 0 0-.09.267.484.46 0 0 0 .314.431q.127.026.243.024h.004a.484.46 0 0 0 .407-.455.484.46 0 0 0-.081-.254 1.3 1.3 0 0 0-.428-.09z" style="opacity:1;fill:#000;fill-opacity:1;stroke:none;stroke-width:.00765969;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"/><ellipse cx="280.261" cy="94.221" rx=".156" ry=".158" style="opacity:1;fill:#fff;fill-opacity:1;stroke:none;stroke-width:.00531143;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"/><path d="M284.07 93.974c.136 0 .26.03.369.077a.484.46 0 0 1 .09.267.484.46 0 0 1-.314.431 1.2 1.2 0 0 1-.243.024h-.004a.484.46 0 0 1-.407-.455.484.46 0 0 1 .081-.254 1.3 1.3 0 0 1 .428-.09z" style="opacity:1;fill:#000;fill-opacity:1;stroke:none;stroke-width:.00765969;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"/><ellipse cx="-283.95" cy="94.19" rx=".156" ry=".158" style="opacity:1;fill:#fff;fill-opacity:1;stroke:none;stroke-width:.00531143;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" transform="scale(-1 1)"/></g></svg> ProblemDEDE
+      </a>
+
+      <!-- SORU / ÇÖZÜM ROZETİ -->
+      <div id="mode-badge" class="badge-question">SORU</div>
+
+      <!-- NAVİGASYON BUTONLARI -->
+      <button class="nav-btn" onclick="prevQuestion()" title="Önceki Soru (←)">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+      </button>
+      
+      <!-- SORU NUMARALARI KAYDIRMA ALANI -->
+      <div id="question-scroll-container"></div>
+      
+      <button class="nav-btn" onclick="nextQuestion()" title="Sonraki Soru (→)">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </button>
+
+      <!-- ADIM İLERLE / GERİLE BUTONLARI -->
+      <div class="step-controls">
+        <button class="nav-btn btn-step-back" onclick="stepBackward()" title="Çözümü Gerilet (↑)">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+        </button>
+
+        <button class="nav-btn btn-step" onclick="stepForward()" title="Çözümü İlerlet (↓)">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+      </div>
+
+      <button class="nav-btn btn-icon-only" onclick="window.print()" title="Yazdır">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+      </button>
+
+      <!-- TAM EKRAN SIMGE BUTONU -->
+      <button id="fullscreen-btn" class="nav-btn btn-icon-only" onclick="toggleFullscreen()" title="Tam Ekran">
+        <svg class="icon-expand" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path></svg>
+      </button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
