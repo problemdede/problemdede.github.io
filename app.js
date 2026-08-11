@@ -29,6 +29,7 @@ window.onload = () => {
 
 async function loadPresentationFromPath(filePath) {
   try {
+    console.log(filePath)
     const response = await fetch(filePath);
     if (!response.ok) throw new Error("Sunum dosyası bulunamadı!");
     const mdText = await response.text();
