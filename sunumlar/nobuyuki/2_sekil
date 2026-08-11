@@ -986,3 +986,242 @@ layout: single
 ![](sunumlar/nobuyuki/images/2_17_2.svg)
 
 :::
+
+===
+
+---
+layout: split-2
+---
+::: slot-1
+# 18. Çıkmaz Şehir Bulmacası - 2
+
+![](sunumlar/nobuyuki/images/2_18_1.svg)
+
+:::
+
+::: slot-2
+
+Şekilde bir kasabanın yol planı verilmiştir. Bu kasabada araçlar, mümkün olduğu sürece kavşaklarda düz gitmek zorundadır. Düz gitmek mümkün değilse, yol varsa sağa veya sola dönebilirler. Buna göre, "Giriş" noktasından kasabaya giren bir araç hangi çıkış noktalarına ulaşılabilir?
+:::
+
+--v--
+
+---
+layout: split-2
+---
+
+::: slot-1
+
+# Çözüm
+
+
+[step: 1 -> 2]
+- A için çözüm:
+![](sunumlar/nobuyuki/images/2_18_2.svg)
+
+[step: 2]
+- D için çözüm:
+![](sunumlar/nobuyuki/images/2_18_4.svg)
+:::
+
+::: slot-2
+
+[step: 1 -> 2]
+- B için çözüm:
+![](sunumlar/nobuyuki/images/2_18_3.svg)
+- C için çözüm yoktur.
+
+[step: 2]
+- E için çözüm:
+![](sunumlar/nobuyuki/images/2_18_5.svg)
+
+:::
+
+===
+
+---
+layout: single
+---
+::: slot-1
+# 19. Çıkmaz Şehir Bulmacası - 3
+
+![](sunumlar/nobuyuki/images/2_19_1.svg)
+
+Şekilde bir kasabanın yol planı verilmiştir. Bu kasabada araçlar, mümkün olduğu sürece kavşaklarda düz gitmek zorundadır. Düz gitmek mümkün değilse, yol varsa sağa veya sola dönebilirler. Girişten kasabaya giren ve çıkıştan çıkan bir aracın yolunu gösteriniz.
+:::
+
+--v--
+
+---
+layout: single
+---
+
+::: slot-1
+
+# Çözüm
+
+![](sunumlar/nobuyuki/images/2_19_2.svg)
+
+:::
+
+===
+
+---
+layout: single
+---
+
+::: slot-1
+
+# 20. Bloklarda Gezi Bulmacası - 1
+
+![](sunumlar/nobuyuki/images/2_20_1.svg)
+
+Yukarıdaki şekilde bir şehirdeki bloklar ve bu blokları birbirine bağlayan yollar gösterilmiştir. G bloğundan başlayarak her yoldan yalnızca bir kez geçmek isteyen bir kişinin gezisi hangi blokta biter?
+
+:::
+
+--v--
+
+---
+layout: single
+---
+
+::: slot-1
+
+# Çözüm
+
+[step: 1 -> 2]
+
+![](sunumlar/nobuyuki/images/2_20_2.svg)
+
+- Yoları incelediğimizde tek sayıda yola sahip olan G ve B yollarıdır. Buda G veya B'den birinin başlangıç diğerinin bitiş olacağı anlamına gelir. Çünkü bir harfe geliş ve gidiş için kullanılan 2 yol vardır. Buda başlangıç ve bitiş dışındaki harflerin tamamının çift sayıda yola sahip olacağı anlamına gelir. Çift sayıda yola sahip olmayanlar ise biri başlangıç için diğeri ise bitiş için bir fazla yolu olacağından tek sayıda yolu olacaktır.
+- Bu durumda G başlangıçsa B'de bitiş olmalıdır. Şatları sağlayan farklı rotalar çizilebilir.
+
+[step: 2 -> 3]
+- G → A
+![](sunumlar/nobuyuki/images/2_20_3.svg)
+
+[step: 3 -> 4]
+- G → A → H
+![](sunumlar/nobuyuki/images/2_20_4.svg)
+
+[step: 4 -> 5]
+- G → A → H → P
+![](sunumlar/nobuyuki/images/2_20_5.svg)
+
+[step: 5 -> 6]
+- G → A → H → P → R
+![](sunumlar/nobuyuki/images/2_20_6.svg)
+
+[step: 6 -> 7]
+- G → A → H → P → R → O
+![](sunumlar/nobuyuki/images/2_20_7.svg)
+
+[step: 7 -> 8]
+- G → A → H → P → R → O → J
+![](sunumlar/nobuyuki/images/2_20_8.svg)
+
+[step: 8 -> 9]
+- G → A → H → P → R → O → J → E
+![](sunumlar/nobuyuki/images/2_20_9.svg)
+
+[step: 9 -> 10]
+- G → A → H → P → R → O → J → E → B
+![](sunumlar/nobuyuki/images/2_20_10.svg)
+
+[step: 10 -> 11]
+- G → A → H → P → R → O → J → E → B → A
+![](sunumlar/nobuyuki/images/2_20_11.svg)
+
+[step: 11 -> 12]
+- G → A → H → P → R → O → J → E → B → A → C
+![](sunumlar/nobuyuki/images/2_20_12.svg)
+
+[step: 12 -> 13]
+- G → A → H → P → R → O → J → E → B → A → C → H
+![](sunumlar/nobuyuki/images/2_20_13.svg)
+
+[step: 13 -> 14]
+- G → A → H → P → R → O → J → E → B → A → C → H → M
+![](sunumlar/nobuyuki/images/2_20_14.svg)
+
+[step: 14 -> 15]
+- G → A → H → P → R → O → J → E → B → A → C → H → M → P
+![](sunumlar/nobuyuki/images/2_20_15.svg)
+
+[step: 15 -> 16]
+- G → A → H → P → R → O → J → E → B → A → C → H → M → P → N
+![](sunumlar/nobuyuki/images/2_20_16.svg)
+
+[step: 16 -> 17]
+- G → A → H → P → R → O → J → E → B → A → C → H → M → P → N → O
+![](sunumlar/nobuyuki/images/2_20_17.svg)
+
+[step: 17 -> 18]
+- G → A → H → P → R → O → J → E → B → A → C → H → M → P → N → O → I
+![](sunumlar/nobuyuki/images/2_20_18.svg)
+
+[step: 18 -> 19]
+- G → A → H → P → R → O → J → E → B → A → C → H → M → P → N → O → I → J
+![](sunumlar/nobuyuki/images/2_20_19.svg)
+
+[step: 19 -> 20]
+- G → A → H → P → R → O → J → E → B → A → C → H → M → P → N → O → I → J → G
+![](sunumlar/nobuyuki/images/2_20_20.svg)
+
+[step: 20 -> 21]
+- G → A → H → P → R → O → J → E → B → A → C → H → M → P → N → O → I → J → G → F
+![](sunumlar/nobuyuki/images/2_20_21.svg)
+
+[step: 21 -> 22]
+- G → A → H → P → R → O → J → E → B → A → C → H → M → P → N → O → I → J → G → F → H
+![](sunumlar/nobuyuki/images/2_20_22.svg)
+
+[step: 22 -> 23]
+- G → A → H → P → R → O → J → E → B → A → C → H → M → P → N → O → I → J → G → F → H → K
+![](sunumlar/nobuyuki/images/2_20_23.svg)
+
+[step: 23 -> 24]
+- G → A → H → P → R → O → J → E → B → A → C → H → M → P → N → O → I → J → G → F → H → K → N
+![](sunumlar/nobuyuki/images/2_20_24.svg)
+
+[step: 24 -> 25]
+- G → A → H → P → R → O → J → E → B → A → C → H → M → P → N → O → I → J → G → F → H → K → N → L
+![](sunumlar/nobuyuki/images/2_20_25.svg)
+
+[step: 25 -> 26]
+- G → A → H → P → R → O → J → E → B → A → C → H → M → P → N → O → I → J → G → F → H → K → N → L → I
+![](sunumlar/nobuyuki/images/2_20_26.svg)
+
+[step: 26 -> 27]
+- G → A → H → P → R → O → J → E → B → A → C → H → M → P → N → O → I → J → G → F → H → K → N → L → I → G
+![](sunumlar/nobuyuki/images/2_20_27.svg)
+
+[step: 27 -> 28]
+- G → A → H → P → R → O → J → E → B → A → C → H → M → P → N → O → I → J → G → F → H → K → N → L → I → G → D
+![](sunumlar/nobuyuki/images/2_20_28.svg)
+
+[step: 28 -> 29]
+- G → A → H → P → R → O → J → E → B → A → C → H → M → P → N → O → I → J → G → F → H → K → N → L → I → G → D → C
+![](sunumlar/nobuyuki/images/2_20_29.svg)
+
+[step: 29 -> 30]
+- G → A → H → P → R → O → J → E → B → A → C → H → M → P → N → O → I → J → G → F → H → K → N → L → I → G → D → C → G
+![](sunumlar/nobuyuki/images/2_20_30.svg)
+
+[step: 30 -> 31]
+- G → A → H → P → R → O → J → E → B → A → C → H → M → P → N → O → I → J → G → F → H → K → N → L → I → G → D → C → G → E
+![](sunumlar/nobuyuki/images/2_20_31.svg)
+
+[step: 31 -> 32]
+- G → A → H → P → R → O → J → E → B → A → C → H → M → P → N → O → I → J → G → F → H → K → N → L → I → G → D → C → G → E → D
+![](sunumlar/nobuyuki/images/2_20_32.svg)
+
+[step: 32]
+- G → A → H → P → R → O → J → E → B → A → C → H → M → P → N → O → I → J → G → F → H → K → N → L → I → G → D → C → G → E → D → B
+![](sunumlar/nobuyuki/images/2_20_33.svg)
+
+
+
+:::
+
