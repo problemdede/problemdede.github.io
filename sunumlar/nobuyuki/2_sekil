@@ -1221,7 +1221,62 @@ layout: single
 - G → A → H → P → R → O → J → E → B → A → C → H → M → P → N → O → I → J → G → F → H → K → N → L → I → G → D → C → G → E → D → B
 ![](sunumlar/nobuyuki/images/2_20_33.svg)
 
+:::
 
+===
+
+---
+layout: single
+---
+
+::: slot-1
+
+# 21. Sütçünün Rotası Bulmacası - 1
+
+![](sunumlar/nobuyuki/images/2_21_1.svg)
+
+Bir bölgede, birbirine yollarla bağlı tam 23 köy vardır. Sütçü her sabah O köyünden yola çıkıyor, tüm köyleri tek tek dolaşıp süt topluyor ve yolculuğunu H köyünde bitiriyor. Sütçü sıkılmamak için her gün tamamen farklı bir rota çiziyor ve her köyden sadece bir kez geçiyor.
+Bir köylü sütçüye yol üzerinde çok önemli bir haber ulaştırması gerekiyor. Ancak sütçünün o gün hangi yollardan geçeceğini bir türlü tahmin edemiyor. Köylünün öyle bir yerde beklemesi lazım ki, şütçü hangi rotayı seçerse seçsin mutlaka o yoldan geçmek zorunda kalsın. Köylü sütçüyü kaçırmamak için hangi yolda beklemelidir?
 
 :::
 
+--v--
+
+---
+layout: single
+---
+
+::: slot-1
+
+# Çözüm
+
+[step: 1 -> 2]
+- H'den başlayarak tüm köyleri sırayla gri ve beyaz renklere boyayalım
+![](sunumlar/nobuyuki/images/2_21_2.svg)
+
+[step: 2 -> 3]
+- H köyünden hemen ulaşabildiğimiz A, F ve M köylerini griye,
+![](sunumlar/nobuyuki/images/2_21_3.svg)
+
+[step: 3 -> 4]
+- Bu gri köylerden gidilebilen T, I, B ve E köylerini beyaza,
+![](sunumlar/nobuyuki/images/2_21_4.svg)
+
+[step: 4 -> 5]
+- Beyaz köylerden ulaşılan U, N, G, C, D ve R köylerini tekrar griye,
+![](sunumlar/nobuyuki/images/2_21_5.svg)
+
+[step: 5 -> 6]
+- Bu gri köylerin bağlandığı S, V, J, K, L ve Z köylerini beyaza,
+![](sunumlar/nobuyuki/images/2_21_6.svg)
+
+[step: 6 -> 7]
+- Son olarak bu beyaz köylerden gidilebilen P, O ve Y köylerini de griye boyuyoruz.
+![](sunumlar/nobuyuki/images/2_21_7.svg)
+
+
+[step: 7]
+- Boyama işlemi bittiğinde elimizde toplam 12 gri ve 11 beyaz köy oluyor. 12 gri ve 11 beyaz arasında mecburi bir kez aynı renkler arası geçiş gerekir. Buda ancak C ve D arasında mümkündür. Yani mecbur buradan geçilmelidir.
+![](sunumlar/nobuyuki/images/2_21_8.svg)
+
+:::
