@@ -82,7 +82,7 @@ body {
 .slot h1, .slot h2, .slot h3 { color: var(--text-main); font-weight: 700; font-size: 36px !important; margin-bottom: 8px; }
 .slot p, .slot div, .step-item { font-size: 28px !important; line-height: 1.5 !important; color: var(--text-main) !important; font-weight: 500 !important; }
 .slot ul, .slot ol { padding-left: 32px !important; }
-.slot li { font-size: 28px !important; line-height: 1.5 !important; margin-bottom: 8px; }
+.slot li { font-size: 28px !important; line-height: 1.5 !important;}
 
 .katex { font-size: 1.1em !important; font-family: var(--app-font) !important; }
 .katex * { font-family: var(--app-font) !important; font-style: normal !important; }

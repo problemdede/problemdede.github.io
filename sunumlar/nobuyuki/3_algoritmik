@@ -1,0 +1,982 @@
+
+
+---
+layout: single
+---
+::: slot-1
+
+# Nobuyuki Yoshigahara'dan Bulmacalar
+
+## Algoritmik Bulmacaları
+
+![](sunumlar/nobuyuki/images/nobuyuki.svg)
+
+**Hazırlayan:** Fatih KAYA
+
+**Tarih:** 12/08/2026
+
+:::
+
+===
+
+---
+layout: single
+---
+
+::: slot-1
+
+# Giriş
+
+Bu sunumda yer alan bulmacalar, ünlü Japon bulmaca ustası Nobuyuki Yoshigahara tarafından tasarlanmıştır. Sorular; Andy Liu, George Sicherman ve Takayuki Yoshigahara tarafından kaleme alınan, Öykü Toros İrvana’nın dilimize kazandırdığı ve TÜBİTAK Popüler Bilim Kitapları tarafından 1 Eylül 2024'te yayımlanan eserden derlenmiştir. Bu nitelikli bulmacalarda emeği geçen herkese teşekkürlerimizi sunarız.
+
+:::
+
+===
+
+---
+layout: split-2
+---
+
+::: slot-1
+# 1. Kuleden İnme Bulmacası
+
+![](sunumlar/nobuyuki/images/3_1_1.svg)
+
+:::
+
+::: slot-2
+
+Kraliçe, prens ve prenses yüksek bir kulede kilitli kalmıştır. Aşağı inmek için kullanabilecekleri tek şey, iki ucunda birer sepet olan büyük bir makara sistemidir. Sepetlerin arasındaki kilo farkı 9 kg'dan fazla olursa, ağır olan sepet hızla yere çakılır ve içindekiler zarar görür. Kuledekilerin kiloları şu şekildedir:
+
+- Prens: 117 kg,
+- Kraliçe: 63 kg,
+- Prenses: 54 kg.
+
+Neyse ki prens, kulede 45 kg ağırlığında paslanmış bir robot bulup tamir eder. Bu robot demirden yapıldığı için yere sertçe çakılsa bile asla zarar görmemektedir. Acaba kahramanlarımızın hepsi bu sistemi kullanarak kuleden zarar görmeden aşağı inmeyi başarabilir mi?
+
+:::
+
+--v--
+
+---
+layout: split-2
+---
+
+::: slot-1
+
+# Çözüm
+
+[step: 1 -> 2]
+![](sunumlar/nobuyuki/images/3_1_2.svg)
+
+[step: 2 -> 3]
+![](sunumlar/nobuyuki/images/3_1_3.svg)
+
+[step: 3 -> 4]
+![](sunumlar/nobuyuki/images/3_1_4.svg)
+
+[step: 4 -> 5]
+![](sunumlar/nobuyuki/images/3_1_5.svg)
+
+[step: 5 -> 6]
+![](sunumlar/nobuyuki/images/3_1_6.svg)
+
+[step: 6 -> 7]
+![](sunumlar/nobuyuki/images/3_1_7.svg)
+
+[step: 7 -> 8]
+![](sunumlar/nobuyuki/images/3_1_8.svg)
+
+[step: 8 -> 9]
+![](sunumlar/nobuyuki/images/3_1_9.svg)
+
+[step: 9 -> 10]
+![](sunumlar/nobuyuki/images/3_1_10.svg)
+
+[step: 10 -> 11]
+![](sunumlar/nobuyuki/images/3_1_11.svg)
+
+[step: 11]
+![](sunumlar/nobuyuki/images/3_1_12.svg)
+
+[step: 1]
+- Robot aşağı iner, yere çakılır.
+
+[step: 2]
+- Prenses aşağı iner, robot yukarı çıkar. 54–45 = 9
+
+:::
+
+::: slot-2
+
+[step: 3]
+- Kraliçe aşağı iner, prenses yukarı çıkar. 63–54=9
+
+[step: 4]
+- Robot aşağı iner, yere çakılır.
+
+[step: 5]
+- Prens aşağı iner, kraliçe ve robot yukarı çıkar.
+
+117–(63+45)=9
+
+[step: 6]
+- Robot aşağı iner, yere çakılır.
+
+[step: 7]
+- Prenses aşağı iner, robot yukarı çıkar. 54–45=9
+
+[step: 8]
+- Kraliçe aşağı iner, prenses yukarı çıkar. 63–54=9
+
+[step: 9]
+- Robot aşağı iner, yere çakılır.
+
+[step: 10]
+- Prenses aşağı iner, robot yukarı çıkar. 54–45=9
+
+[step: 11]
+- Robot aşağı iner, yere çakılır.
+
+:::
+
+===
+
+---
+layout: single
+---
+
+::: slot-1
+# 2. Köprüden Geçme Bulmacası
+
+![](sunumlar/nobuyuki/images/3_2_1.svg)
+
+Arif, Beyza, Cenk ve Defne, gece karanlığında 18 dk sonra yıkılacak olan eski bir köprüden geçeceklerdir. Köprüyle ilgili kurallar şöyledir:
+
+- Köprüden aynı anda en fazla 2 kişi geçebilir.
+- Köprüden geçenlerin yanında meşale olmalıdır. Geride bekleyenler varsa, meşale geri getirilmelidir.
+- İki kişi birlikte geçerken yavaş olanın hızıyla ilerlenir.
+
+Köprüyü Arif 1, Beyza 2, Cenk 5 ve Defne 10 dakikada geçebildiğine göre, bu 4 arkadaş köprü yıkılmadan karşıya geçebilir mi?
+
+:::
+
+--v--
+
+---
+layout: split-2
+---
+
+::: slot-1
+
+# Çözüm
+
+[step: 1 -> 2]
+![](sunumlar/nobuyuki/images/3_2_2.svg)
+
+[step: 2 -> 3]
+![](sunumlar/nobuyuki/images/3_2_3.svg)
+
+[step: 3 -> 4]
+![](sunumlar/nobuyuki/images/3_2_4.svg)
+
+[step: 4 -> 5]
+![](sunumlar/nobuyuki/images/3_2_5.svg)
+
+[step: 5 -> 6]
+![](sunumlar/nobuyuki/images/3_2_6.svg)
+
+[step: 6 -> 7]
+![](sunumlar/nobuyuki/images/3_2_7.svg)
+
+[step: 7]
+![](sunumlar/nobuyuki/images/3_2_8.svg)
+
+:::
+
+::: slot-2
+
+[step: 1]
+- Bu sorunun püf noktası, yavaş giden iki kişiyi (Cenk ve Defne) köprüden beraber karşıya geçirmektir. Gelin adım adım inceleyelim.
+
+[step: 2]
+- Arif ve Beyza karşıya geçer. (Süre: 2 dk)
+
+[step: 3]
+- Arif meşaleyi geri getirir. (Süre: 1 dk)
+
+[step: 4]
+- Cenk ve Defne karşıya geçer. (Süre: 10 dk)
+
+[step: 5]
+- Beyza meşaleyi geri getirir. (Süre: 2 dk)
+
+[step: 6]
+- Arif ve Beyza tekrar karşıya geçer. (Süre: 2 dk)
+
+[step: 7]
+- Böylece herkes güvenle karşıya geçmiş olur. Toplam süre:
+
+2+1+10+2+2=17 dakika sürer. Yani 18 dakika içinde karşıya geçebilirler.
+
+:::
+
+===
+
+---
+layout: single
+---
+
+::: slot-1
+# 3. Sürahi Bulmacası
+
+![](sunumlar/nobuyuki/images/3_3_1.svg)
+
+12, 7, 5 ve 3 litrelik dört adet sürahi var.
+
+- 12 lt sürahi tamamen doludur.
+- Diğer sürahiler tamamen boştur.
+- Sürahilerin üzerinde hiçbir ölçü çizgisi (ibaresi) yoktur.
+
+Sürahilerdeki suyu sadece tamamen doldurarak veya başka bir sürahiye tamamen boşaltarak aktarabiliyoruz. Buna göre, A,B ve C sürahilerinin her birinde tam 4 litre su olacak şekilde suyu nasıl paylaştırabiliriz?
+
+:::
+
+--v--
+
+---
+layout: split-2
+---
+
+::: slot-1
+
+# Çözüm
+
+[step: 1 -> 2]
+![](sunumlar/nobuyuki/images/3_3_2.svg)
+
+[step: 2 -> 3]
+![](sunumlar/nobuyuki/images/3_3_3.svg)
+
+[step: 3 -> 4]
+![](sunumlar/nobuyuki/images/3_3_4.svg)
+
+[step: 4 -> 5]
+![](sunumlar/nobuyuki/images/3_3_5.svg)
+
+[step: 5 -> 6]
+![](sunumlar/nobuyuki/images/3_3_6.svg)
+
+[step: 6 -> 7]
+![](sunumlar/nobuyuki/images/3_3_7.svg)
+
+[step: 7]
+![](sunumlar/nobuyuki/images/3_3_8.svg)
+
+:::
+
+::: slot-2
+
+[step: 1]
+- Başlangıçtaki durum şöyledir.
+
+[step: 2]
+- A'dan D'ye aktaralım.
+
+[step: 3]
+- A'dan C'ye aktaralım.
+
+[step: 4]
+- D'den B'ye aktaralım.
+
+[step: 5]
+- C'den B'ye aktaralım.
+
+[step: 6]
+- B'den D'ye aktaralım.
+
+[step: 7]
+- D'den C'ye aktaralım.
+
+:::
+
+===
+
+---
+layout: single
+---
+
+::: slot-1
+# 4. İstasyon Bulmacası
+
+![](sunumlar/nobuyuki/images/3_4_1.svg)
+
+Bir istasyonda kendi kendine gidemeyen iki vagon (A ve B) ile onları çekip itebilen bir lokomotif (E) var. Ancak:
+
+- 11 numaralı alandaki dar geçitten vagonlar geçebiliyor ama lokomotif çok büyük olduğu için geçemiyor.
+- Lokomotif bir vagona bağlıyken keskin dönüşler yapamıyor. Bu yüzden vagon çekerken ya da iterken; 3-4 ve 8-3 arası yollar ile 5-4 ve 9-5 arası yollar kullanılamıyor.
+
+A vagonunu 6'ya, B vagonunu 2'ye ve lokomotifi (E) 4 numaralı alana güvenle ulaştırmak için nasıl bir rota izlenmelidir?
+:::
+
+--v--
+
+---
+layout: split-2
+---
+
+::: slot-1
+
+[step: 1 -> 2]
+![](sunumlar/nobuyuki/images/3_4_2.svg)
+
+[step: 2 -> 3]
+![](sunumlar/nobuyuki/images/3_4_3.svg)
+
+[step: 3 -> 4]
+![](sunumlar/nobuyuki/images/3_4_4.svg)
+
+[step: 4 -> 5]
+![](sunumlar/nobuyuki/images/3_4_5.svg)
+
+[step: 5 -> 6]
+![](sunumlar/nobuyuki/images/3_4_6.svg)
+
+[step: 6 -> 7]
+![](sunumlar/nobuyuki/images/3_4_7.svg)
+
+[step: 7 -> 8]
+![](sunumlar/nobuyuki/images/3_4_8.svg)
+
+[step: 8 -> 9]
+![](sunumlar/nobuyuki/images/3_4_9.svg)
+
+[step: 9 -> 10]
+![](sunumlar/nobuyuki/images/3_4_10.svg)
+
+[step: 10 -> 11]
+![](sunumlar/nobuyuki/images/3_4_11.svg)
+
+[step: 11 -> 12]
+![](sunumlar/nobuyuki/images/3_4_12.svg)
+
+[step: 12 -> 13]
+![](sunumlar/nobuyuki/images/3_4_13.svg)
+
+[step: 13 -> 14]
+![](sunumlar/nobuyuki/images/3_4_14.svg)
+
+[step: 14 -> 15]
+![](sunumlar/nobuyuki/images/3_4_15.svg)
+
+[step: 15 -> 16]
+![](sunumlar/nobuyuki/images/3_4_16.svg)
+
+[step: 16]
+![](sunumlar/nobuyuki/images/3_4_17.svg)
+
+[step: 1]
+- E, 5'e gider ve B ile birleşir.
+
+[step: 2]
+- E, 3'e gider ve A ile birleşir.
+
+[step: 3]
+- E, 2'ye gider, A'yı bırakır.
+
+[step: 4]
+- E, 10'a gider, B'yi bırakır.
+
+[step: 5]
+- E, 2'ye gider ve A ile birleşir.
+
+:::
+
+::: slot-2
+
+[step: 6]
+- E, 6'ya gider.
+
+[step: 7]
+- E, 9'a gider ve A, B ile birleşir.
+
+[step: 8]
+- E, 7'ye gider.
+
+[step: 9]
+- E, 4'e gider ve B'yi bırakır.
+
+[step: 10]
+- E, 6'ya gider.
+
+[step: 11]
+- E, 12'ye gider ve A'yı bırakır.
+
+[step: 12]
+- E, 10'a gider ve A'yı alır.
+
+[step: 13]
+- E, 3'e gelip B'yi alır.
+
+[step: 14]
+- E, 2'ye gider.
+
+[step: 15]
+- E, B'yi 2'ye bırakıp, 5'e gider.
+
+[step: 16]
+- E, A'yı bırakıp 4'e döner.
+
+:::
+
+===
+
+---
+layout: single
+---
+
+::: slot-1
+# 5. Kafes Bulmacası - 1
+
+![](sunumlar/nobuyuki/images/3_5_1.svg)
+
+Yan yana duran M, D ve B kafeslerinin her biri iç bahçeye açılmaktadır. Ortadaki D kafesiyle diğer kafesler arasında da geçiş kapıları vardır. Boncuk, Duman ve Mırnav isimli üç hayvan, kafeslere karışık bir şekilde yerleştirilmiştir. Bu hayvanları, kendi isimlerinin baş harfi olan kafeslere taşımak istiyoruz. Ancak aynı anda aynı yerde (kafes veya iç bahçe) iki hayvan olmamalıdır. Hayvanları birbirleriyle karşılaştırmadan doğru kafeslere yerleştirmek için en az kaç hamle yapılması gerekir? Rotaları gösteriniz.
+
+:::
+
+--v--
+
+---
+layout: split-2
+---
+
+::: slot-1
+
+# Çözüm
+
+[step: 1 -> 2]
+![](sunumlar/nobuyuki/images/3_5_2.svg)
+
+[step: 2 -> 3]
+![](sunumlar/nobuyuki/images/3_5_3.svg)
+
+[step: 3 -> 4]
+![](sunumlar/nobuyuki/images/3_5_4.svg)
+
+[step: 4 -> 5]
+![](sunumlar/nobuyuki/images/3_5_5.svg)
+
+[step: 5 -> 6]
+![](sunumlar/nobuyuki/images/3_5_6.svg)
+
+[step: 6 -> 7]
+![](sunumlar/nobuyuki/images/3_5_7.svg)
+
+[step: 7 -> 8]
+![](sunumlar/nobuyuki/images/3_5_8.svg)
+
+[step: 8]
+![](sunumlar/nobuyuki/images/3_5_9.svg)
+
+
+:::
+
+::: slot-2
+
+[step: 1]
+- Boncuk, iç bahçeye gider.
+
+[step: 2]
+- Duman, M kafesine gider.
+
+[step: 3]
+- Mırnav, D kafesine gider.
+
+[step: 4]
+- Boncuk, B kafesine gider.
+
+[step: 5]
+- Mırnav, iç bahçeye gider.
+
+[step: 6]
+- Duman, D kafesine gider.
+
+[step: 7]
+- Mırnav, M kafesine gider.
+
+[step: 8]
+- En az 7 hamlede istenilen yerleşimi elde edebiliriz.
+
+
+:::
+
+===
+
+---
+layout: single
+---
+
+::: slot-1
+# 6. Kafes Bulmacası - 2
+
+![](sunumlar/nobuyuki/images/3_6_1.svg)
+
+Bir kaç yıl sonra hayvanat bahçesine Pamuk isminde başka bir hayvan getirilmiş ve iç bahçe genişletilip ortasına P kafesi yerleştirilmiştir. Eski kapılar değiştirilip yeni 4 bölüme açılan kapılar eklenmiştir. Yine hayvanlar kafeslere karışık bir şekilde yerleştirilmiştir. Bu hayvanları, kendi isimlerinin baş harfi olan kafeslere taşımak istiyoruz. Ancak aynı anda aynı yerde (kafes veya bahçe) iki hayvan olmamalıdır. Hayvanları birbirleriyle karşılaştırmadan doğru kafeslere yerleştirmek için en az kaç hamle yapılması gerekir? Rotaları gösteriniz.
+
+:::
+
+--v--
+
+---
+layout: split-2
+---
+
+::: slot-1
+
+# Çözüm
+
+[step: 1 -> 2]
+![](sunumlar/nobuyuki/images/3_6_2.svg)
+
+[step: 2 -> 3]
+![](sunumlar/nobuyuki/images/3_6_3.svg)
+
+[step: 3 -> 4]
+![](sunumlar/nobuyuki/images/3_6_4.svg)
+
+[step: 4 -> 5]
+![](sunumlar/nobuyuki/images/3_6_5.svg)
+
+[step: 5 -> 6]
+![](sunumlar/nobuyuki/images/3_6_6.svg)
+
+[step: 6 -> 7]
+![](sunumlar/nobuyuki/images/3_6_7.svg)
+
+[step: 7 -> 8]
+![](sunumlar/nobuyuki/images/3_6_8.svg)
+
+[step: 8]
+![](sunumlar/nobuyuki/images/3_6_9.svg)
+
+
+:::
+
+::: slot-2
+
+[step: 1]
+- Pamuk, Bahçe 1'e gider.
+
+[step: 2]
+- Mırnav, Bahçe 2'ye gider.
+
+[step: 3]
+- Boncuk, P kafesine gider.
+
+[step: 4]
+- Boncuk, B kafesine gider.
+
+[step: 5]
+- Mırnav, P kafesine gider.
+
+[step: 6]
+- Mırnav, M kafesine gider.
+
+[step: 7]
+- Pamuk, P kafesine gider.
+
+[step: 8]
+- En az 7 hamlede istenilen yerleşimi elde edebiliriz.
+
+:::
+
+===
+
+---
+layout: single
+---
+
+::: slot-1
+# 7. Pul Bulmacası - 1
+
+| Şekil 1 | Şekil 2 |
+| :-----: | :-----: |
+| ![](sunumlar/nobuyuki/images/3_7_1.svg) | ![](sunumlar/nobuyuki/images/3_7_2.svg) |
+
+Şekil 1’deki deseni Şekil 2’deki hale getirmek için pulları teker teker hareket ettireceğiz. Kurallar şöyle:
+
+- Bir pul koyduğunuz yerde kendisiyle aynı sırada bulunmayan en az iki pula değmelidir.
+- Bir pulu yerinden kaldırdıktan sonra, tekrar eski yerine koyamazsınız.
+
+Buna göre, deseni Şekil 2'deki hale getirmek için en az kaç hamle gerekir?
+
+:::
+
+--v--
+
+---
+layout: single
+---
+
+::: slot-1
+
+# Çözüm
+
+[step: 1 -> 2]
+- Hamle 1
+![](sunumlar/nobuyuki/images/3_7_3.svg)
+
+[step: 2 -> 3]
+- Hamle 2
+![](sunumlar/nobuyuki/images/3_7_4.svg)
+
+[step: 3 -> 4]
+- Hamle 3
+![](sunumlar/nobuyuki/images/3_7_5.svg)
+
+[step: 4 -> 5]
+- Hamle 4
+![](sunumlar/nobuyuki/images/3_7_6.svg)
+
+[step: 5 -> 6]
+- Hamle 5
+![](sunumlar/nobuyuki/images/3_7_7.svg)
+
+[step: 6]
+- En az 5 hamlede sorunu çözebiliriz.
+![](sunumlar/nobuyuki/images/3_7_8.svg)
+
+:::
+
+===
+
+---
+layout: single
+---
+
+::: slot-1
+# 8. Pul Bulmacası - 2
+
+| Şekil 1 | Şekil 2 |
+| :-----: | :-----: |
+| ![](sunumlar/nobuyuki/images/3_7_2.svg) | ![](sunumlar/nobuyuki/images/3_7_1.svg) |
+
+Şekil 1’deki deseni Şekil 2’deki hale getirmek için pulları teker teker hareket ettireceğiz (Bir önceki sorunun tam tersi). Kurallar şöyle:
+
+- Bir pul koyduğunuz yerde kendisiyle aynı sırada bulunmayan en az iki pula değmelidir.
+- Bir pulu yerinden kaldırdıktan sonra, tekrar eski yerine koyamazsınız.
+
+Buna göre, deseni Şekil 2'deki hale getirmek için en az kaç hamle gerekir?
+
+:::
+
+--v--
+
+---
+layout: single
+---
+
+::: slot-1
+
+# Çözüm
+
+[step: 1 -> 2]
+- Hamle 1
+![](sunumlar/nobuyuki/images/3_8_1.svg)
+
+[step: 2 -> 3]
+- Hamle 2
+![](sunumlar/nobuyuki/images/3_8_2.svg)
+
+[step: 3 -> 4]
+- Hamle 3
+![](sunumlar/nobuyuki/images/3_8_3.svg)
+
+[step: 4 -> 5]
+- Hamle 4
+![](sunumlar/nobuyuki/images/3_8_4.svg)
+
+[step: 5 -> 6]
+- Hamle 5
+![](sunumlar/nobuyuki/images/3_8_5.svg)
+
+[step: 6 -> 7]
+- Hamle 6
+![](sunumlar/nobuyuki/images/3_8_6.svg)
+
+[step: 7 -> 8]
+- Hamle 7
+![](sunumlar/nobuyuki/images/3_8_7.svg)
+
+[step: 8]
+- En az 7 hamlede sorunu çözebiliriz.
+![](sunumlar/nobuyuki/images/3_8_8.svg)
+
+
+:::
+
+===
+
+---
+layout: single
+---
+
+::: slot-1
+# 9. Pul Bulmacası - 3
+
+![](sunumlar/nobuyuki/images/3_9_1.svg)
+
+On adet pul, şekildeki gibi yan yana tek bir sıra halinde dizilmiştir. Bu pulların yerini değiştirerek, her biri ikişer puldan oluşan (üst üste konmuş) toplam 5 pul grubu elde etmek istiyoruz. Kurallarımız:
+
+- Bir pulu hareket ettirirken tam iki pulun üzerinden atlatarak tek başına duran bir pulun üzerine koymalısınız.
+- Üzerinden atladığınız iki pul, yan yana duran iki ayrı pul olabileceği gibi, üst üste duran ikili bir pul grubu da olabilir.
+- Pulların yerini değiştirdikçe aralarında oluşan boşlukların hiçbir önemi yoktur (atlama yaparken bu boşluklar sayılmaz).
+
+İstenen dizilimi tam 5 hamlede nasıl tamamlayabilirsiniz?
+
+:::
+
+--v--
+
+---
+layout: single
+---
+
+::: slot-1
+
+# Çözüm
+
+[step: 1 -> 2]
+- Hamle 1
+![](sunumlar/nobuyuki/images/3_9_2.svg)
+
+[step: 2 -> 3]
+- Hamle 2
+![](sunumlar/nobuyuki/images/3_9_3.svg)
+
+[step: 3 -> 4]
+- Hamle 3
+![](sunumlar/nobuyuki/images/3_9_4.svg)
+
+[step: 4 -> 5]
+- Hamle 4
+![](sunumlar/nobuyuki/images/3_9_5.svg)
+
+[step: 5 -> 6]
+- Hamle 5
+![](sunumlar/nobuyuki/images/3_9_6.svg)
+
+[step: 6]
+- Son durum
+![](sunumlar/nobuyuki/images/3_9_7.svg)
+
+:::
+
+===
+
+---
+layout: single
+---
+
+::: slot-1
+# 10. Pul Bulmacası - 4
+
+![](sunumlar/nobuyuki/images/3_10_1.svg)
+
+Yukarıdaki şekilde, biri boş dokuzunda pul olan toplam on adet daire verilmiştir. Pulları hareket ettirirken şu kurallara uymalıyız:
+
+- Pulu, hemen yanındaki pulun üzerinden atlatarak arkasındaki boş bir daireye yerleştirebiliriz.
+- Üzerinden atlanan pul, şekilden çıkarılır ve o daire artık boş kalır.
+
+Bu kurallara göre hareket ederek, oyunun sonunda şekil üzerinde sadece tek bir pul kalmasını nasıl sağlayabiliriz?
+:::
+
+--v--
+
+---
+layout: single
+---
+
+::: slot-1
+
+[step: 1 -> 2]
+- Atlayış 1
+![](sunumlar/nobuyuki/images/3_10_2.svg)
+
+[step: 2 -> 3]
+- Atlayış 2
+![](sunumlar/nobuyuki/images/3_10_3.svg)
+
+[step: 3 -> 4]
+- Atlayış 3
+![](sunumlar/nobuyuki/images/3_10_4.svg)
+
+[step: 4 -> 5]
+- Atlayış 4
+![](sunumlar/nobuyuki/images/3_10_5.svg)
+
+[step: 5 -> 6]
+- Atlayış 5
+![](sunumlar/nobuyuki/images/3_10_6.svg)
+
+[step: 6 -> 7]
+- Atlayış 6
+![](sunumlar/nobuyuki/images/3_10_7.svg)
+
+[step: 7 -> 8]
+- Atlayış 7
+![](sunumlar/nobuyuki/images/3_10_8.svg)
+
+[step: 8 -> 9]
+- Atlayış 8
+![](sunumlar/nobuyuki/images/3_10_9.svg)
+
+[step: 9]
+- Son durum
+![](sunumlar/nobuyuki/images/3_10_10.svg)
+
+
+:::
+
+===
+
+---
+layout: single
+---
+
+::: slot-1
+# 11. Pul Bulmacası - 5
+
+![](sunumlar/nobuyuki/images/3_11_1.svg)
+
+5 × 5 boyutundaki bir oyun tahtasına, 1 kırmızı 8 beyaz olmak üzere toplam 9 adet pul şekildeki gibi yerleştirilmiştir. Kurallar şöyledir:
+
+- Bir pul, yanındaki pulun üzerinden atlayarak hemen arkasındaki boş kareye geçebilir. Atlamalar yatay, dikey veya çapraz yapılabilir.
+- Üzerinden atlanan pul tahtadan çıkarılır.
+- Bir pul ile peş peşe yapılan tüm atlamalar tek bir hamle sayılır.
+
+Amacımız tahtada sadece tek bir kırmızı pul bırakmaktır. Bunu en az hamlede başarabilmek için nasıl bir yol izlemeliyiz?
+
+:::
+
+--v--
+
+---
+layout: single
+---
+
+::: slot-1
+
+[step: 1 -> 2]
+- Atlayış 1
+![](sunumlar/nobuyuki/images/3_11_2.svg)
+
+[step: 2 -> 3]
+- Atlayış 2
+![](sunumlar/nobuyuki/images/3_11_3.svg)
+
+[step: 3 -> 4]
+- Atlayış 3
+![](sunumlar/nobuyuki/images/3_11_4.svg)
+
+[step: 4]
+- Son durum
+![](sunumlar/nobuyuki/images/3_11_5.svg)
+
+:::
+
+===
+
+---
+layout: single
+---
+
+::: slot-1
+# 11. Pul Bulmacası - 6
+
+![](sunumlar/nobuyuki/images/3_12_1.svg)
+
+Üç kırmızı ve üç beyaz pul, 7 kareden oluşan bir tahtaya şekildeki gibi yerleştirilmiştir (ortadaki kare boştur). Amacımız kırmızı pullarla beyaz pulların yerlerini tamamen değiştirmektir. Hareket Kuralları:
+
+- Bir pul, hemen yanındaki (bitişiğindeki) boş kareye kayabilir.
+- Bir pul, hemen yanındaki pulun üzerinden atlayarak arkasındaki boş kareye geçebilir.
+- Üzerinden atlanan pul tahtadan kaldırılmaz.
+
+En az kaç hamlede kırmızı ve beyaz pulların yerlerini değiştirebiliriz?
+
+:::
+
+--v--
+
+---
+layout: single
+---
+
+::: slot-1
+
+[step: 1 -> 2]
+- Hamle 1
+![](sunumlar/nobuyuki/images/3_12_2.svg)
+
+[step: 2 -> 3]
+- Hamle 2
+![](sunumlar/nobuyuki/images/3_12_3.svg)
+
+[step: 3 -> 4]
+- Hamle 3
+![](sunumlar/nobuyuki/images/3_12_4.svg)
+
+[step: 4 -> 5]
+- Hamle 4
+![](sunumlar/nobuyuki/images/3_12_5.svg)
+
+[step: 5 -> 6]
+- Hamle 5
+![](sunumlar/nobuyuki/images/3_12_6.svg)
+
+[step: 6 -> 7]
+- Hamle 6
+![](sunumlar/nobuyuki/images/3_12_7.svg)
+
+[step: 7 -> 8]
+- Hamle 7
+![](sunumlar/nobuyuki/images/3_12_8.svg)
+
+[step: 8 -> 9]
+- Hamle 8
+![](sunumlar/nobuyuki/images/3_12_9.svg)
+
+[step: 9 -> 10]
+- Hamle 9
+![](sunumlar/nobuyuki/images/3_12_10.svg)
+
+[step: 10 -> 11]
+- Hamle 10
+![](sunumlar/nobuyuki/images/3_12_11.svg)
+
+[step: 11 -> 12]
+- Hamle 11
+![](sunumlar/nobuyuki/images/3_12_12.svg)
+
+[step: 12 -> 13]
+- Hamle 12
+![](sunumlar/nobuyuki/images/3_12_13.svg)
+
+[step: 13 -> 14]
+- Hamle 13
+![](sunumlar/nobuyuki/images/3_12_14.svg)
+
+[step: 14 -> 15]
+- Hamle 14
+![](sunumlar/nobuyuki/images/3_12_15.svg)
+
+[step: 15 -> 16]
+- Hamle 15
+![](sunumlar/nobuyuki/images/3_12_16.svg)
+
+[step: 16]
+- Son durum
+![](sunumlar/nobuyuki/images/3_12_17.svg)
+
+
+:::
