@@ -663,26 +663,298 @@ layout: single
 
 [step: 1]
 
-| Kolye | Kutu |
-| :---: | :--: |
-| ![](sunumlar/nobuyuki/images/4_9_2.svg) | ![](sunumlar/nobuyuki/images/4_9_3.svg) |
-
-- Aynı renk boncuklardan sadece birinin üst üste gelmesi için renkleri birer atlayarak yerleştirebiliriz. Bunu yaptığımızda aşağıdaki şekli elde ederiz:
+- Aynı renk boncuklardan sadece birinin üst üste gelmesi için renkleri birer atlayarak yerleştirebiliriz. Bunu yaptığımızda aşağıdaki kutuyu elde ederiz:
 
 [step: 2]
-
-| Seçenekler | Durum |
-| :--------: | :---: |
-| K1 ve K2   | Aynı Renk |
-| K1 ve Y1   | Farklı Renk |
-| K1 ve Y2   | Farklı Renk |
-| K2 ve Y1   | Farklı Renk |
-| K2 ve Y2   | Farklı Renk |
-| Y1 ve Y2   | Aynı Renk |
-
+![](sunumlar/nobuyuki/images/4_9_2.svg)
 
 [step: 3]
-- Tabloyu incelediğimizde karşımıza toplam 6 farklı seçenek çıkar. Bu seçeneklerden sadece 2 tanesinde bilyeler aynı renkteyken, 4 tanesinde bilyeler farklı renktedir. Bu durumda, torbadan çekilen bilyelerin farklı renk olması çok daha olasıdır.
+- Kolye ve kutuyu birer renk seçerek eşleştirirdiğimizde, sadece bir rengin aynı olduğunu görebiliriz.
+![](sunumlar/nobuyuki/images/4_9_3.svg)
 
+:::
+
+===
+
+---
+layout: single
+---
+
+::: slot-1
+# 10. Pentonmino Bulmacası
+
+Beşer kareden oluşan farklı şekiller (pentominolar) yan yana getirilerek 4 × 15 boyutunda bir dikdörtgen oluşturulmuştur.
+
+![](sunumlar/nobuyuki/images/4_10_1.svg)
+
+Bu şekiller; birbirine temas eden (komşu olan) iki şekil aynı renkte olmayacak kuralına göre kırmızı, sarı ve yeşil renklere boyanacaktır. Dikdörtgenin sol alt köşesindeki parça kırmızıya (K), sağ üst köşesindeki parça ise yeşile (Y) boyandığına göre, bu kuralı bozmadan geri kalan tüm şekilleri uygun renklere boyayınız.
+:::
+
+--v--
+
+---
+layout: single
+---
+
+::: slot-1
+
+# Çözüm
+
+[step: 1]
+
+- Farklı denemeler yaptığınızda aşağıdaki çözüme ulaşabilirsiniz:
+
+![](sunumlar/nobuyuki/images/4_10_2.svg)
+
+:::
+
+===
+
+---
+layout: single
+---
+
+::: slot-1
+# 11. Harflerin Sudoku Bulmacası
+
+![](sunumlar/nobuyuki/images/4_11_1.svg)
+
+4 × 4 boyutundaki tabloda bulunan her bir kareye A, B, C ve D harflerinden biri yazılacaktır. Her harf:
+
+- her satırda (yatayda) tam olarak bir kez,
+- her sütunda (dikeyde) tam olarak bir kez,
+- iki ana köşegeninde (çaprazda) de tam olarak birer kez yer almalıdır.
+
+Bazı harfler önceden yerleştirildiğine göre, kurallara uygun olarak boş kareleri tamamlayınız.
+:::
+
+--v--
+
+---
+layout: split-2
+---
+
+::: slot-1
+
+# Çözüm
+
+[step: 1 -> 2]
+![](sunumlar/nobuyuki/images/4_11_2.svg)
+
+[step: 2 -> 3]
+![](sunumlar/nobuyuki/images/4_11_3.svg)
+
+[step: 3 -> 4]
+![](sunumlar/nobuyuki/images/4_11_4.svg)
+
+[step: 4 -> 5]
+![](sunumlar/nobuyuki/images/4_11_5.svg)
+
+[step: 5 -> 6]
+![](sunumlar/nobuyuki/images/4_11_6.svg)
+
+[step: 6 -> 7]
+![](sunumlar/nobuyuki/images/4_11_7.svg)
+
+[step: 7 -> 8]
+![](sunumlar/nobuyuki/images/4_11_8.svg)
+
+[step: 8 -> 9]
+![](sunumlar/nobuyuki/images/4_11_9.svg)
+
+[step: 9 -> 10]
+![](sunumlar/nobuyuki/images/4_11_10.svg)
+
+[step: 10 -> 11]
+![](sunumlar/nobuyuki/images/4_11_11.svg)
+
+[step: 11]
+![](sunumlar/nobuyuki/images/4_11_12.svg)
+
+[step: 1]
+- 2. satırda D olduğundan, 3. sütundaki D mecburen **4**-3'e yazılır.
+
+[step: 2]
+- 3. sütunda kalan tek harf olan A, **2**-3'e yazılır.
+
+:::
+
+::: slot-2
+[step: 3]
+- 2. satırda kalan tek harf olan C, **2**-1'e yazılır.
+
+[step: 4]
+- Satırda C, sütunda B, köşegende A olduğundan **1**-4 mecbur D olur.
+
+[step: 5]
+- Köşegende B ve C eksiktir. **4**-1'in sütununda C olduğundan oraya B, **3**-2'ye ise C yazılır.
+
+[step: 6]
+- **1**-1'in satırında C ve D, sütununda B ve C olduğundan buraya A yazılır.
+
+[step: 7]
+- 1. sütunda kalan tek harf olan D, **3**-1'e yazılır.
+
+[step: 8]
+- 1. satırda kalan tek harf olan B, **1**-2'ye yazılır.
+
+[step: 9]
+- 3. satırda kalan tek harf olan A, **3**-4'e yazılır.
+
+[step: 10]
+- 2. sütunda kalan tek harf olan A, **4**-2'ye yazılır.
+
+[step: 11]
+- 4. sütunda kalan tek harf olan C, **4**-4'e yazılır.
+
+:::
+
+===
+
+---
+layout: split-2
+---
+
+::: slot-1
+# 12. Dikdörtgenlerin Bulmacası
+
+![](sunumlar/nobuyuki/images/4_12_1.svg)
+
+:::
+
+::: slot-2
+
+Şekilde birbiriyle üst üste gelmiş (kesişen) 9 dikdörtgen bulunmaktadır. Ancak isimleri silinmiştir. Elimizdeki bilgiler şöyledir:
+- **A**, D ve F ile
+- **B**, F ve G ile
+- **C**, G ve H ile
+- **D**, A ve H ile
+- **E**, H ve I ile
+- **F**; A, B ve I ile
+- **G**; B, C ve I ile
+- **H**; C, D ve E ile
+- **I**; E, F ve G ile kesişmektedir.
+Her bir dikdörtgenin üzerine gelmesi gereken harfi bulunuz.
+
+:::
+
+--v--
+
+---
+layout: split-2
+---
+
+::: slot-1
+# 12. Dikdörtgenlerin Bulmacası
+
+[step:1 -> 2]
+![](sunumlar/nobuyuki/images/4_12_2.svg)
+
+[step:2 -> 3]
+![](sunumlar/nobuyuki/images/4_12_3.svg)
+
+[step:3 -> 4]
+![](sunumlar/nobuyuki/images/4_12_4.svg)
+
+[step:4 -> 5]
+![](sunumlar/nobuyuki/images/4_12_5.svg)
+
+[step:5 -> 6]
+![](sunumlar/nobuyuki/images/4_12_6.svg)
+
+[step:6 -> 7]
+![](sunumlar/nobuyuki/images/4_12_7.svg)
+
+[step:7 -> 8]
+![](sunumlar/nobuyuki/images/4_12_8.svg)
+
+[step:8 -> 9]
+![](sunumlar/nobuyuki/images/4_12_9.svg)
+
+[step:9 -> 10]
+![](sunumlar/nobuyuki/images/4_12_10.svg)
+
+[step:10]
+![](sunumlar/nobuyuki/images/4_12_11.svg)
+
+
+[step: 1]
+- **F**, **G**, **H** ve **I**, diğer 3 dörtgenle kesişir. Bunları kesikli çizgiyle gösterelim.
+
+:::
+
+::: slot-2
+[step: 2]
+- **H**; F, G ve I ile kesişmez. Yani hiç bir kesikli çizgiliyi kesmeyen kesikli çizgilidir.
+
+[step: 3]
+- **I**; F ve G ile kesişir. Yani kesikli çizgili 2 dörtgeni kesen kesikli çizgili parçadır.
+
+[step: 4]
+- H ve I ile kesişen tek parça **E**'dir.
+
+[step: 5]
+- **B**; F ve G ile kesişir. Yani H dışındaki 2 kesikli çizgiliyi kesen parça B'dir.
+
+[step: 6]
+- **C**, G ve H ile kesişir. H ve diğer kesikli çizgiyi kesen parça C'dir.
+
+[step: 7]
+- **C** ile kesişen diğer parça G'dir.
+
+[step: 8]
+- Son kesikli çizgili şeklimizde F'dir.
+
+[step: 9]
+- F ile kesişen diğer parça A'dır.
+
+[step: 10]
+- A ve H ile kesişen parça ise D'dir.
+
+:::
+
+===
+
+---
+layout: single
+---
+
+::: slot-1
+# 13. Satranç Bulmacası
+
+![](sunumlar/nobuyuki/images/4_13_1.svg)
+
+Satranç oyununda vezir; yatay, dikey ve çapraz yönlerde önü boş olduğu sürece istediği kadar ilerleyebilir ve farklı renkte bir taşla karşılaşırsa onu yiyerek oyun dışı bırakabilir. 5 x 5 boyutlarında küçük bir satranç tahtasında 3 adet beyaz ve 5 adet siyah vezir bulunuyor. Bu 8 vezirin tamamını tahtaya öyle yerleştirin ki; oyundaki hiçbir vezir farklı renkteki diğer bir veziri yiyemesin. Bu yerleşimi bulabilir misiniz?
+:::
+
+--v--
+
+---
+layout: split-2
+---
+
+::: slot-1
+# Çözüm
+[step: 1 -> 2]
+![](sunumlar/nobuyuki/images/4_13_2.svg)
+
+[step: 2 -> 3]
+![](sunumlar/nobuyuki/images/4_13_3.svg)
+
+[step: 3]
+![](sunumlar/nobuyuki/images/4_13_4.svg)
+:::
+
+::: slot-2
+[step: 1]
+- Farklı renkteki vezirlerin birbirini yemesini engellemek için aynı renkteki taşları tahtanın belirli bölgelerinde kümeleyerek ilerleyebiliriz.
+
+- Beyaz vezirlerden ikisini şekildeki gibi yerleştirdiğimizde, siyah vezirlerin güvenle durabileceği sadece 6 boş kare kalır.
+
+[step: 2]
+- Elimizde yerleştirilmesi gereken 1 beyaz vezir daha vardır. Bu veziri, kalan 6 boş kareden siyahlar için en az kayba yol açacak noktaya koymalıyız. Bu kilit nokta 4. satır, 1. sütundur
+
+[step: 3]
+- Son beyaz vezir de yerleştikten sonra, tahtada siyah vezirlerin beyazlar tarafından asla tehdit edilmeyen tam 5 adet güvenli kare kalır. 5 siyah vezir de buralara yerleştirildiğinde çözüm şekildeki gibi tamamlanır.
 :::
 
