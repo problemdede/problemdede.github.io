@@ -1,0 +1,688 @@
+
+
+---
+layout: single
+---
+::: slot-1
+
+# Nobuyuki Yoshigahara'dan Bulmacalar
+
+## Kombinasyon Bulmacaları
+
+![](sunumlar/nobuyuki/images/nobuyuki.svg)
+
+**Hazırlayan:** Fatih KAYA
+
+**Tarih:** 17/08/2026
+
+:::
+
+===
+
+---
+layout: single
+---
+
+::: slot-1
+
+# Giriş
+
+Bu sunumda yer alan bulmacalar, ünlü Japon bulmaca ustası Nobuyuki Yoshigahara tarafından tasarlanmıştır. Sorular; Andy Liu, George Sicherman ve Takayuki Yoshigahara tarafından kaleme alınan, Öykü Toros İrvana’nın dilimize kazandırdığı ve TÜBİTAK Popüler Bilim Kitapları tarafından 1 Eylül 2024'te yayımlanan eserden derlenmiştir. Bu nitelikli bulmacalarda emeği geçen herkese teşekkürlerimizi sunarız.
+
+:::
+
+===
+
+---
+layout: single
+---
+
+::: slot-1
+# 1. Rakam Yazma Bulmacası - 1
+
+![](sunumlar/nobuyuki/images/4_1_1.svg)
+
+Yan yana verilmiş 6 adet boş dairenin içine; iki adet 1, iki adet 2 ve iki adet 3 rakamını şu kurallara göre yerleştiriniz:
+
+- 1 rakamlarının arasında tam 1 adet başka rakam,
+- 2 rakamlarının arasında tam 2 adet başka rakam,
+- 3 rakamlarının arasında tam 3 adet başka rakam olmalı.
+
+:::
+
+--v--
+
+---
+layout: single
+---
+
+::: slot-1
+
+# Çözüm
+
+[step: 1 -> 2]
+![](sunumlar/nobuyuki/images/4_1_2.svg)
+
+[step: 2 -> 3]
+![](sunumlar/nobuyuki/images/4_1_3.svg)
+
+[step: 3]
+![](sunumlar/nobuyuki/images/4_1_4.svg)
+
+[step: 1]
+En büyük sayılar üzerinden düşünmeye başlayalım:
+
+- İki adet 3 rakamının arasında 3 boşluk olmak zorunda olduğundan, 3'ler toplamda 5 dairelik bir yer kaplar. 6 dairelik sınırımızı aşmamak için geriye sadece 1 boş daire kalır.
+
+[step: 2]
+- İki adet 2 rakamı da aynı anda bu 3'lerin arasında olamaz; çünkü aralarında 2 boşluk olması kuralı bunu engeller. Bu yüzden 2'lerden biri 3'lerin içinde, diğeri ise dışında olmak zorundadır.
+
+- Altı dairelik uzunluk sınırını aşmamak için dışarıdaki 2 rakamı, 3 rakamına dışarıdan hemen komşu (bitişik) olmalıdır.
+
+[step: 3]
+- 1 rakamları için zaten tek bir seçenek kalır.
+:::
+
+===
+
+---
+layout: single
+---
+
+::: slot-1
+# 2. Rakam Yazma Bulmacası - 2
+
+![](sunumlar/nobuyuki/images/4_2_1.svg)
+
+Yan yana verilmiş 8 adet boş dairenin içine; iki adet 1, iki adet 2, iki adet 3 ve iki adet 4 rakamını şu kurallara göre yerleştiriniz:
+
+- 1 rakamlarının arasında tam 1 adet başka rakam,
+- 2 rakamlarının arasında tam 2 adet başka rakam,
+- 3 rakamlarının arasında tam 3 adet başka rakam,
+- 4 rakamlarının arasında tam 4 adet başka rakam, olmalı.
+:::
+
+--v--
+
+---
+layout: single
+---
+
+::: slot-1
+
+# Çözüm
+
+[step: 1 -> 2]
+![](sunumlar/nobuyuki/images/4_2_2.svg)
+
+[step: 2 -> 3]
+![](sunumlar/nobuyuki/images/4_2_3.svg)
+
+[step: 3 -> 4]
+![](sunumlar/nobuyuki/images/4_2_4.svg)
+
+[step: 4]
+![](sunumlar/nobuyuki/images/4_2_5.svg)
+
+[step: 1]
+En büyük sayılar üzerinden düşünmeye başlayalım:
+
+- İki adet 4 rakamının arasında 4 boşluk olmak zorunda olduğundan, 4'ler toplamda 6 dairelik bir yer kaplar. 8 dairelik sınırımızı aşmamak için geriye 2 boş daire kalır.
+
+[step: 2]
+- Tıpkı bir önceki soruda olduğu gibi, 3 rakamlarının ikisi birden bu 4'lerin arasında yer alamaz. 8 dairelik sınırımızı aşmamak için 3 rakamlarından birinin, 4'lerden birine ya hemen komşu ya da en fazla 1 uzakta olması gerekir. Eğer 1 uzağa koyarsak, 4'lerin arasında kalan yan yana boşluklara kurallara uygun sayılar yerleştiremeyiz. Bu yüzden 3 rakamı mutlaka 4'e komşu olmalıdır.
+
+[step: 3]
+- Eğer iki adet 2 rakamını da 4'lerin ortasındaki boşluklara sıkıştırmaya çalışırsak, bu kez 1 rakamlarına hiç yer kalmaz.
+
+- Bu yüzden 1 rakamlarını, 4'lerin arasında duran 3 rakamının hemen sağ ve sol yanlarına yerleştirmeliyiz.
+
+[step: 4]
+- Geriye kalan boş dairelere de 2 rakamlarını yazdığımızda bulmaca çözülür.
+:::
+
+===
+
+---
+layout: single
+---
+
+::: slot-1
+# 3. Rakam Yazma Bulmacası - 3
+
+![](sunumlar/nobuyuki/images/4_3_1.svg)
+
+1'den 8'e kadar olan rakamları (1, 2, 3, 4, 5, 6, 7, 8) şekildeki boş dairelerin içine yerleştireceğiz. Ancak çizgilerle birbirine bağlanan herhangi iki dairenin içindeki rakamlar ardışık (peş peşe gelen) sayılar olamaz. (Örneğin; 4 rakamının bağlı olduğu dairelere 3 veya 5 rakamları yazılamaz.) Tüm daireleri doğru bir şekilde doldurabilir misiniz?
+:::
+
+--v--
+
+---
+layout: split-2
+---
+
+::: slot-1
+
+# Çözüm
+[step: 1 -> 2]
+![](sunumlar/nobuyuki/images/4_3_2.svg)
+
+[step: 2 -> 3]
+![](sunumlar/nobuyuki/images/4_3_3.svg)
+
+[step: 3 -> 4]
+![](sunumlar/nobuyuki/images/4_3_4.svg)
+
+[step: 4]
+![](sunumlar/nobuyuki/images/4_3_5.svg)
+
+[step: 1]
+- Ortadaki iki dairenin her birine bağlı tam altı adet komşu vardır. Bu daireler neredeyse diğer tüm dairelerle bağlantılı olduğu için oralara en az ardışığı olan sayıları, yani 1 ve 8 rakamlarını yazmalıyız.
+
+:::
+::: slot-2
+
+[step: 2]
+- 1 ve 8’in ardışıkları 2 ve 7'yi en üst ve en alta yazmayız. Mecburen 2 en sağda 7 ise en solda olmalı.
+
+[step: 3]
+- 3 rakamı 2'nin, 6 rakamı da 7'nin yanına gelemez.
+
+- Ayrıca 3 ve 6'yı da yan yana yazamayız; çünkü onları yan yana koyarsak geriye kalan 4 ve 5 rakamları da zorunlu olarak yan yana gelir ve kural bozulur.
+
+[step: 4]
+- 4 ve 5'i kuralı bozmadan yerleştirdiğimizde çözüme ulaşırız.
+
+:::
+
+===
+
+---
+layout: single
+---
+
+::: slot-1
+# 4. Ev Bulmacası
+
+![](sunumlar/nobuyuki/images/4_4_1.svg)
+
+Aslı, Bekir, Cengiz, Derya ve Emre 1'den 6'ya kadar numaralandırılmış yan yana 6 evin bulunduğu bir sokakta yaşamaktadır. Her biri farklı bir evde oturmaktadır ve bu evlerden 5 numaralı olanı boştur. Ayrıca:
+
+- Aslı ve Bekir'in oturduğu evlerin numaraları arasındaki fark 2'dir.
+- Cengiz ve Derya'nın oturduğu evlerin numaralarının toplamı ise 7'dir.
+
+Bu bilgilere göre, Emre kaç numaralı evde oturmaktadır?
+:::
+
+--v--
+
+---
+layout: single
+---
+
+::: slot-1
+# Çözüm
+[step: 1 -> 2]
+![](sunumlar/nobuyuki/images/4_4_2.svg)
+
+[step: 2 -> 3]
+![](sunumlar/nobuyuki/images/4_4_3.svg)
+
+[step: 3]
+![](sunumlar/nobuyuki/images/4_4_4.svg)
+
+[step: 1]
+- 5 numaralı ev boş olduğundan, toplamları 7 olan Cengiz ve Derya ya 3 ve 4 ya da 1 ve 6 numaralı evlerde oturuyor olmalıdır.
+- Eğer 3 ve 4 numaralı evlerde otururlarsa: Geriye kalan 1, 2 ve 6 numaralı evlerden aralarındaki fark 2 olan bir sayı çifti elde edemeyiz. Bu yüzden Cengiz ve Derya kesinlikle 1 ve 6 numaralı evlerde oturmalıdır.
+
+[step: 2]
+- Bu durumda: Geriye Aslı, Bekir ve Emre için kullanabileceğimiz 2, 3 ve 4 numaralı evler kalır. Bu kalan evler içinden aralarındaki fark 2 olan sayılar sadece 2 ve 4'tür. Yani Aslı ve Bekir 2 ve 4 numaralı evlerde oturmalıdır.
+
+[step: 3]
+- Geriye yerleşilmeyen sadece 3 numaralı ev kaldığından, Emre kesinlikle 3 numaralı evde oturuyor olmalıdır.
+:::
+
+===
+
+---
+layout: single
+---
+
+::: slot-1
+# 5. Doğru/Yanlış Bulmacası
+
+Tabloda Aslı, Bekir, Cengiz ve Derya'nın, tamamı "Doğru/Yanlış" şeklinde yanıtlanan 10 soruluk testte verdikleri cevaplar gösterilmiştir.
+
+| Sorular |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  10  |
+| :-----: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :--: |
+| Aslı    |  D  |  Y  |  Y  |  D  |  Y  |  Y  |  D  |  D  |  Y  |  D   |
+| Bekir   |  Y  |  D  |  Y  |  Y  |  Y  |  D  |  Y  |  D  |  Y  |  Y   |
+| Cengiz  |  D  |  Y  |  D  |  D  |  D  |  Y  |  D  |  D  |  D  |  D   |
+| Derya   |  Y  |  Y  |  D  |  Y  |  D  |  Y  |  Y  |  Y  |  D  |  Y   |
+
+
+Testin sonucunda; Aslı'nın 8, Bekir'in 2 ve Cengiz'in 7 cevabı Doğru çıkmıştır. Buna göre, Derya'nın kaç cevabı doğrudur?
+:::
+
+--v--
+
+---
+layout: single
+---
+
+::: slot-1
+
+# Çözüm
+
+[step: 1 -> 2]
+
+- Aslı, Bekir ve Cengiz'in birbirleriyle aynı ya da farklı verdikleri cevapları renk gruplarına ayırarak inceleyelim:
+
+[step: 1]
+<table style="text-align: center; margin: auto;">
+    <tr>
+        <th style="background-color: #ffffff;">Sorular</th>
+        <th style="background-color: #d4edbc;">1</th>
+        <th style="background-color: #d4edbc;">2</th>
+        <th style="background-color: #fef0be;">3</th>
+        <th style="background-color: #d4edbc;">4</th>
+        <th style="background-color: #fef0be;">5</th>
+        <th style="background-color: #d4edbc;">6</th>
+        <th style="background-color: #d4edbc;">7</th>
+        <th style="background-color: #c4e8f3;">8</th>
+        <th style="background-color: #fef0be;">9</th>
+        <th style="background-color: #d4edbc;">10</th>
+    </tr>
+    <tr>
+        <td>Aslı</td>
+        <td style="background-color: #d4edbc;">D <span class="step-item step-hidden" data-birth="2" data-death="999" style="display: inline-block;">✓</span></td>
+        <td style="background-color: #d4edbc;">Y <span class="step-item step-hidden" data-birth="2" data-death="999" style="display: inline-block;">✓</span></td>
+        <td style="background-color: #fef0be;">Y</td>
+        <td style="background-color: #d4edbc;">D <span class="step-item step-hidden" data-birth="2" data-death="999" style="display: inline-block;">✓</span></td>
+        <td style="background-color: #fef0be;">Y</td>
+        <td style="background-color: #d4edbc;">Y <span class="step-item step-hidden" data-birth="2" data-death="999" style="display: inline-block;">✓</span></td>
+        <td style="background-color: #d4edbc;">D <span class="step-item step-hidden" data-birth="2" data-death="999" style="display: inline-block;">✓</span></td>
+        <td style="background-color: #c4e8f3;">D <span class="step-item step-hidden" data-birth="3" data-death="999" style="display: inline-block;">x</span></td>
+        <td style="background-color: #fef0be;">Y</td>
+        <td style="background-color: #d4edbc;">D <span class="step-item step-hidden" data-birth="2" data-death="999" style="display: inline-block;">✓</span></td>
+    </tr>
+    <tr>
+        <td>Bekir</td>
+        <td style="background-color: #d4edbc;">Y</td>
+        <td style="background-color: #d4edbc;">D</td>
+        <td style="background-color: #fef0be;">Y</td>
+        <td style="background-color: #d4edbc;">Y</td>
+        <td style="background-color: #fef0be;">Y</td>
+        <td style="background-color: #d4edbc;">D</td>
+        <td style="background-color: #d4edbc;">Y</td>
+        <td style="background-color: #c4e8f3;">D <span class="step-item step-hidden" data-birth="3" data-death="999" style="display: inline-block;">x</span></td>
+        <td style="background-color: #fef0be;">Y</td>
+        <td style="background-color: #d4edbc;">Y</td>
+    </tr>
+    <tr>
+        <td>Cengiz</td>
+        <td style="background-color: #d4edbc;">D <span class="step-item step-hidden" data-birth="3" data-death="999" style="display: inline-block;">✓</span></td>
+        <td style="background-color: #d4edbc;">Y <span class="step-item step-hidden" data-birth="3" data-death="999" style="display: inline-block;">✓</span></td>
+        <td style="background-color: #fef0be;">D</td>
+        <td style="background-color: #d4edbc;">D <span class="step-item step-hidden" data-birth="3" data-death="999" style="display: inline-block;">✓</span></td>
+        <td style="background-color: #fef0be;">D</td>
+        <td style="background-color: #d4edbc;">Y <span class="step-item step-hidden" data-birth="3" data-death="999" style="display: inline-block;">✓</span></td>
+        <td style="background-color: #d4edbc;">D <span class="step-item step-hidden" data-birth="3" data-death="999" style="display: inline-block;">✓</span></td>
+        <td style="background-color: #c4e8f3;">D <span class="step-item step-hidden" data-birth="3" data-death="999" style="display: inline-block;">x</span></td>
+        <td style="background-color: #fef0be;">D</td>
+        <td style="background-color: #d4edbc;">D <span class="step-item step-hidden" data-birth="3" data-death="999" style="display: inline-block;">✓</span></td>
+    </tr>
+    <tr>
+        <td>Derya</td>
+        <td style="background-color: #e5e5e5;">Y <span class="step-item step-hidden" data-birth="4" data-death="999" style="display: inline-block;">x</span></td>
+        <td style="background-color: #e5e5e5;">Y <span class="step-item step-hidden" data-birth="4" data-death="999" style="display: inline-block;">✓</span></td>
+        <td style="background-color: #e5e5e5;">D <span class="step-item step-hidden" data-birth="5" data-death="999" style="display: inline-block;">1</span></td>
+        <td style="background-color: #e5e5e5;">Y <span class="step-item step-hidden" data-birth="4" data-death="999" style="display: inline-block;">x</span></td>
+        <td style="background-color: #e5e5e5;">D <span class="step-item step-hidden" data-birth="5" data-death="999" style="display: inline-block;">1</span></td>
+        <td style="background-color: #e5e5e5;">Y <span class="step-item step-hidden" data-birth="4" data-death="999" style="display: inline-block;">✓</span></td>
+        <td style="background-color: #e5e5e5;">Y <span class="step-item step-hidden" data-birth="4" data-death="999" style="display: inline-block;">x</span></td>
+        <td style="background-color: #e5e5e5;">Y <span class="step-item step-hidden" data-birth="6" data-death="999" style="display: inline-block;">✓</span></td>
+        <td style="background-color: #e5e5e5;">D <span class="step-item step-hidden" data-birth="5" data-death="999" style="display: inline-block;">1</span></td>
+        <td style="background-color: #e5e5e5;">Y <span class="step-item step-hidden" data-birth="4" data-death="999" style="display: inline-block;">x</span></td>
+    </tr>
+</table>
+
+
+[step: 2 -> 3]
+- 6 yeşil soruda Aslı ve Bekir tamamen farklı cevaplar vermiştir. Kalan 4 soruda ise cevapları aynıdır. Eğer aynı cevap verdikleri 4 sorunun tamamı yanlış olsaydı, Aslı'nın en fazla 6 doğrusu olabilirdi. Ancak Aslı'nın 8 doğrusu olduğunu biliyoruz. Bu durum bize gösteriyor ki; Aslı yeşil soruların tamamını doğru cevaplamıştır. Geriye kalan 4 sorudan ise 2'sini doğru, 2'sini yanlış cevaplamıştır.
+
+[step: 3 -> 4]
+- Cengiz'in yeşil soruları Aslı'yla aynı olduğu için hepsi doğrudur. Yeşil sorular dışında sadece 1 doğru daha çıkarması gerekir. Eğer bu doğru mavi soru olsaydı, mavi soruyu Aslı da doğru cevaplamış olurdu. Bu durumda Cengiz kalan 3 sarı sorunun hepsini yanlış cevaplamış, Aslı ise hepsini doğru cevaplamış olurdu. Fakat o zaman Aslı'nın tüm soruları doğru olurdu! Bu bize gösteriyor ki; mavi soruyu Aslı, Bekir ve Cengiz'in üçü de yanlış cevaplamıştır. Yani Cengiz'in kalan son 1 doğrusu mutlaka sarı sorulardan gelmelidir. Başka bir deyişle sarı soruların 1'ini doğru (Aslı'nın yanlış sorusu) 2'sini yanlış (Aslı ve Bekir'in doğru soruları) yapmıştır.
+
+[step: 4]
+- Derya'nın yeşil sorularını Aslı veya Cengiz'le kıyaslarsak sadece 2 ve 6 numaralı soruları doğru cevaplamıştır. (2 doğru).
+[step: 5]
+- Sarı soruları Cengiz ile tamamen aynı işaretlemiştir. Cengiz sarı sorulardan 1 doğru çıkardığı için Derya da buradan 1 doğru kazanır.
+[step: 6]
+- Diğer 3 kişinin yanlış cevapladığı mavi soruyu Derya onlardan farklı işaretlediği için bu soruyu doğru cevaplamıştır (1 doğru).
+Yani Derya 2 + 1 + 1 = 4 soruyu doğru cevaplamıştır.
+
+:::
+
+===
+
+---
+layout: single
+---
+
+::: slot-1
+# 6. Taş Kağıt Makas Bulmacası
+
+| Taş | Kağıt | Makas |
+| :-: | :---: | :---: |
+| ![](sunumlar/nobuyuki/images/4_6_1.svg) | ![](sunumlar/nobuyuki/images/4_6_2.svg) | ![](sunumlar/nobuyuki/images/4_6_3.svg) |
+
+İki arkadaş toplam 10 tur süren bir taş-kağıt-makas oyunu oynamıştır. Bildiğiniz gibi oyunda; taş makası, makas kağıdı, kağıt ise taşı yenmektedir. Oyuncuların 10 tur boyunca yaptıkları seçimlerin toplamı şu şekildedir:
+
+- 1. Oyuncu: 3 defa taş, 6 defa makas ve 1 defa kağıt seçmiştir.
+- 2. Oyuncu: 2 defa taş, 4 defa makas ve 4 defa kağıt seçmiştir.
+
+Bu 10 turun hiçbirinde berabere kalınmadığına göre, oyunu hangi oyuncu daha çok kazanarak tamamlamıştır?
+:::
+
+--v--
+
+---
+layout: single
+---
+
+::: slot-1
+# Çözüm
+
+
+[step: 1-> 2]
+<table style="text-align: center; margin: auto;">
+    <tr>
+        <th>Oyuncular</th>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+        <th>5</th>
+        <th>6</th>
+        <th>7</th>
+        <th>8</th>
+        <th>9</th>
+        <th>10</th>
+    </tr>
+    <tr>
+        <td>1.Oyuncu</td>
+        <td><img src="sunumlar/nobuyuki/images/4_6_3.svg"></td>
+        <td><img src="sunumlar/nobuyuki/images/4_6_3.svg"></td>
+        <td><img src="sunumlar/nobuyuki/images/4_6_3.svg"></td>
+        <td><img src="sunumlar/nobuyuki/images/4_6_3.svg"></td>
+        <td><img src="sunumlar/nobuyuki/images/4_6_3.svg"></td>
+        <td><img src="sunumlar/nobuyuki/images/4_6_3.svg"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>2.Oyuncu</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><img src="sunumlar/nobuyuki/images/4_6_3.svg"></td>
+        <td><img src="sunumlar/nobuyuki/images/4_6_3.svg"></td>
+        <td><img src="sunumlar/nobuyuki/images/4_6_3.svg"></td>
+        <td><img src="sunumlar/nobuyuki/images/4_6_3.svg"></td>
+    </tr>
+</table>
+
+[step: 2 -> 3]
+<table style="text-align: center; margin: auto;">
+    <tr>
+        <th>Oyuncular</th>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+        <th>5</th>
+        <th>6</th>
+        <th>7</th>
+        <th>8</th>
+        <th>9</th>
+        <th>10</th>
+    </tr>
+    <tr>
+        <td>1.Oyuncu</td>
+        <td style="background-color: #ffaaaa;"><img src="sunumlar/nobuyuki/images/4_6_3.svg"></td>
+        <td style="background-color: #ffaaaa;"><img src="sunumlar/nobuyuki/images/4_6_3.svg"></td>
+        <td style="background-color: #d4edbc;"><img src="sunumlar/nobuyuki/images/4_6_3.svg"></td>
+        <td style="background-color: #d4edbc;"><img src="sunumlar/nobuyuki/images/4_6_3.svg"></td>
+        <td style="background-color: #d4edbc;"><img src="sunumlar/nobuyuki/images/4_6_3.svg"></td>
+        <td style="background-color: #d4edbc;"><img src="sunumlar/nobuyuki/images/4_6_3.svg"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>2.Oyuncu</td>
+        <td style="background-color: #d4edbc;"><img src="sunumlar/nobuyuki/images/4_6_1.svg"></td>
+        <td style="background-color: #d4edbc;"><img src="sunumlar/nobuyuki/images/4_6_1.svg"></td>
+        <td style="background-color: #ffaaaa;"><img src="sunumlar/nobuyuki/images/4_6_2.svg"></td>
+        <td style="background-color: #ffaaaa;"><img src="sunumlar/nobuyuki/images/4_6_2.svg"></td>
+        <td style="background-color: #ffaaaa;"><img src="sunumlar/nobuyuki/images/4_6_2.svg"></td>
+        <td style="background-color: #ffaaaa;"><img src="sunumlar/nobuyuki/images/4_6_2.svg"></td>
+        <td><img src="sunumlar/nobuyuki/images/4_6_3.svg"></td>
+        <td><img src="sunumlar/nobuyuki/images/4_6_3.svg"></td>
+        <td><img src="sunumlar/nobuyuki/images/4_6_3.svg"></td>
+        <td><img src="sunumlar/nobuyuki/images/4_6_3.svg"></td>
+    </tr>
+</table>
+
+[step: 3]
+<table style="text-align: center; margin: auto;">
+    <tr>
+        <th>Oyuncular</th>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+        <th>5</th>
+        <th>6</th>
+        <th>7</th>
+        <th>8</th>
+        <th>9</th>
+        <th>10</th>
+    </tr>
+    <tr>
+        <td>1.Oyuncu</td>
+        <td style="background-color: #ffaaaa;"><img src="sunumlar/nobuyuki/images/4_6_3.svg"></td>
+        <td style="background-color: #ffaaaa;"><img src="sunumlar/nobuyuki/images/4_6_3.svg"></td>
+        <td style="background-color: #d4edbc;"><img src="sunumlar/nobuyuki/images/4_6_3.svg"></td>
+        <td style="background-color: #d4edbc;"><img src="sunumlar/nobuyuki/images/4_6_3.svg"></td>
+        <td style="background-color: #d4edbc;"><img src="sunumlar/nobuyuki/images/4_6_3.svg"></td>
+        <td style="background-color: #d4edbc;"><img src="sunumlar/nobuyuki/images/4_6_3.svg"></td>
+        <td style="background-color: #d4edbc;"><img src="sunumlar/nobuyuki/images/4_6_1.svg"></td>
+        <td style="background-color: #d4edbc;"><img src="sunumlar/nobuyuki/images/4_6_1.svg"></td>
+        <td style="background-color: #d4edbc;"><img src="sunumlar/nobuyuki/images/4_6_1.svg"></td>
+        <td style="background-color: #ffaaaa;"><img src="sunumlar/nobuyuki/images/4_6_2.svg"></td>
+    </tr>
+    <tr>
+        <td>2.Oyuncu</td>
+        <td style="background-color: #d4edbc;"><img src="sunumlar/nobuyuki/images/4_6_1.svg"></td>
+        <td style="background-color: #d4edbc;"><img src="sunumlar/nobuyuki/images/4_6_1.svg"></td>
+        <td style="background-color: #ffaaaa;"><img src="sunumlar/nobuyuki/images/4_6_2.svg"></td>
+        <td style="background-color: #ffaaaa;"><img src="sunumlar/nobuyuki/images/4_6_2.svg"></td>
+        <td style="background-color: #ffaaaa;"><img src="sunumlar/nobuyuki/images/4_6_2.svg"></td>
+        <td style="background-color: #ffaaaa;"><img src="sunumlar/nobuyuki/images/4_6_2.svg"></td>
+        <td style="background-color: #ffaaaa;"><img src="sunumlar/nobuyuki/images/4_6_3.svg"></td>
+        <td style="background-color: #ffaaaa;"><img src="sunumlar/nobuyuki/images/4_6_3.svg"></td>
+        <td style="background-color: #ffaaaa;"><img src="sunumlar/nobuyuki/images/4_6_3.svg"></td>
+        <td style="background-color: #d4edbc;"><img src="sunumlar/nobuyuki/images/4_6_3.svg"></td>
+    </tr>
+</table>
+
+
+[step: 1 -> 2]
+- Oyunda hiç berabere kalınmadığı ve iki oyuncunun toplam makas sayısı 6 + 4 = 10 olduğu için, her turda mutlaka oyunculardan biri makas seçmiştir. Bu bilgiden yola çıkarak turları kolayca eşleştirebiliriz:
+
+[step: 2]
+- 1. Oyuncunun Makas Seçtiği 6 Tur:
+   - 2. oyuncu 2 kez taş seçip kazanmış,
+   - 2. oyuncu 4 kez kağıt seçip kaybetmiştir.
+
+[step: 3]
+- 2. Oyuncunun Makas Seçtiği 4 Tur:
+   - 1. oyuncu 3 kez taş seçip kazanmış,
+   - 1. oyuncu 1 kez kağıt seçip kaybetmiştir.
+
+[step: 4]
+- 1.Oyuncu 7 galibiyet 3 mağlubiyetle kazanan olur.
+:::
+
+===
+
+---
+layout: single
+---
+
+::: slot-1
+# 7. Üç Arkadaş ve Kart Bulmacası
+
+![](sunumlar/nobuyuki/images/4_7_1.svg)
+
+Yukarıdaki 9 adet kart Aslı, Bekir ve Cengiz arasında, herkesin elindeki kartların toplamı eşit olacak şekilde üçer üçer paylaştırılıyor.
+Daha sonra bu üç arkadaş, kendi aralarında ikişerli eşleşerek şöyle bir kart oyunu oynuyorlar:
+
+- Oyuncular ellerinden sırayla birer kart açar. Daha yüksek sayıyı açan o turu kazanır.
+- Toplam 3 tur sonunda en çok turu kazanan, oyunun galibi olur.
+
+Eğer herkes en doğru stratejiyle oynarsa ilginç bir döngü oluşmaktadır: Bekir Aslı'yı, Cengiz Bekir'i, Aslı ise Cengiz'i yenebilmektedir. Bekir'in elinde 1 numaralı, Cengiz'in elinde ise 2 numaralı kart olduğu bilindiğine göre; her oyuncunun elinde bulunan üçer kartı bulunuz.
+:::
+
+--v--
+
+---
+layout: single
+---
+
+::: slot-1
+# Çözüm
+[step: 1 -> 6]
+- Kartların üzerinde yazan sayıların toplamı 1+2+3+4+5+6+7+8+9=45 tir.
+[step: 2 -> 6]
+- Bu toplamı 3 kişiye eşit paylaştırırsak 45:3=15 olur. Her oyuncunun elindeki kartların toplamı 15 olmalıdır.
+[step: 3 -> 6]
+- Bekir'in elinde 1, Cengiz'in elinde ise 2 numaralı kart olduğunu biliyoruz. Toplamları 15 yapacak şekilde kartları dağıttığımızda karşımıza iki farklı senaryo çıkar:
+[step: 4 -> 6]
+- 1. Senaryo: **Bekir**'de 1, 5, 9; **Cengiz**'de 2, 6, 7; **Aslı**'da 3, 4, 8
+[step: 5 -> 6]
+- 2. Senaryo: **Bekir**'de 1, 6, 8; **Cengiz**'de 2, 4, 9; **Aslı**'da 3, 5, 7
+[step: 6]
+**1. Senaryoyu test edelim:** (**Bekir**'de 1, 5, 9; **Cengiz**'de 2, 6, 7; **Aslı**'da 3, 4, 8)
+- Bekir'deki 5 ve 9 numaralı kartlar, Aslı'daki 4 ve 8 numaralı kartlardan daha büyüktür. Doğru bir stratejiyle Bekir bu eşleşmeyi kazanır.
+[step: 7]
+- Cengiz'deki 2 ve 6 numaralı kartlar, Bekir'deki 1 ve 5 numaralı kartlardan daha büyüktür. Dolayısıyla bu eşleşmeyi de Cengiz kazanır.
+[step: 8]
+- Aslı'daki 3 ve 8 numaralı kartlar, Cengiz'deki 2 ve 7 numaralı kartlardan daha büyüktür. Bu durumda Aslı da Cengiz'i yener.
+[step: 9]
+Böylece 1. senaryonun doğru olduğu görümüş oluduk. Yani kartlar 1 .senaryoya göre dağtılmış olmalıdır.
+:::
+
+===
+
+---
+layout: single
+---
+
+::: slot-1
+# 8. Olasılık Bulmacası
+
+![](sunumlar/nobuyuki/images/4_8_1.svg)
+
+Bir torbada 2 adet kırmızı ve 2 adet yeşil bilye vardır. Bu torbadan aynı anda rastgele iki bilye çekildiğinde, çekilen bilyelerin farklı renkte olma olasılığı ile aynı renkte olma olasılığını karşılaştırınız. Hangisinin gerçekleşme olasılığı daha yüksektir?
+:::
+
+--v--
+
+---
+layout: single
+---
+
+::: slot-1
+
+# Çözüm
+
+[step: 1]
+- Torbadaki bilyeleri K1, K2, Y1 ve Y2 olarak düşünelim ve torbadan çıkabilecek tüm ikili seçenekleri bir tabloda görelim:
+
+[step: 2]
+
+| Seçenekler | Durum |
+| :--------: | :---: |
+| K1 ve K2   | Aynı Renk |
+| K1 ve Y1   | Farklı Renk |
+| K1 ve Y2   | Farklı Renk |
+| K2 ve Y1   | Farklı Renk |
+| K2 ve Y2   | Farklı Renk |
+| Y1 ve Y2   | Aynı Renk |
+
+
+[step: 3]
+- Tabloyu incelediğimizde karşımıza toplam 6 farklı seçenek çıkar. Bu seçeneklerden sadece 2 tanesinde bilyeler aynı renkteyken, 4 tanesinde bilyeler farklı renktedir. Bu durumda, torbadan çekilen bilyelerin farklı renk olması çok daha olasıdır.
+
+:::
+
+===
+
+---
+layout: single
+---
+
+::: slot-1
+# 9. Leyla'nın Kolyesi Bulmacası
+
+Leyla'nın heri biri farklı renkte olan beş boncuktan oluşan şekildeki gibi bir kolyesi vardır.
+
+![](sunumlar/nobuyuki/images/4_9_1.svg)
+
+Arkadaşı Nehir, Leyla’ya bu kolye için özel bir hediye kutusu tasarlar. Kutunun içine boncukların oturması için yan yana beş adet boşluk açar ve bu boşlukları kolyedeki renklerle boyar. Ancak Nehir, renklerin sırasını kolyedekinden farklı bir şekilde ayarlamıştır. Leyla kolyesini kutuya yerleştirmek istediğinde çok şaşırtıcı bir durumla karşılaşır: Kolyeyi nasıl çevirip koyarsa koysun, her seferinde sadece 1 boncuk kendi rengindeki boşluğa denk gelmekte, diğer 4 boncuk ise her zaman farklı renkteki boşluklarda kalmaktadır. Buna göre Nehir, kutudaki renk boşluklarının sırasını nasıl ayarlamıştır?
+:::
+
+--v--
+
+---
+layout: single
+---
+
+::: slot-1
+
+# Çözüm
+
+[step: 1]
+
+| Kolye | Kutu |
+| :---: | :--: |
+| ![](sunumlar/nobuyuki/images/4_9_2.svg) | ![](sunumlar/nobuyuki/images/4_9_3.svg) |
+
+- Aynı renk boncuklardan sadece birinin üst üste gelmesi için renkleri birer atlayarak yerleştirebiliriz. Bunu yaptığımızda aşağıdaki şekli elde ederiz:
+
+[step: 2]
+
+| Seçenekler | Durum |
+| :--------: | :---: |
+| K1 ve K2   | Aynı Renk |
+| K1 ve Y1   | Farklı Renk |
+| K1 ve Y2   | Farklı Renk |
+| K2 ve Y1   | Farklı Renk |
+| K2 ve Y2   | Farklı Renk |
+| Y1 ve Y2   | Aynı Renk |
+
+
+[step: 3]
+- Tabloyu incelediğimizde karşımıza toplam 6 farklı seçenek çıkar. Bu seçeneklerden sadece 2 tanesinde bilyeler aynı renkteyken, 4 tanesinde bilyeler farklı renktedir. Bu durumda, torbadan çekilen bilyelerin farklı renk olması çok daha olasıdır.
+
+:::
+

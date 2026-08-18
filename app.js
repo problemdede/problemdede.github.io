@@ -398,6 +398,7 @@ document.addEventListener('keydown', (e) => {
 
 
 /* DOKUNMATİK KAYDIRMA (SWIPE) DESTEĞİ */
+/* DOKUNMATİK KAYDIRMA (SWIPE) DESTEĞİ */
 let touchStartX = 0;
 let touchStartY = 0;
 let touchEndX = 0;
@@ -406,16 +407,20 @@ let touchEndY = 0;
 // Minimum kaydırma mesafesi (yanlışlıkla dokunmaları engellemek için eşik değer)
 const minSwipeDistance = 50; 
 
-document.addEventListener('touchstart', (e) => {
-  touchStartX = e.changedTouches[0].screenX;
-  touchStartY = e.changedTouches[0].screenY;
-}, { passive: true });
+const stageContainer = document.getElementById('stage-container');
 
-document.addEventListener('touchend', (e) => {
-  touchEndX = e.changedTouches[0].screenX;
-  touchEndY = e.changedTouches[0].screenY;
-  handleSwipeGesture();
-}, { passive: true });
+if (stageContainer) {
+  stageContainer.addEventListener('touchstart', (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+    touchStartY = e.changedTouches[0].screenY;
+  }, { passive: true });
+
+  stageContainer.addEventListener('touchend', (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    touchEndY = e.changedTouches[0].screenY;
+    handleSwipeGesture();
+  }, { passive: true });
+}
 
 function handleSwipeGesture() {
   const diffX = touchEndX - touchStartX;

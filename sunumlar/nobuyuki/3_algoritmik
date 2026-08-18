@@ -7,7 +7,7 @@ layout: single
 
 # Nobuyuki Yoshigahara'dan Bulmacalar
 
-## Algoritmik Bulmacaları
+## Algoritmik Bulmacalar
 
 ![](sunumlar/nobuyuki/images/nobuyuki.svg)
 
@@ -978,5 +978,149 @@ layout: single
 - Son durum
 ![](sunumlar/nobuyuki/images/3_12_17.svg)
 
+
+:::
+
+===
+
+---
+layout: single
+---
+
+::: slot-1
+# 11. Pul Bulmacası - 6
+
+
+|  A  | B | C |
+| :-: | :-: | :-: |
+| ![](sunumlar/nobuyuki/images/3_13_1.svg) | ![](sunumlar/nobuyuki/images/3_13_2.svg) | ![](sunumlar/nobuyuki/images/3_13_3.svg) |
+
+1 × 5 boyutundaki bir oyun tahtasının farklı karelerine 4 adet pul yerleştirilmiştir. Bu pulların bir yüzü kırmızı, diğer yüzü ise beyazdır. Başlangıçta tüm pulların kırmızı yüzleri yukarı bakmaktadır. Oyunun Kuralları:
+
+- Her hamlede bir pulu alıp, başka bir pulun (veya peş peşe duran pulların) üzerinden atlatarak boş bir kareye koyabilirsiniz.
+- Üzerinden atlanan tüm pullar ters çevrilir (kırmızıysa beyaz, beyazsa kırmızı olur).
+- Atlayan pulun renginde ise hiçbir değişiklik olmaz.
+
+Buna göre A, B ve C durumlarındaki pulların tamamını beyaz renge dönüştürmek için en az kaç hamle yapılması gerekir?
+
+:::
+
+--v--
+
+---
+layout: split-3
+---
+
+::: slot-1
+[step: 1 -> 2]
+- Hamle 1
+![](sunumlar/nobuyuki/images/3_13_4.svg)
+
+[step: 2 -> 3]
+- Hamle 2
+![](sunumlar/nobuyuki/images/3_13_5.svg)
+
+[step: 3 -> 4]
+- Hamle 3
+![](sunumlar/nobuyuki/images/3_13_6.svg)
+
+[step: 4 -> 5]
+- Hamle 4
+![](sunumlar/nobuyuki/images/3_13_7.svg)
+
+[step: 5]
+- Son durum, 4 hamlede tamamladık.
+![](sunumlar/nobuyuki/images/3_13_8.svg)
+:::
+
+::: slot-2
+
+[step: 6 -> 7]
+- Hamle 1
+![](sunumlar/nobuyuki/images/3_13_9.svg)
+
+[step: 7 -> 8]
+- Hamle 2
+![](sunumlar/nobuyuki/images/3_13_10.svg)
+
+[step: 8 -> 9]
+- Hamle 3
+![](sunumlar/nobuyuki/images/3_13_11.svg)
+
+[step: 9 -> 10]
+- Hamle 4
+![](sunumlar/nobuyuki/images/3_13_12.svg)
+
+[step: 10 -> 11]
+- Hamle 5
+![](sunumlar/nobuyuki/images/3_13_13.svg)
+
+[step: 11 -> 12]
+- Hamle 6
+![](sunumlar/nobuyuki/images/3_13_14.svg)
+
+[step: 12 -> 13]
+- Hamle 7
+![](sunumlar/nobuyuki/images/3_13_15.svg)
+
+[step: 13 -> 14]
+- Hamle 8
+![](sunumlar/nobuyuki/images/3_13_16.svg)
+
+[step: 14 -> 15]
+- Hamle 9
+![](sunumlar/nobuyuki/images/3_13_17.svg)
+
+[step: 15]
+- Son durum, 9 hamlede tamamladık.
+![](sunumlar/nobuyuki/images/3_13_18.svg)
+
+:::
+
+::: slot-3
+
+[step: 16 -> 17]
+- Hamle 1
+![](sunumlar/nobuyuki/images/3_13_19.svg)
+
+[step: 17 -> 18]
+- Hamle 2
+![](sunumlar/nobuyuki/images/3_13_20.svg)
+
+[step: 18 -> 19]
+- Hamle 3
+![](sunumlar/nobuyuki/images/3_13_21.svg)
+
+[step: 19 -> 20]
+- Hamle 4
+![](sunumlar/nobuyuki/images/3_13_22.svg)
+
+[step: 20 -> 21]
+- Hamle 5
+![](sunumlar/nobuyuki/images/3_13_23.svg)
+
+[step: 21 -> 22]
+- Hamle 6
+![](sunumlar/nobuyuki/images/3_13_24.svg)
+
+[step: 22 -> 23]
+- Hamle 7
+![](sunumlar/nobuyuki/images/3_13_25.svg)
+
+[step: 23 -> 24]
+- Hamle 8
+![](sunumlar/nobuyuki/images/3_13_26.svg)
+
+[step: 24 -> 25]
+- Hamle 9
+![](sunumlar/nobuyuki/images/3_13_27.svg)
+
+[step: 25 -> 26]
+- Hamle 10
+![](sunumlar/nobuyuki/images/3_13_28.svg)
+
+[step: 26]
+- Son durum, 10 hamlede tamamladık.
+![](sunumlar/nobuyuki/images/3_13_29.svg)
 
 :::
