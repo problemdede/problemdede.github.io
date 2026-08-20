@@ -958,3 +958,248 @@ layout: split-2
 - Son beyaz vezir de yerleştikten sonra, tahtada siyah vezirlerin beyazlar tarafından asla tehdit edilmeyen tam 5 adet güvenli kare kalır. 5 siyah vezir de buralara yerleştirildiğinde çözüm şekildeki gibi tamamlanır.
 :::
 
+===
+
+---
+layout: single
+---
+
+::: slot-1
+# 14. İlginç Trafik Bulmacası
+
+![](sunumlar/nobuyuki/images/4_14_1.svg)
+
+Trafiğin kuzeyden güneye (yukarıdan aşağıya) aktığı bir ülkede, birbirine paralel 5 adet otoyol bulunmaktadır. Bu otoyollar arasında şekildeki gibi yatay bağlantı yolları inşa edilmiştir. Bir araç, dikey yolda ilerlerken karşısına çıkan ilk yatay bağlantı yoluna girmek zorundadır. Bağlantı yolunun bitiminde ise yeni girdiği otoyoldan aşağıya doğru hareketine devam eder. Amaç, bir sürücü hangi otoyoldan yola başlarsa başlasın, yolculuğunu yine aynı otoyolda bitirmesidir. Ancak mevcut planda işler istenildiği gibi gitmez. Bu hedefi gerçekleştirmek ve için en az kaç yeni bağlantı yolu daha inşa etmek gerekir?
+:::
+
+--v--
+
+---
+layout: single
+---
+
+::: slot-1
+
+[step: 1 -> 2]
+![](sunumlar/nobuyuki/images/4_14_2.svg)
+
+[step: 2 -> 3]
+![](sunumlar/nobuyuki/images/4_14_3.svg)
+
+[step: 3]
+![](sunumlar/nobuyuki/images/4_14_4.svg)
+
+[step: 1]
+- 1, 4 ve 5 numaralı yollardan giriş yapan araçlar, yolları takip ettiğinde hiçbir problem olmadan yine kendi numaralarından çıkış yapar.
+
+[step: 2]
+- 2'den yola çıkan araç 3'ten, 3'ten yola çıkan araç ise 2'den çıkmaktadır.
+
+[step: 3]
+- Bu karışıklığı gidermek ve araçları kendi şeritlerine döndürmek için 2 ve 3 numaralı otoyollar arasına, en alt kısma 1 adet yatay bağlantı yolu eklemek yeterlidir. Böylece aranan cevap en az 1 bağlantı yolu olarak bulunur.
+:::
+
+===
+
+---
+layout: split-2
+---
+
+::: slot-1
+# 15. Maya Tapınağı Bulmacası
+
+![](sunumlar/nobuyuki/images/4_15_1.svg)
+
+:::
+
+::: slot-2
+Bir arkeolog, 4 bölümden oluşan Maya tapınağının haritasını bölüm bölüm çıkartmıştır. Ancak bu 4 farklı bölümün nasıl dizildiğini unutmuştur. Görselde, harita parçalarının sadece 1 tek kapalı döngü oluşturacak şekilde yerleştirilmiş hali verilmiştir. Bu 4 bölümün yerlerini veya yönlerini kendi aralarında değiştirerek; 2, 3, 4, 5 ve 6 farklı kapalı döngü oluşturacak yeni yerleşimler oluşturunuz.
+:::
+
+--v--
+
+---
+layout: split-2
+---
+
+::: slot-1
+# Çözüm
+
+[step: 1 -> 2]
+![](sunumlar/nobuyuki/images/4_15_2.svg)
+
+[step: 2 -> 3]
+![](sunumlar/nobuyuki/images/4_15_3.svg)
+
+[step: 3 -> 4]
+![](sunumlar/nobuyuki/images/4_15_4.svg)
+
+[step: 4 -> 5]
+![](sunumlar/nobuyuki/images/4_15_5.svg)
+
+[step: 5]
+![](sunumlar/nobuyuki/images/4_15_6.svg)
+:::
+
+::: slot-2
+[step: 1]
+- **2 Döngü İçin:** 4. parçayı 2'nin, 2. parçayı 3'ün, 3. parçayı ise 4'ün yerine almalıyız.
+
+[step: 2]
+- **3 Döngü İçin:** 3 ve 4 numaralı parçaların yerlerini değiştirmeliyiz.
+
+[step: 3]
+- **4 Döngü İçin:** 4. parçayı 3'ün, 3. parçayı 2'nin, 2. parçayı ise 4'ün yerine almalıyız.
+
+[step: 4]
+- **5 Döngü İçin:** 2 ve 4 numaralı parçaların yerlerini değiştirmeliyiz.
+
+[step: 5]
+- **6 Döngü İçin:** 2 ve 3 numaralı parçaların yerlerini değiştirmeliyiz.
+:::
+
+===
+
+---
+layout: single
+---
+
+::: slot-1
+# 16. Blok Bulmacası
+
+![](sunumlar/nobuyuki/images/4_16_1.svg)
+
+Elinizde 3 × 1 boyutlarında tam 32 adet özdeş küçük dikdörtgen blok bulunmaktadır. Bu blokların tamamını kullanarak 12 x 8 boyutlarında büyük bir dikdörtgen inşa edilecektir. Ancak dikdörtgenleri tahtaya öyle bir yerleştirmelisiniz ki, hiçbir 4 küçük dikdörtgen ortak bir köşeye sahip olmasın (köşede bir + işareti oluşmasın). Blokları hem yatay hem dikey kullanarak bu yerleşimi tamamlayınız.
+:::
+
+--v--
+
+---
+layout: single
+---
+
+::: slot-1
+Farklı çözümler mevcut olsada çözümlerden biri şöyledir:
+![](sunumlar/nobuyuki/images/4_16_2.svg)
+:::
+
+===
+
+---
+layout: single
+---
+
+::: slot-1
+# 17. Blok Bulmacası - 2
+
+![](sunumlar/nobuyuki/images/4_17_1.svg)
+
+Görselde 3 x 4 boyutunda küçük parçalardan oluşan bir dikdörtgen bulunmaktadır. Parçaların birleştiği çizgiler arasında, dikdörtgeni boydan boya ikiye bölebilen kesintisiz düz çizgilere fay hattı denmektedir. İçinde hiçbir kesintisiz düz çizgi barındırmayan, yani boydan boya bölünemeyen dikdörtgenlere ise hatasız dikdörtgen adı verilir. 1 x 2 boyutundaki tek bir parça, içinde hiç ek yeri olmadığı için doğal olarak en küçük hatasız dikdörtgendir. Birden fazla parçayı bir araya getirerek oluşturabileceğimiz ikinci en küçük hatasız dikdörtgenin boyutu ne olmalıdır?
+:::
+
+--v--
+
+---
+layout: single
+---
+
+::: slot-1
+Genişliği 1, 2, 3 ve 4 olan şekillerde dikey hattan kurtulmaya çalıştığınızda yatay, yatay hattan kurtulmaya çalıştığınızda ise dikey hat oluşumunu engellemek matematiksel olarak mümkün değildir. Bu yüzden oluşturacağımız hatasız şeklin genişliği en az 5 olmalıdır. 1 x 2 boyutundan sonraki ikinci en küçük hatasız dikdörtgenin boyutu 5 x 6 olarak bulunur. Aşağıda genişliği 5 olan 2 farklı çözüm verilmiştir:
+
+![](sunumlar/nobuyuki/images/4_17_2.svg)
+:::
+
+===
+
+---
+layout: single
+---
+
+::: slot-1
+# 18. İlmek Bulmacası - 1
+
+![](sunumlar/nobuyuki/images/4_18_1.svg)
+
+Görselde iç içe geçmiş dört çift ilmek (halka) grubu bulunmaktadır. Her grupta ikişer adet halka yer almaktadır. Bu çiftlerden hangisi, gerçekte birbirine bağlı olmayan (yani çekildiğinde birbirinden kolayca ayrılabilen) iki bağımsız ilmekten oluşmaktadır?
+:::
+
+--v--
+
+---
+layout: split-2
+---
+
+::: slot-1
+
+
+[step: 1]
+- "8" şeklindeki ilmek, açılıp "0" haline gelebilir.
+![](sunumlar/nobuyuki/images/4_18_2.svg)
+
+[step: 2]
+- Şekli takip edersek A, B, C ve D noktalarında sağdaki ilmeğin soldaki ilmeğin üzerinden mi yoksa altından mı geçtiğini tabloya not edelim.
+![](sunumlar/nobuyuki/images/4_18_3.svg)
+:::
+
+::: slot-2
+[step: 3]
+
+| Çiftler | Birinci | İkinci | Üçüncü | Dördüncü |
+| :-----: | :-----: | :----: | :----: | :------: |
+|    A    | Üstten  | Alttan | Alttan |  Alttan  |
+|    B    | Alttan  | Üstten | Üstten |  Üstten  |
+|    C    | Üstten  | Üstten | Alttan |  Alttan  |
+|    D    | Alttan  | Alttan | Üstten |  Üstten  |
+
+[step: 4]
+- İlmeklerin birbirinden ayrılamaması için geçişlerin sürekli bir alttan bir üstten sırayla gitmesi gerekir. İkinci ilmek bu kuralı sağlamaz. Kesişim noktalarında sırasıyla; altından, üstünden, üstünden, altından şeklinde gittiği için kilitlenmez ve birbirinden ayrılabilir.
+
+:::
+
+===
+
+---
+layout: split-2
+---
+
+::: slot-1
+# 18. İlmek Bulmacası - 2
+![](sunumlar/nobuyuki/images/4_19_1.svg)
+:::
+:::slot-2
+Görselde, üç ayrı çerçeve etrafına sıkıca dolanmış üç farklı ip ilmeği görmektesiniz. Bu iplerin gevşek uçları oldukça uzundur ve her iki uç da hiçbir şekilde serbest bırakılmadan (ellerle sıkıca) tutulmaktadır. İplerin uçları bırakılmadığı halde, bu ilmeklerden birini çerçevesinden tamamen kurtarıp çıkarmak mümkündür. Çerçevesinden ayrılabilen ilmek hangisidir ve iplerin uçları hiç bırakılmadan bu işlem nasıl başarılabilir?
+:::
+
+--v--
+
+---
+layout: split-2
+---
+
+::: slot-1
+# Çözüm
+
+[step: 1 -> 2]
+![](sunumlar/nobuyuki/images/4_19_2.svg)
+[step: 2 -> 3]
+![](sunumlar/nobuyuki/images/4_19_3.svg)
+[step: 3 -> 4]
+![](sunumlar/nobuyuki/images/4_19_4.svg)
+[step: 4 -> 5]
+![](sunumlar/nobuyuki/images/4_19_5.svg)
+[step: 5]
+![](sunumlar/nobuyuki/images/4_19_6.svg)
+:::
+
+::: slot-2
+[step: 1]
+- 2. ve 3. ip serbest bırakılamaz ancak 1. ipi çerçeveden çıkarmak mümkündür.
+[step: 2]
+- Adım 1: Ortadaki paralel kısım alttaki halkanın içinden geçirilir.
+[step: 3]
+- Adım 2: Halkadan geçirilen ip, en üst çerçevenin önünden yukarı çıkarılıp arkasından arkaya alınır.
+[step: 4]
+- Adım 3: İp en aşağı kadar çekilip en alt çerçevenin arkasından aşağı indirilip önünden alınır.
+[step: 5]
+- Adım 4: Tutulan uç kısımlardan çekildiğinde ip tamamen kurtulacaktır.
+:::
